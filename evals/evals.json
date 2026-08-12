@@ -1,0 +1,255 @@
+{
+  "skill_name": "rustfield-riso-graphic-redesign",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "根据这张 Y2K 像素大头贴/街机空间图片重新设计。需要明显看得出还是原图中的那个女孩和那个场景，但不能照搬像素房间。",
+      "expected_output": "An identity-preserving redesign that keeps the full-body standing headphone girl, booth/arcade function, enclosure relationship, lively Y2K energy, and palette relationship while rebuilding the scene in the board's flat graphic language.",
+      "expectations": [
+        "The route is identity-preserving redesign, not free semantic translation.",
+        "The source sentence includes the girl's warm brown skin, long dark hair, full-body standing crop, oversized pink heart-pad headphones, front-facing state, photo-booth/arcade enclosure, and lively neon Y2K atmosphere.",
+        "The result preserves the centered-inside-enclosure relationship and enough functional side/floor cues to identify the setting.",
+        "The result does not become a quiet bust portrait, seated girl, generic music image, or fixed heart/frame/sticker template.",
+        "Pixel/glow/sticker density is translated into modules, enclosure, scale, crop, and contrast rather than copied literally or replaced by clutter.",
+        "The workflow selects separate figure-shape, composition, and material references from the local board."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "把一张正面站立的足球运动员照片转成我们的风格。球衣条纹、站姿和运动员身份都要保留，脸可以很简单。",
+      "expected_output": "A single-figure redesign preserving full-body crop, stance, sport identity, and clothing pattern while simplifying anatomy and face.",
+      "expectations": [
+        "The full-body crop and stance are not changed arbitrarily.",
+        "Clothing silhouette, stripe rhythm, and sport identifiers carry identity.",
+        "The face is reduced without changing the person into an anime or kawaii character.",
+        "Reference 75 or another suitable full-body board image is used as a shape reference, not as replacement content."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "参考一张校车里坐着五个孩子的图重新设计，必须还是一群孩子一起坐车，不能变成一个小孩的肖像。",
+      "expected_output": "A group-system composition preserving count band, shared bus container, repeated windows, and social relation.",
+      "expectations": [
+        "The group is not collapsed into one representative figure.",
+        "The bus or shared vehicle enclosure remains a setting-function anchor.",
+        "Individual figures vary through a small set of diagnostic color/shape features.",
+        "Depth is flattened through repeated windows, rows, and shared container geometry."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "把狐狸、乌龟、猪和蛇做成一张动物图鉴风格图片，每种动物都要一眼能认出来。",
+      "expected_output": "A taxonomy/grid or loose taxonomy preserving each species checksum and controlled variation.",
+      "expectations": [
+        "Each species keeps two to four diagnostic silhouette or pattern features.",
+        "Animals do not share one generic rounded mascot body.",
+        "The collection uses a stable panel or spacing system.",
+        "Labels are verified or added separately if exact text is required."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "根据一张森林里有多种动物、树、山和小屋的图片重新设计，保留森林生态关系，但不要画真实透视。",
+      "expected_output": "A shallow environmental system preserving habitat skeleton, mixed species, landmark relations, and ecological density.",
+      "expectations": [
+        "The environment is not deleted in favor of one animal.",
+        "Ground, landmarks, plants, animals, and relative scale form a recognizable habitat.",
+        "Depth is compressed through floating landmarks, overlap, or stacked fields.",
+        "The result avoids cinematic landscape rendering and generic leaf decoration."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "把一张切洋葱的图转成我们的风格。必须保留双手、刀、洋葱圈和流泪之间的关系。",
+      "expected_output": "A relational action composition preserving hands, knife, onion rings, tears, and the cutting action while simplifying anatomy and surface.",
+      "expectations": [
+        "Hands and knife are treated as action anchors rather than discarded pose detail.",
+        "Tears remain causally related to cutting onions.",
+        "The composition uses broad masses and repeated onion rings without turning them into arbitrary decoration.",
+        "The result remains specific to cutting onions, not generic cooking."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "根据一张锅里有鸡肉、胡萝卜、土豆和葱的韩式炖菜图片重新设计，保留菜品、锅和配料关系。",
+      "expected_output": "A food relational cluster preserving vessel, serving state, ingredient diagnostics, and cultural meal context.",
+      "expectations": [
+        "The pot and ingredient distribution remain the dominant subject system.",
+        "The dish is not replaced by generic fruit, coffee, or a cute kitchen prop.",
+        "Top/side views may mix, but containment and serving relationships remain clear.",
+        "Unauthorized branding and watermarks are removed."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "把一张椅子、落地灯和杯子的室内静物重新设计，保持它们构成一个休息角落的关系。",
+      "expected_output": "A relational still life preserving chair-lamp-cup function and shallow domestic setting.",
+      "expectations": [
+        "The three objects remain functionally related rather than becoming a random inventory.",
+        "The interior is flattened to ground/wall fields or one enclosure instead of deleted.",
+        "Pattern and color blocks carry identity with limited line detail.",
+        "No unrelated flowers, hearts, stars, or stickers are added."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "把一张房子、地面、天空和巨大烟云的风景图做成我们的风格。",
+      "expected_output": "A shallow landscape preserving environmental skeleton and dramatic house-to-cloud scale relation.",
+      "expectations": [
+        "Ground, sky, house, and cloud/smoke remain the core structure.",
+        "The scale relation is preserved or deliberately intensified.",
+        "The result does not replace the scene with a generic house icon and scattered nature symbols.",
+        "Realistic atmospheric perspective and cinematic light are avoided."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "给一个文化活动做一张有中文标题、日期和地点的高能量海报，风格参考项目图集。",
+      "expected_output": "A typography-led one-pass poster with title as a primary shape and a verified exact information hierarchy.",
+      "expectations": [
+        "Typography-led mode and poster topology are selected explicitly.",
+        "Title, date, and place form a planned hierarchy rather than an afterthought.",
+        "The workflow selects a typography reference separately from composition and material references.",
+        "Exact Chinese copy is included and checked in the same complete render; a failed text candidate is discarded rather than separately typeset."
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "把一个没有具体对象、只有碰撞、旋转和重复色块的主题做成抽象图形作品。",
+      "expected_output": "An abstract force field preserving direction, collision, repetition, scale, and contrast without inventing literal mascots.",
+      "expectations": [
+        "The identity packet describes forces and rhythm rather than a generic theme noun.",
+        "The result does not add a cute character, heart, flower, or unrelated object.",
+        "Selected references support abstract composition and material separately.",
+        "Shape-family count is controlled while movement remains visible."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "我只想要原图的主题，不需要保留原来的动作和场景，可以做得更抽象。",
+      "expected_output": "A deliberate free semantic translation with the route clearly changed from the default.",
+      "expectations": [
+        "The route is free semantic translation because the user explicitly authorizes distance.",
+        "The workflow still preserves the core idea and atmosphere kernel.",
+        "Changes to action or setting are documented in the blueprint.",
+        "The result does not claim identity-preserving fidelity."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "参考项目中的整套图片，而不是只模仿其中一张，生成一张新图。",
+      "expected_output": "A board-level selection using separate composition, shape, and material references.",
+      "expectations": [
+        "The workflow uses the board index or contact sheets and does not infer the style from one favorite image.",
+        "Each selected reference has a declared role.",
+        "Content from style references is not imported into the new image.",
+        "The final review explains board-style fidelity through observable shape, color, space, and material behavior."
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "这张图主体和构图都对，只把过重的水彩纹理改成干净平涂，不要重做人物和场景。",
+      "expected_output": "A localized material edit preserving the approved identity and topology.",
+      "expectations": [
+        "The route is edit and the approved subject/composition remain unchanged.",
+        "The requested material change is completed in one render from the supplied original image.",
+        "The result is rechecked for accidental changes outside the material layer.",
+        "The generated candidate is not fed into a second mask, recolor, texture, or typography pass."
+      ]
+    },
+    {
+      "id": 15,
+      "prompt": "把三位老人在社区院子里围桌打牌聊天的纪实照片转成我们的风格。保留三个人、打牌关系、盆栽和晾衣架形成的院落感。",
+      "expected_output": "A shallow social scene preserving the three-person count, shared card table, mutual orientation, courtyard function, and lively conversational atmosphere.",
+      "expectations": [
+        "The topology is chosen from the current source rather than inherited from a poster example.",
+        "Exactly three elderly people remain around one shared table and cards visibly carry the action.",
+        "Plants and a laundry rail form a minimum courtyard skeleton instead of unrelated decoration.",
+        "The side stamp is derived from a source card, plant, or laundry-rail form; no unrelated portal, checker floor, sticker field, or badge appears."
+      ]
+    },
+    {
+      "id": 16,
+      "prompt": "把五只丹顶鹤从冬季湿地起飞的横幅照片转成我们的风格，保留五只、起飞动作、芦苇和远山。",
+      "expected_output": "A kinetic animal group in a shallow habitat preserving exact count, crane diagnostics, takeoff phases, marsh origin, reeds, hills, and open-sky scale.",
+      "expectations": [
+        "Exactly five cranes remain and each keeps species diagnostics rather than becoming a generic bird.",
+        "The flock direction and takeoff action determine composition and ratio.",
+        "The environment remains a winter marsh rather than a poster enclosure or animal grid.",
+        "A small graphic side stamp is derived from a crane crown, beak, wing, or reed; no generic symbol or pseudo-text is added."
+      ]
+    },
+    {
+      "id": 17,
+      "prompt": "把俯拍的静物照片转成我们的风格：一个有缺口的蓝色搪瓷碗里有三个柠檬，旁边是红白餐布和金属勺，放在旧木桌上。",
+      "expected_output": "A quiet top-down relational still life preserving the chipped bowl, exact lemon count and containment, folded cloth, spoon, worn table support, and morning stillness.",
+      "expectations": [
+        "The named blue, yellow, and red-white colors are recognized as identity-bearing while exact hues come from the board.",
+        "The bowl contains exactly three lemons and the cloth and spoon retain their support relation.",
+        "Quiet density and top-down viewpoint are preserved; any title remains optional while a small stamp derives from the chipped rim, lemon, cloth, or spoon.",
+        "Global color-boundary behavior is present but does not isolate every object with equal wide gutters."
+      ]
+    },
+    {
+      "id": 18,
+      "prompt": "把一个人在航天器里近距离侧脸观看巨大地球的照片转成我们的风格。整体更偏波普，加入一个从窗框或地球轮廓提取的小印章，并设计一个合适的复古海报标题。只输出一张完整成图。",
+      "expected_output": "A single-pass pop-leaning Riso poster preserving the person–Earth–spacecraft relationship, using one traceable board palette, one source-derived side stamp, and one exact retro title.",
+      "expectations": [
+        "One exact user-board file is named as the sole palette anchor with ink families, dominance order, approximate area ratios, and contrast relationship.",
+        "The palette is not freely synthesized from several references and remains visibly pop-leaning.",
+        "The stamp derives from a visible source window, strut, profile, or Earth form, and the title is short, exact, and concept-derived.",
+        "Composition, title, stamp, palette, global gaps, and print material are included in one complete generation from the original inputs.",
+        "If the candidate fails, it is discarded and a fresh full render starts from the original image and role references; no mask edit, recolor pass, texture pass, or separate typesetting is used."
+      ]
+    },
+    {
+      "id": 19,
+      "prompt": "生成一张以电影《海上钢琴师》为主题的图片，使用我们的风格。",
+      "expected_output": "A text-only route that researches film-specific identity when needed, separates web content references from project-board material references, and produces a non-vector Riso/screen-print image faithful to the user's film theme.",
+      "expectations": [
+        "The route is text-only because the user supplied no image, even when the Skill later attaches project-board or web images.",
+        "The user's film theme remains the content authority and the result preserves specific film anchors rather than becoming a generic ocean-and-piano poster.",
+        "One exact project-board image is the sole material/palette authority; any web film image is content-only or analyzed offline.",
+        "The blueprint specifies low-frequency contour wobble, unequal geometry, varied global gaps/overlaps, and local ink-density, missing-ink, halftone, and registration evidence.",
+        "A mechanically regular generic vector candidate is rejected and regenerated from the original text and approved references."
+      ]
+    },
+    {
+      "id": 20,
+      "prompt": "画一张17世纪荷兰天文钟表匠在工作台前校准摆钟的图，保持时代物件准确。",
+      "expected_output": "A text-only historical scene using web theme research for period and mechanism diagnostics while the project board controls visual language.",
+      "expectations": [
+        "Web research is used because period clothing, tools, clock geometry, and workshop relationships are identity-critical.",
+        "The Skill decides whether to attach a content reference or analyze sources offline based on leakage risk.",
+        "No web source controls palette, Riso material, typography, or exact composition.",
+        "Irregular geometry strengthens handmade print character without corrupting the pendulum clock's functional diagnostics."
+      ]
+    },
+    {
+      "id": 21,
+      "prompt": "生成一只橙色大狗在蓝色浴缸里吹泡泡的欢乐场景。",
+      "expected_output": "A text-only fictional scene that does not need web research and uses project-board references for material, palette, composition, and shape roles only.",
+      "expectations": [
+        "No web search is required because the fictional subject, action, relationship, and mood are sufficiently specified.",
+        "The orange dog, blue bathtub, bubble action, and joyful energy remain locked to the user's wording.",
+        "Project-board references do not introduce unrelated characters, props, wording, or scenery.",
+        "Repeated bubbles vary in size, spacing, contour, ink density, and registration rather than appearing as perfect vector circles."
+      ]
+    },
+    {
+      "id": 22,
+      "prompt": "调用我们的 skill 生成一张主题为《星露谷物语》的图像。不要直接照搬游戏截图，需要重新设计构图。",
+      "expected_output": "A researched text-only redesign that preserves Stardew Valley's compact figure grammar, oblique tiled world structure, farm-town-community relationships, and seasonal labor rhythm while translating its surface into a mature editorial Riso composition.",
+      "expectations": [
+        "The workflow builds a theme reference packet from complementary official game imagery covering character proportion, farm or town viewpoint, key building or tool forms, and activity or community relationships before composition design.",
+        "It records an anchor ledger with two to four primary visual identity anchors and a style-distance budget; each primary anchor names its evidence, visible rule, required survival mechanism, and allowed translation.",
+        "Riso replaces the raster surface without erasing the underlying block-and-tile logic, compact character proportions, oblique spatial grammar, modular crop rhythm, or farm-town-community world structure.",
+        "It records a visual thesis and uses one dominant spatial or relational device rather than distributing crops, animals, buildings, and tools as explanatory icons.",
+        "Any attached web images control only named content or setting facts; project-board references separately control palette, print material, shape, composition, and optional typography.",
+        "The result preserves adult editorial composition through decisive crop, unequal scale, layered space, asymmetry, and purposeful negative space while retaining the project’s naïve geometry.",
+        "The maturity gate rejects round doll figures, nursery-book cottages, identical flowers, cute generic animals, evenly scattered stickers, and preschool worksheet zoning unless explicitly required by the brief.",
+        "The anchor coverage gate rejects a generic realistic farm, generic pastoral editorial scene, or generic cute farm game that could be relabeled without changing its visual construction."
+      ]
+    }
+  ]
+}

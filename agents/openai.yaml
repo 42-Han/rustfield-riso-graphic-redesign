@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rustfield RISO Graphic Redesign"
+  short_description: "用编辑式几何构图与RISO印刷语言重设计任意主题"
+  default_prompt: "使用 $rustfield-riso-graphic-redesign 保留当前输入的身份、关系与场景骨架，分离内容、构图、造型、配色材质和排版参考，以编辑式几何色块、全局错版留缝、局部RISO油墨证据、可选标题和源元素印章一次性生成完整画面；只收束失败的细节层，不把整个场景过度简化。"

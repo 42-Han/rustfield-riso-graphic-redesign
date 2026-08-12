@@ -1,0 +1,248 @@
+# Production Protocol
+
+Use this protocol to approve a complete one-pass candidate or restart a failed attempt. It contains no subject-specific default; all content fields come from the current source.
+
+## Preflight record
+
+Complete before prompt writing:
+
+```text
+Route / intended use / ratio / output count:
+Source sentence:
+Subject type and count:
+Defining diagnostics:
+Action/state:
+Relationship graph:
+Setting function and required carriers:
+Atmosphere / energy / density / era cue:
+Information choice: stamp only / title + stamp / user-required no decoration:
+
+Identity anchors:
+Relationship anchors:
+Atmosphere carriers:
+Style surfaces to replace:
+Noise to discard:
+
+Topology:
+Large / medium / small hierarchy:
+Structural redesign:
+Open-space or crowding target:
+Exact user-board palette anchor:
+Palette ink families / dominance order / approximate area ratios:
+Identity-critical source-color exceptions:
+Shape/detail budget by main subject:
+Global color-boundary plan:
+Surface mode and intensity:
+Exact title/copy and retro typography plan:
+Source element used for the side stamp / placement / scale:
+
+Content reference:
+Composition reference:
+Shape reference:
+Material/palette reference:
+Typography reference, if needed:
+Primary risks:
+```
+
+## Blueprint gate
+
+Do not generate until all apply:
+
+- The source and planned-result sentences describe the same specific subject, action/state, relationship or setting function, and atmosphere unless the chosen route authorizes change.
+- Subject type and count are explicit.
+- Every identity and relationship anchor has a visible place, scale, or structural expression.
+- The side stamp comes from a named visible source element; any title has exact concept-derived, supplied, or preserved wording.
+- Topology, energy, density, and output ratio are selected independently.
+- The setting skeleton survives when it carries identity.
+- The plan names one structural change unless layout preservation is requested.
+- One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented.
+- Each major subject has diagnostic features and a simplification budget.
+- Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
+- Shape is readable before texture; texture remains local and secondary.
+- When text is selected or required, it is exact and included in the same render. When text is optional and the blueprint selects `stamp only`, its absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
+- Composition, typography, stamp, palette, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
+- Reference roles are separate and no style reference contributes content.
+- No unresolved alternatives remain in the prompt.
+
+## Information budget by topology
+
+Use these as starting ranges, not caps:
+
+| Topology | Typical content | Typical open-space behavior |
+|---|---|---|
+| Single emblem | 1 subject, 0–2 necessary supports | 30–60% |
+| Relational cluster | 2–6 mutually related subjects/objects | 15–45% |
+| Single figure | 1 figure plus action/setting carriers | 20–50% |
+| Group system | source-required pair, group, row, or crowd | 10–35% |
+| Shallow scene | subject plus environmental skeleton | 10–35% |
+| Taxonomy/grid | source-required count or stable cell system | cell gaps and consistent frame |
+| All-over field | enough repeated motifs to preserve abundance | 5–25% |
+| Typography-led poster | title, anchor image, required facts | hierarchy-specific |
+| Abstract force field | enough shapes to preserve force/rhythm | follows direction and contrast |
+
+Preserve additional anchors as simplified masses when the source needs them. Do not meet an object limit by erasing the setting or relationship.
+
+Do not impose a fixed whole-image shape count. Allocate detail by diagnostic and relational value: a figure may need aggressive reduction while a successful ship, street, room, machine, or landscape retains moderate block perspective, functional parts, and sparse structural lines. Repair the failing layer in the next complete blueprint without reducing unrelated layers merely to make the whole image more geometric.
+
+## Palette gate
+
+Assign colors by function:
+
+1. paper or dominant field;
+2. main subject mass;
+3. secondary/ground/enclosure mass;
+4. dark or light contrast anchor;
+5. high-chroma accent;
+6. optional secondary accent.
+
+Choose one exact image from the user's project board as palette authority. Record:
+
+- file name or board number;
+- 4–8 visible ink families;
+- dominance order;
+- approximate percentage range for each large color role;
+- the anchor's main contrast pattern.
+
+Copy that relationship rather than freely selecting attractive colors. Do not blend palettes from composition, shape, material, and typography references. Preserve a source color only when it identifies the subject, species, product, uniform, flag, route, label, or named object; document the exception and keep it subordinate when possible.
+
+Typical ranges:
+
+- quiet image: 3–6 ink families;
+- relational scene: 4–8;
+- saturated poster or grid: 5–8.
+
+Keep black below roughly 20–25%. Use deep plum, cobalt, blue-green, forest green, brown, or another board dark for large fields.
+
+The default result is pop-leaning: retain at least one exaggerated high-contrast relationship from the palette anchor and one or two of its high-chroma accents. Do not soften the anchor into harmonious near-neutrals.
+
+## Shape gate
+
+For every main subject, record:
+
+- dominant mass;
+- two to five diagnostic features;
+- one allowed proportion shift;
+- necessary internal line roles;
+- edge and global boundary behavior.
+
+Conditional checks:
+
+- People: preserve body/crop, pose, clothing blocks, action prop, and social relation; remove facial features and unnecessary anatomy/fashion lines.
+- Groups: preserve count band, grouping, shared action/container, and controlled variation.
+- Animals: preserve species checksum, posture, behavior, and habitat when ecological identity matters.
+- Food/still life: preserve containment, support, serving, contact, and use relationships.
+- Products: preserve silhouette, control/opening/handle placement, orientation, and use context.
+- Landscape/interior: preserve environmental skeleton and scale relationships while compressing depth.
+- Abstract work: preserve force, direction, repetition, collision, enclosure, or separation without inventing mascots.
+- Posters: preserve exact information hierarchy and verify the copy inside the same generated candidate.
+
+## Material gate
+
+Use [material-language.md](material-language.md) as the detailed source of truth. The default result has:
+
+- crisp closed color masses;
+- local 5–15% halftone/dots or ink-density variation for standard Riso/screen print;
+- slight registration drift;
+- one shared irregular boundary system across major color junctions;
+- little or no gradient modeling;
+- no brush-built silhouettes, watercolor, gouache, heavy dry brush, pasted craft, contact shadow, paper thickness, glossy volume, or full-frame distress.
+
+## Typography gate
+
+- Inventory all legible source text.
+- Mark each item `preserve exact`, `use as title`, `remove with authorization`, or `noise/unauthorized`.
+- Preserve language, characters, punctuation, dates, and reading order.
+- When the composition benefits from a title, use short exact wording derived from the source concept or supplied by the user. Use bold retro-poster display lettering and a declared typography reference.
+- For every poster, record one exact project typography reference and copy its observable font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock. Do not accept generic centered display type when these relationships are absent.
+- Include the title in the same full render. If it is wrong, reject the candidate and generate a new complete image from the original inputs.
+- In no-text mode, reject all pseudo-text, letters, numbers, signatures, and watermarks; a purely graphic source-derived side stamp may remain.
+
+## Source-derived stamp gate
+
+- Extract one visible source element such as a prop, tool, window form, landmark, ingredient, sign fragment, product detail, species feature, or silhouette.
+- Reduce it to a small 3–10% side stamp with the same palette and print logic as the main image.
+- Keep it secondary and compositionally connected; it is not a generic badge, logo, or random sticker.
+- Use no stamp only when the user explicitly requests no decoration.
+
+## Quality gates
+
+### Identity
+
+- Same specific subject sentence, not merely the same broad theme.
+- Correct subject type, count, defining appearance, action/state, relationship, and setting function.
+- No style-reference content has replaced source content.
+
+### Atmosphere
+
+- Emotional temperature, energy, density, social/environmental scale, and era cue match.
+- Energy comes from gesture, scale, crop, overlap, direction, rhythm, and contrast—not invented decoration.
+
+### Composition
+
+- Large/medium/small masses read at thumbnail scale.
+- Open space or crowding is intentional.
+- Repetition carries source rhythm rather than filler.
+- Required environment remains without realistic-room or cinematic-landscape reconstruction.
+
+### Board style
+
+- Diagnostic forms read through decisive masses.
+- Depth is shallow and graphic.
+- Palette and approximate area hierarchy visibly correspond to the declared user-board anchor rather than an invented hybrid.
+- Contrast reads as pop-leaning through large color clashes and high-chroma accents from that anchor.
+- All major junctions participate in the global irregular gap/overlap/registration system without becoming uniformly outlined or fragmented.
+- Print evidence is local and subordinate.
+- The result is closer to the project board than to anime/kawaii, generic vector, realistic 3D, watercolor storybook, painted concept art, or paper craft.
+
+### Information and boundaries
+
+- Exact text is correct and legible, and the source-derived side stamp remains recognizable as an element from the input.
+- No pseudo-text, unauthorized logos, copied mascots, watermarks, platform UI, or signatures remain.
+
+Any identity hard failure blocks delivery even when the image is aesthetically strong.
+
+## Failure recovery
+
+| Failure | Diagnosis | Recovery |
+|---|---|---|
+| Generic result | identity kernel too small | rebuild the full prompt with defining appearance, action, relationship, setting, and atmosphere; generate fresh from original inputs |
+| Too literal | source coordinates or rendering copied | rewrite scale, crop, spacing, viewpoint compression, and depth order; generate fresh |
+| Fixed-template drift | prior-case motifs or layout imported | remove unsupported motifs from the full blueprint; generate fresh |
+| Wrong count/group | subjects collapsed or added | restore count band, grouping, shared action, and container in a new full prompt |
+| Wrong species/object | diagnostics lost | rebuild the subject checksum and shape reference; generate fresh |
+| Wrong setting | environment reduced to token décor | restore the functional skeleton and relation in a new full prompt |
+| Wrong energy | pose/crop/rhythm changed | restore action and directional structure in a new full prompt |
+| Too sparse | necessary context removed | restore carriers as larger simplified masses in a new full prompt |
+| Too dense | atmosphere confused with object count | consolidate cues into bands, crops, clusters, or fields; generate fresh |
+| Style reference leakage | foreign subject, prop, anatomy, or text appears | tighten reference roles or remove the misleading reference; generate fresh |
+| Untraceable palette | colors were synthesized or blended across references | choose one exact user-board palette anchor, state its area relationship, and generate fresh |
+| Generic vector | perfectly snapped geometry and uniform edges | strengthen the full irregular-boundary and print contract; generate fresh |
+| Fragmented gutters | every shape isolated by equal wide gaps | narrow and vary junctions in the full blueprint; generate fresh |
+| Texture overload | surface competes with form | reduce texture intensity in the complete prompt; generate fresh |
+| Brush/craft drift | material reference dominates with paint or pasted construction | replace it with a clean closed-mass reference; generate fresh |
+| Source-color drift | output follows photo hues by default | restore the declared board palette relationship; generate fresh |
+| Wrong stamp/title | stamp is generic or copy is wrong | restate the source-derived element and exact wording; generate fresh |
+
+Every recovery starts again from the original content image and approved role references. Never feed a failed generated candidate into another generation, mask edit, inpaint, recolor, overlay, texture pass, or separate type pass.
+
+## Delivery record
+
+Deliver only reviewed final candidates and the requested number of variants. Keep rejected drafts in working storage, not in the final packet.
+
+Return:
+
+```text
+Image/path:
+Route/topology:
+Source sentence:
+Identity kernel:
+Reference roles:
+Palette source and area relationship:
+Information layer:
+Blueprint summary:
+Final prompt:
+Identity review:
+Atmosphere review:
+Board-style review:
+Remaining uncertainty:
+```

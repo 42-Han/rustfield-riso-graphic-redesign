@@ -1,0 +1,143 @@
+# Generation Path
+
+Use this workflow for any input category. Fill it from the current source; never reuse subject nouns, props, layout devices, or palette words from a prior task.
+
+## 1. Declare the route and output
+
+Record:
+
+- route: identity-preserving redesign, layout-preserving restyle, free semantic translation, or local edit;
+- intended use and aspect ratio;
+- output count;
+- information layer: source-derived stamp only, title plus stamp, or user-required no decoration;
+- exact title/copy when present.
+
+## 2. Build the identity packet
+
+Write four compact statements:
+
+1. `source sentence` — exact subject, count, action/state, relationship or setting function, and atmosphere;
+2. `identity kernel` — indispensable appearance, action, setting, relationship, and information anchors;
+3. `atmosphere kernel` — energy, density, emotional temperature, contrast, social/environmental scale, and era cue;
+4. `discard list` — source rendering, exact coordinates, redundant detail, unauthorized marks, watermarks, and noise.
+
+The discard list may not contain an identity or relationship anchor.
+
+## 3. Select the structural axes
+
+Choose independently:
+
+| Axis | Options |
+|---|---|
+| Topology | single emblem, relational cluster, single figure, group system, shallow scene, taxonomy/grid, all-over field, typography-led poster, abstract force field |
+| Energy | still, warm, lively, kinetic, maximal-controlled |
+| Density | sparse, medium, dense, tiled |
+| Shape | geometric mass, geometric block, stepped modular mass, mixed clean shape-line |
+| Surface | clean flat print, screen print/Riso, restrained pencil accent, xerox-halftone |
+| Information | none, caption, labels, title, full hierarchy |
+
+Do not infer one axis from another. A quiet still life need not be pastel; a dense scene need not become a poster; a person-led image need not be centered.
+
+## 4. Assign reference roles
+
+Label each image before attachment:
+
+```text
+Reference 1 — content: preserve its subject identity, count, action, relationships, setting function, and atmosphere.
+Reference 2 — composition: use hierarchy, crop, scale, spacing, and depth order only.
+Reference 3 — shape: use simplification and diagnostic construction only; preserve source-specific anatomy/form.
+Reference 4 — material/palette: copy this exact user-board image's ink families, dominance order, approximate area ratios, contrast, edge behavior, halftone, and registration only.
+Reference 5 — typography: use its recorded font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock only; preserve the planned wording exactly.
+```
+
+Attach only the roles actually needed. Do not require a full set when no valid reference exists.
+
+Selection gates:
+
+- Match the shape reference to the subject category and subtype.
+- Match composition to topology, energy, density, and output ratio—not to a shared decorative motif.
+- Let one exact user-board image control the complete palette relationship. Record its file name, 4–8 ink families, dominance order, and approximate area percentages before prompt writing.
+- Do not average, interpolate, or freely combine palette colors from multiple references. A composition, shape, or typography reference contributes no color unless it is separately declared as the sole palette anchor.
+- Reject a material reference dominated by watercolor, gouache, dry brush, fuzzy pigment, pasted craft, or realistic modeling.
+- Do not import subjects, clothing, accessories, text, layout, or props from style references.
+- Use no typography reference when text is absent.
+
+## 5. Lock the blueprint
+
+The blueprint must resolve:
+
+- what remains recognizable;
+- what changes structurally;
+- exact subject/object count and relationship graph;
+- setting carriers and support/ground/enclosure structure;
+- large, medium, and small mass placement;
+- crop, overlap, rotation, asymmetry, and depth order;
+- open-space or crowding target;
+- exact palette-anchor file, ink families, dominance order, approximate area ratios, and any identity-critical source-color exception;
+- diagnostic features and allowable simplification for each main subject;
+- one global boundary plan for every major color junction: irregular narrow gap, exposed paper/light sliver, overlap, or registration offset;
+- texture type and intensity;
+- exact title/copy plan and typography placement;
+- for posters, one exact typography-reference file plus its recorded font construction, size relationships, line breaks, alignment, spacing, baseline/rotation, and image-type interlock;
+- one side-stamp plan derived from a visible source element, normally occupying 3–10% of the canvas;
+- explicit information choice: `stamp only`, `title + stamp`, or user-required `no decoration`.
+
+Unless the route preserves layout, name at least one meaningful structural change. Do not force every image to use an enclosure, central subject, three supports, or square format. The stamp is a small supporting information element, not a fixed composition template.
+
+## 6. Compile the render prompt
+
+Keep the prompt normally between 90 and 200 words. Use four ordered blocks.
+
+### Identity lock
+
+Name the source-specific invariants first: subject type and count, defining features, action/state, relationship, setting function, atmosphere, and exact information.
+
+### Composition
+
+State topology, output ratio, large/medium/small hierarchy, subject placement, crop, overlap, context carriers, and deliberate structural change.
+
+### Treatment
+
+Name the exact palette-anchor file and state its ink families, area relationship, and contrast pattern. Then state diagnostic shape simplification, source-derived stamp/title, global registration-boundary behavior, material, texture intensity, black limit, and conditional rules such as featureless faces only when people appear.
+
+### Avoid
+
+Name three to five failures most likely for this source: wrong count/species/action, lost setting, imported motifs, wrong material, or text failure. Do not paste the full global exclusion list.
+
+## 7. Generate and inspect
+
+Use the original content source with the selected reference set. Generate each candidate as one complete image from those original inputs. A generated candidate is never an edit target or supporting reference for the next attempt.
+
+Inspect at two scales:
+
+- thumbnail: source recognition, hierarchy, count, topology, energy, density, palette;
+- full size: diagnostic features, global boundary behavior, line/detail budget, text, accidental objects, logos, watermarks, and texture.
+
+Typography, source-derived stamp, composition, palette, shapes, gaps, and print surface must all be present in this same render.
+
+## 8. Restart by failure type
+
+- Any failed candidate: discard it; never mask, inpaint, recolor, overlay, retexture, or separately typeset it.
+- Identity failure: rebuild the identity packet and full blueprint, then generate fresh from the original inputs.
+- Topology failure: restore count, relationship graph, setting skeleton, or composition structure in a new full prompt, then generate fresh.
+- Palette/material failure: keep or replace the single palette anchor, rewrite the complete palette-area contract, then generate fresh.
+- Text/stamp failure: rewrite the exact information plan in the complete prompt, then generate fresh; do not repair the old image.
+- Repeated failure: report the exact mismatch instead of presenting or patching a failed candidate.
+
+## Output record
+
+```text
+Image/path:
+Route/topology:
+Source sentence:
+Identity kernel:
+Reference roles:
+Palette source and area relationship:
+Information layer:
+Blueprint summary:
+Final prompt:
+Identity review:
+Atmosphere review:
+Board-style review:
+Remaining uncertainty:
+```
