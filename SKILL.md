@@ -43,8 +43,7 @@ State an assumption only when the route materially changes the result.
 - Read only the matching sections of [references/subject-extraction.md](references/subject-extraction.md).
 - Read [references/reference-board-analysis.md](references/reference-board-analysis.md) when selecting local style references or palette families.
 - Read [references/production-protocol.md](references/production-protocol.md) for preflight, review, and repair.
-- Read [references/official-artist-reference-guide.md](references/official-artist-reference-guide.md) only when using `ref_artists_official_2026-08-04/`.
-- Read [references/artist-research.md](references/artist-research.md) only when extending the style system, not for routine generation.
+- Read [references/external-reference-routing.md](references/external-reference-routing.md) only when using active external references named `reference_images/ref-###-*`.
 
 ## Build the source model
 
@@ -91,10 +90,11 @@ Assign every attached image exactly one role:
 - `content` — identity, action, relationships, setting, and atmosphere;
 - `composition` — hierarchy, crop, scale, spacing, and depth order;
 - `shape` — simplification and diagnostic construction for the same subject type;
-- `material/palette` — one user-board image controls the complete color relationship, area hierarchy, edge behavior, dots, and registration;
+- `palette` — one exact user-board image controls only ink families, dominance order, approximate area ratios, and contrast pattern;
+- `material` — an optional clean-print reference controls only halftone, ink-density variation, registration behavior, and boundary character; when absent, use the default material language;
 - `typography` — font skeleton, weight/width, size hierarchy, line breaks, alignment, baseline/rotation, spacing, and image-type interlock for preserved copy or a deliberately designed title.
 
-Use two to four references when available. Name one exact user-board file as the palette anchor. Record its ink families and approximate area proportions; do not blend several references into an invented palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, or setting. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
+Attach only references that change a real design decision. For image-input work, use the supplied image plus zero to four supporting references; for text-only work, keep all attached theme and project references to four or fewer. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. Record its ink families and approximate area proportions; do not blend several references into an invented palette. A material reference may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
 
 Do not prompt for direct imitation of a living artist. Translate references into observable properties.
 
@@ -120,13 +120,15 @@ When people appear, preserve pose, body/crop identity, clothing blocks, action p
 
 ## Information layer
 
-- Typography is an information choice, not a default prohibition. Unless the user explicitly requires a title, exact copy, or no text, select `stamp only` or `title + stamp` from the resolved composition and project-board evidence; do not silently add a no-text constraint.
-- Extract one small source-derived element as a side stamp by default. Use an actual prop, silhouette, sign fragment, tool, landmark, species feature, window shape, ingredient, or product detail from the current input; keep it secondary at roughly 3–10% of the canvas.
-- When the current user prompt requests a `海报` (poster), choose `title + stamp` and treat the title as required rather than optional. Derive the shortest exact title from the named subject unless the user supplied exact copy.
-- For every poster, inspect the project board and attach one exact typography reference unless the user supplied a complete typography system. Record its observable font construction and layout behavior; do not settle for a generic centered title or let the reference contribute wording, subjects, or palette.
-- Choose `stamp only` or `title + stamp` before prompting. Use a short exact title when it strengthens the pop-poster composition; derive its wording from the source concept or preserve supplied/source text.
+Resolve the text strategy and stamp strategy independently before prompting.
+
+- `text strategy` — preserve required source copy; add a required title; add an optional title; or use no text. Typography is an information choice, not a default prohibition. When the user has not required or prohibited text and the request is not explicitly a poster, make one unbiased 50/50 random draw between `optional title` and `no text`, record the result before reference selection and prompt writing, and follow that result for the complete render. Do not use composition quality, reference availability, or personal preference to override the draw.
+- `stamp strategy` — by default, use one or more small input-derived stamps when they support the composition. Use no stamp when the user explicitly requests no decoration or when an input-derived stamp would only create template-like decoration. For an image input, derive them from visible source elements. For text-only work, derive them from a concrete brief fact or declared identity anchor. Use actual props, silhouettes, sign fragments, tools, landmarks, species features, window forms, ingredients, product details, or key-form fragments; keep their combined area secondary at roughly 3–10% of the canvas.
+- When the current user explicitly requests a `海报` or poster, set `required title`. Derive the shortest exact title from the named subject unless the user supplied exact copy.
+- When the text strategy uses a title, inspect the project board and attach one exact typography reference unless the user supplied a complete typography system. Record its observable font construction and layout behavior; do not settle for a generic centered title or let the reference contribute wording, subjects, or palette.
+- For non-poster work without an explicit text instruction, use the recorded 50/50 draw. If it selects `optional title`, derive short exact wording from the current source concept or preserve supplied/source text and use a typography reference. If it selects `no text`, prohibit words and pseudo-text in the prompt. Either outcome is valid and is never a regeneration criterion.
 - Build titles with bold retro-poster display lettering: condensed, expanded, irregular, rotated, arched, or interlocked with image masses according to the selected typography reference.
-- Do not remove typography or the stamp merely because they are decorative. Remove them only when the user explicitly requests no decoration, or when an exact no-text requirement applies; a no-text request may still use a purely graphic source-derived stamp.
+- An explicit no-text request prohibits words but may still use a purely graphic input-derived stamp. An explicit no-decoration request prohibits stamps but does not by itself prohibit required text.
 - Do not use generic stars, hearts, planets, flowers, badges, slogans, or pseudo-text when the source does not support them.
 
 ## Prompt and review
@@ -135,7 +137,7 @@ Follow [references/generation-path.md](references/generation-path.md) to compile
 
 1. identity lock;
 2. composition and relationship graph;
-3. exact palette provenance and area relationship, shape, source-derived stamp/title, global boundary behavior, and material;
+3. exact palette provenance and area relationship, shape, independent text and stamp strategies, global boundary behavior, and material;
 4. only the highest-risk avoid items for this source.
 
 Review in this order:
@@ -163,16 +165,16 @@ Reject a candidate when any apply:
 - It traces the source layout without meaningful redesign, unless layout preservation was requested.
 - It becomes a fixed poster template regardless of the input category.
 - It removes necessary environment or group structure in the name of simplicity.
-- Its side stamp is not derived from a visible source element.
+- Its stamp is not derived from a visible source element (image input) or a concrete brief/identity anchor (text-only input).
 - Its palette cannot be traced to one declared user-board image and its area relationship.
 - It was assembled through sequential edits or a separate text/material pass instead of one complete render.
 - It becomes anime/kawaii character art, generic corporate vector, cinematic concept art, realistic 3D, watercolor, gouache, heavy dry brush, or cut-paper craft.
 - Color blocks are perfectly snapped everywhere, or the boundary treatment becomes uniform wide gutters.
 - Texture, outline, gradient, or perspective overwhelms the large color masses.
 - It violates an explicit content requirement in the current user prompt.
-- A prompt requesting a `海报` (poster) produces no title or the title does not identify the requested subject.
-- A poster title has no declared typography reference or cannot be traced to that reference's recorded font construction, hierarchy, line breaking, alignment, spacing, and image-type relationship.
-- Title or text presence, absence, wording, or quality is not a rejection or regeneration criterion unless the user explicitly requires a title, specific copy, or no text. Never regenerate solely to add, remove, or improve optional text.
+- A prompt explicitly requesting a `海报` or poster produces no title or the title does not identify the requested subject.
+- A required or selected title has no declared typography reference or cannot be traced to that reference's recorded font construction, hierarchy, line breaking, alignment, spacing, and image-type relationship.
+- Optional title presence, absence, wording, or quality is not a rejection or regeneration criterion. Never regenerate solely to add, remove, or improve optional text.
 - User-required text is wrong, or an explicit no-text request contains text or pseudo-text.
 
 ## Delivery

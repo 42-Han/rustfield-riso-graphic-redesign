@@ -4,13 +4,14 @@ Use this gate for every generation. The project is defined by clean geometric co
 
 ## Non-negotiable visual result
 
+- Use a neutral natural-white paper base by default. Do not warm the paper toward cream, beige, yellow, sepia, or aged stock unless the user explicitly requests that paper color or the declared palette anchor makes it indispensable.
 - Build every major person, animal, object, and environmental carrier from closed, readable color shapes.
-- Keep the primary silhouette crisp and continuous. Handmade irregularity may shift registration, edge alignment, or ink density, but it may not make the edge fuzzy, feathery, wet, pasted, or brush-built.
+- Keep the primary silhouette crisp and continuous while giving it clearly visible low-frequency irregular contour wobble, like a clean hand-pulled print or rough stamp edge. The wobble must alter the contour slightly without making it fuzzy, feathery, wet, pasted, brush-built, or finely noisy.
 - Make every major color junction participate in one shared registration-boundary system: a narrow irregular paper/light-color gap, slight overlap, or offset registration sliver. Vary the behavior by junction; do not make all joins edge-to-edge, uniformly outlined, or separated by equal wide gutters.
 - Let large and medium color fields carry the image. Texture, line, grain, halftone, and registration are secondary evidence.
 - For people, color masses must carry anatomy and identity. A figure should survive as a small set of abstract blocks without relying on line drawing.
 - Preserve a clear large/medium/small hierarchy at thumbnail size.
-- Use one declared user-board image as the palette authority. Copy its ink families, dominance order, approximate area ratios, and contrast pattern; do not synthesize a hybrid from several references.
+- Use one declared user-board image as the palette authority. Copy its ink families, dominance order, approximate area ratios, and contrast pattern; do not synthesize a hybrid from several references. A separate material reference may refine print behavior only; it never overrides the palette authority.
 - Keep the result pop-leaning through one large high-contrast color relationship and one or two high-chroma accents already present in the palette anchor.
 - Allow black only as a controlled ink: keep it below roughly 20–25% of the canvas, and prefer deep plum, deep cobalt, or deep green for large dark fields.
 
@@ -18,6 +19,7 @@ Use this gate for every generation. The project is defined by clean geometric co
 
 - Use 3–6 opaque ink families for quiet or medium images, and 5–8 for high-energy posters or dense scenes.
 - Place 5–15% local halftone dots, dot clusters, ink-density shifts, or small registration offsets inside closed shapes or along color boundaries.
+- Include localized halftone clusters, uneven ink density, and a few small missing-ink rubs where they support form or junctions; do not simulate them as one uniform full-frame grain filter.
 - Keep dots local and intentional. Do not cover the whole image with uniform distress.
 - Let pop energy come from color clash, scale, crop, flat contrast, and dot fields rather than random decoration.
 - Let junctions feel stamped by hand while preserving hierarchy. Strong connected fields may remain connected; registration behavior belongs at meaningful color boundaries, not as a grid that fragments every internal detail.
@@ -61,8 +63,8 @@ Attach the image only if all answers are yes. If the image is valuable for actio
 Include one positive material sentence and one short exclusion sentence. For example:
 
 ```text
-Use palette anchor `<exact board file>` as opaque ink families, preserving its dominance order and approximate area ratios. Render all forms as clean geometric masses in flat screen-print/Riso style, with local halftone dots, subtle uneven ink density, and a global junction system of varied narrow paper gaps, slight overlaps, and small registration offsets across every major color relationship.
-No cut-paper craft, watercolor, gouache, dry-brush fill, fuzzy painted edges, source-photo palette copying, pure-black dominance, perfectly tiled vector seams, uniform outlines, wide gutters, or all-over distress.
+Use palette anchor `<exact board file>` as opaque ink families, preserving its dominance order and approximate area ratios, on a neutral natural-white paper base. Render all forms as clean geometric masses in flat screen-print/Riso style, with clearly visible low-frequency irregular contour wobble, localized halftone clusters, uneven ink density, small missing-ink rubs, and a global junction system of narrow unequal gaps, exposed paper slivers, slight overlaps, and small registration offsets across every major color relationship.
+No yellowed, cream, beige, sepia, or aged paper; no cut-paper craft, watercolor, gouache, dry-brush fill, fuzzy painted edges, source-photo palette copying, pure-black dominance, perfectly tiled vector seams, uniform outlines, wide gutters, or all-over distress.
 ```
 
 Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` without defining the clean silhouette and exact print mechanism. These words otherwise encourage painterly noise.

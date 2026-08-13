@@ -15,7 +15,8 @@ Action/state:
 Relationship graph:
 Setting function and required carriers:
 Atmosphere / energy / density / era cue:
-Information choice: stamp only / title + stamp / user-required no decoration:
+Text strategy: preserve required copy / required title / recorded 50/50 result = optional title or no text:
+Stamp strategy: input-derived stamp(s) / user-required no stamp / no stamp because it would be template-like decoration:
 
 Identity anchors:
 Relationship anchors:
@@ -28,18 +29,20 @@ Large / medium / small hierarchy:
 Structural redesign:
 Open-space or crowding target:
 Exact user-board palette anchor:
+Optional material reference / default material language:
 Palette ink families / dominance order / approximate area ratios:
 Identity-critical source-color exceptions:
 Shape/detail budget by main subject:
 Global color-boundary plan:
 Surface mode and intensity:
 Exact title/copy and retro typography plan:
-Source element used for the side stamp / placement / scale:
+Image-input source element or text-only brief/identity anchor used for stamp(s) / placement / total scale:
 
 Content reference:
 Composition reference:
 Shape reference:
-Material/palette reference:
+Palette reference:
+Material reference, if used:
 Typography reference, if needed:
 Primary risks:
 ```
@@ -51,16 +54,17 @@ Do not generate until all apply:
 - The source and planned-result sentences describe the same specific subject, action/state, relationship or setting function, and atmosphere unless the chosen route authorizes change.
 - Subject type and count are explicit.
 - Every identity and relationship anchor has a visible place, scale, or structural expression.
-- The side stamp comes from a named visible source element; any title has exact concept-derived, supplied, or preserved wording.
+- For image input, every stamp comes from a named visible source element. For text-only input, every stamp comes from a concrete brief fact or declared identity anchor. Any required or selected title has exact concept-derived, supplied, or preserved wording.
 - Topology, energy, density, and output ratio are selected independently.
 - The setting skeleton survives when it carries identity.
 - The plan names one structural change unless layout preservation is requested.
-- One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented.
+- One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. Any material reference is recorded separately and controls print behavior only.
 - Each major subject has diagnostic features and a simplification budget.
 - Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
 - Shape is readable before texture; texture remains local and secondary.
-- When text is selected or required, it is exact and included in the same render. When text is optional and the blueprint selects `stamp only`, its absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
-- Composition, typography, stamp, palette, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
+- For a non-poster request with no explicit text instruction, make one unbiased 50/50 random draw between `optional title` and `no text`. Record the completed random result before selecting typography references or compiling the prompt. Do not leave the choice to the image model or override it because one outcome appears compositionally preferable.
+- When text is selected or required, it is exact and included in the same render. Optional title presence or absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
+- Selected composition, typography, stamp(s), palette, material, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
 - Reference roles are separate and no style reference contributes content.
 - No unresolved alternatives remain in the prompt.
 
@@ -103,7 +107,7 @@ Choose one exact image from the user's project board as palette authority. Recor
 - approximate percentage range for each large color role;
 - the anchor's main contrast pattern.
 
-Copy that relationship rather than freely selecting attractive colors. Do not blend palettes from composition, shape, material, and typography references. Preserve a source color only when it identifies the subject, species, product, uniform, flag, route, label, or named object; document the exception and keep it subordinate when possible.
+Copy that relationship rather than freely selecting attractive colors. Do not blend palettes from composition, shape, material, and typography references. A material reference may control print behavior only. Preserve a source color only when it identifies the subject, species, product, uniform, flag, route, label, or named object; document the exception and keep it subordinate when possible.
 
 Typical ranges:
 
@@ -140,10 +144,13 @@ Conditional checks:
 
 Use [material-language.md](material-language.md) as the detailed source of truth. The default result has:
 
+- a neutral natural-white paper base, without cream, beige, yellow, sepia, or aged-paper cast unless explicitly requested;
 - crisp closed color masses;
+- clearly visible low-frequency irregular contour wobble without fuzzy or brush-built silhouettes;
 - local 5–15% halftone/dots or ink-density variation for standard Riso/screen print;
+- localized halftone clusters, uneven ink density, and small missing-ink rubs rather than a generic full-frame grain filter;
 - slight registration drift;
-- one shared irregular boundary system across major color junctions;
+- one shared irregular boundary system of narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets across major color junctions;
 - little or no gradient modeling;
 - no brush-built silhouettes, watercolor, gouache, heavy dry brush, pasted craft, contact shadow, paper thickness, glossy volume, or full-frame distress.
 
@@ -152,17 +159,17 @@ Use [material-language.md](material-language.md) as the detailed source of truth
 - Inventory all legible source text.
 - Mark each item `preserve exact`, `use as title`, `remove with authorization`, or `noise/unauthorized`.
 - Preserve language, characters, punctuation, dates, and reading order.
-- When the composition benefits from a title, use short exact wording derived from the source concept or supplied by the user. Use bold retro-poster display lettering and a declared typography reference.
-- For every poster, record one exact project typography reference and copy its observable font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock. Do not accept generic centered display type when these relationships are absent.
+- When the text strategy selects a title, use short exact wording derived from the source concept or supplied by the user. Use bold retro-poster display lettering and a declared typography reference.
+- When the text strategy uses a title, record one exact project typography reference and copy its observable font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock. Do not accept generic centered display type when these relationships are absent.
 - Include the title in the same full render. If it is wrong, reject the candidate and generate a new complete image from the original inputs.
-- In no-text mode, reject all pseudo-text, letters, numbers, signatures, and watermarks; a purely graphic source-derived side stamp may remain.
+- In no-text mode, reject all pseudo-text, letters, numbers, signatures, and watermarks; a purely graphic input-derived stamp may remain.
 
-## Source-derived stamp gate
+## Input-derived stamp gate
 
-- Extract one visible source element such as a prop, tool, window form, landmark, ingredient, sign fragment, product detail, species feature, or silhouette.
-- Reduce it to a small 3–10% side stamp with the same palette and print logic as the main image.
-- Keep it secondary and compositionally connected; it is not a generic badge, logo, or random sticker.
-- Use no stamp only when the user explicitly requests no decoration.
+- For image input, extract one or more visible source elements such as a prop, tool, window form, landmark, ingredient, sign fragment, product detail, species feature, or silhouette. For text-only input, select equivalent elements from a concrete brief fact or declared identity anchor.
+- Reduce them to small secondary stamps with the same palette and print logic as the main image; keep their total area around 3–10% of the canvas.
+- Keep them secondary and compositionally connected; they are not generic badges, logos, or random stickers.
+- Use no stamp when the user explicitly requests no decoration or when a source-derived stamp would only create template-like decoration.
 
 ## Quality gates
 
@@ -196,7 +203,7 @@ Use [material-language.md](material-language.md) as the detailed source of truth
 
 ### Information and boundaries
 
-- Exact text is correct and legible, and the source-derived side stamp remains recognizable as an element from the input.
+- Required text is correct and legible, and any input-derived stamp remains recognizable as an element from the input or text brief.
 - No pseudo-text, unauthorized logos, copied mascots, watermarks, platform UI, or signatures remain.
 
 Any identity hard failure blocks delivery even when the image is aesthetically strong.
@@ -216,12 +223,13 @@ Any identity hard failure blocks delivery even when the image is aesthetically s
 | Too dense | atmosphere confused with object count | consolidate cues into bands, crops, clusters, or fields; generate fresh |
 | Style reference leakage | foreign subject, prop, anatomy, or text appears | tighten reference roles or remove the misleading reference; generate fresh |
 | Untraceable palette | colors were synthesized or blended across references | choose one exact user-board palette anchor, state its area relationship, and generate fresh |
+| Material overreach | a material reference changed palette or imported content | restore the palette anchor and isolate the material reference to print behavior; generate fresh |
 | Generic vector | perfectly snapped geometry and uniform edges | strengthen the full irregular-boundary and print contract; generate fresh |
 | Fragmented gutters | every shape isolated by equal wide gaps | narrow and vary junctions in the full blueprint; generate fresh |
 | Texture overload | surface competes with form | reduce texture intensity in the complete prompt; generate fresh |
 | Brush/craft drift | material reference dominates with paint or pasted construction | replace it with a clean closed-mass reference; generate fresh |
 | Source-color drift | output follows photo hues by default | restore the declared board palette relationship; generate fresh |
-| Wrong stamp/title | stamp is generic or copy is wrong | restate the source-derived element and exact wording; generate fresh |
+| Wrong stamp/title | stamp is generic, its source is unclear, or required copy is wrong | restate the input-derived element and exact wording; generate fresh |
 
 Every recovery starts again from the original content image and approved role references. Never feed a failed generated candidate into another generation, mask edit, inpaint, recolor, overlay, texture pass, or separate type pass.
 

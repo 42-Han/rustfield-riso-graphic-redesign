@@ -44,7 +44,7 @@
         "Each species keeps two to four diagnostic silhouette or pattern features.",
         "Animals do not share one generic rounded mascot body.",
         "The collection uses a stable panel or spacing system.",
-        "Labels are verified or added separately if exact text is required."
+        "Any required label is verified inside the same complete render; a failed candidate is regenerated rather than separately typeset."
       ]
     },
     {
@@ -109,7 +109,7 @@
       "expectations": [
         "Typography-led mode and poster topology are selected explicitly.",
         "Title, date, and place form a planned hierarchy rather than an afterthought.",
-        "The workflow selects a typography reference separately from composition and material references.",
+        "The workflow selects a typography reference separately from composition, palette, and material references.",
         "Exact Chinese copy is included and checked in the same complete render; a failed text candidate is discarded rather than separately typeset."
       ]
     },
@@ -165,7 +165,7 @@
         "The topology is chosen from the current source rather than inherited from a poster example.",
         "Exactly three elderly people remain around one shared table and cards visibly carry the action.",
         "Plants and a laundry rail form a minimum courtyard skeleton instead of unrelated decoration.",
-        "The side stamp is derived from a source card, plant, or laundry-rail form; no unrelated portal, checker floor, sticker field, or badge appears."
+        "Any small stamp derives from a source card, plant, or laundry-rail form; no unrelated portal, checker floor, sticker field, or badge appears."
       ]
     },
     {
@@ -176,7 +176,7 @@
         "Exactly five cranes remain and each keeps species diagnostics rather than becoming a generic bird.",
         "The flock direction and takeoff action determine composition and ratio.",
         "The environment remains a winter marsh rather than a poster enclosure or animal grid.",
-        "A small graphic side stamp is derived from a crane crown, beak, wing, or reed; no generic symbol or pseudo-text is added."
+        "Any small graphic stamp is derived from a crane crown, beak, wing, or reed; no generic symbol or pseudo-text is added."
       ]
     },
     {
@@ -193,11 +193,11 @@
     {
       "id": 18,
       "prompt": "把一个人在航天器里近距离侧脸观看巨大地球的照片转成我们的风格。整体更偏波普，加入一个从窗框或地球轮廓提取的小印章，并设计一个合适的复古海报标题。只输出一张完整成图。",
-      "expected_output": "A single-pass pop-leaning Riso poster preserving the person–Earth–spacecraft relationship, using one traceable board palette, one source-derived side stamp, and one exact retro title.",
+      "expected_output": "A single-pass pop-leaning Riso poster preserving the person–Earth–spacecraft relationship, using one traceable board palette, one or more input-derived stamps, and one exact retro title.",
       "expectations": [
         "One exact user-board file is named as the sole palette anchor with ink families, dominance order, approximate area ratios, and contrast relationship.",
         "The palette is not freely synthesized from several references and remains visibly pop-leaning.",
-        "The stamp derives from a visible source window, strut, profile, or Earth form, and the title is short, exact, and concept-derived.",
+        "Each stamp derives from a visible source window, strut, profile, or Earth form, and the title is short, exact, and concept-derived.",
         "Composition, title, stamp, palette, global gaps, and print material are included in one complete generation from the original inputs.",
         "If the candidate fails, it is discarded and a fresh full render starts from the original image and role references; no mask edit, recolor pass, texture pass, or separate typesetting is used."
       ]
@@ -209,7 +209,7 @@
       "expectations": [
         "The route is text-only because the user supplied no image, even when the Skill later attaches project-board or web images.",
         "The user's film theme remains the content authority and the result preserves specific film anchors rather than becoming a generic ocean-and-piano poster.",
-        "One exact project-board image is the sole material/palette authority; any web film image is content-only or analyzed offline.",
+        "One exact project-board image is the sole palette authority; any separate material reference controls print behavior only, and any web film image is content-only or analyzed offline.",
         "The blueprint specifies low-frequency contour wobble, unequal geometry, varied global gaps/overlaps, and local ink-density, missing-ink, halftone, and registration evidence.",
         "A mechanically regular generic vector candidate is rejected and regenerated from the original text and approved references."
       ]

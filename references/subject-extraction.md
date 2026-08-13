@@ -137,7 +137,7 @@ Preserve:
 - whether text acts as field, frame, label, band, or object;
 - relationship between typography and imagery.
 
-Plan type and illustration together. Generate/type exact copy separately when needed. Do not strip information from an event or information source, accept pseudo-letters, or add a generic headline to a no-text image.
+Plan type and illustration together. Render required exact copy in the same complete image; if it fails, discard the candidate and generate a new complete image from the original inputs. Do not strip information from an event or information source, accept pseudo-letters, or add a generic headline to a no-text image.
 
 ## Mixed-category routing
 

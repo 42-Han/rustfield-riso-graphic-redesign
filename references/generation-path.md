@@ -9,8 +9,9 @@ Record:
 - route: identity-preserving redesign, layout-preserving restyle, free semantic translation, or local edit;
 - intended use and aspect ratio;
 - output count;
-- information layer: source-derived stamp only, title plus stamp, or user-required no decoration;
-- exact title/copy when present.
+- text strategy: preserve required copy, required title, optional title, or no text; for a non-poster request with no explicit text instruction, record one unbiased 50/50 random draw between optional title and no text before selecting references;
+- stamp strategy: one or more input-derived stamps, or no stamp when explicitly requested or when a stamp would become template-like decoration;
+- exact title/copy when required or selected.
 
 ## 2. Build the identity packet
 
@@ -46,8 +47,9 @@ Label each image before attachment:
 Reference 1 — content: preserve its subject identity, count, action, relationships, setting function, and atmosphere.
 Reference 2 — composition: use hierarchy, crop, scale, spacing, and depth order only.
 Reference 3 — shape: use simplification and diagnostic construction only; preserve source-specific anatomy/form.
-Reference 4 — material/palette: copy this exact user-board image's ink families, dominance order, approximate area ratios, contrast, edge behavior, halftone, and registration only.
-Reference 5 — typography: use its recorded font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock only; preserve the planned wording exactly.
+Reference 4 — palette: copy this exact user-board image's ink families, dominance order, approximate area ratios, and contrast only.
+Reference 5 — material: use clean-print surface behavior only: halftone, ink density, registration, and junction character; never alter palette or content.
+Reference 6 — typography: use its recorded font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock only; preserve the planned wording exactly.
 ```
 
 Attach only the roles actually needed. Do not require a full set when no valid reference exists.
@@ -57,9 +59,9 @@ Selection gates:
 - Match the shape reference to the subject category and subtype.
 - Match composition to topology, energy, density, and output ratio—not to a shared decorative motif.
 - Let one exact user-board image control the complete palette relationship. Record its file name, 4–8 ink families, dominance order, and approximate area percentages before prompt writing.
-- Do not average, interpolate, or freely combine palette colors from multiple references. A composition, shape, or typography reference contributes no color unless it is separately declared as the sole palette anchor.
-- Reject a material reference dominated by watercolor, gouache, dry brush, fuzzy pigment, pasted craft, or realistic modeling.
-- Do not import subjects, clothing, accessories, text, layout, or props from style references.
+- Do not average, interpolate, or freely combine palette colors from multiple references. A composition, shape, material, or typography reference contributes no color unless it is separately declared as the sole palette anchor.
+- A material reference controls print behavior only. Reject one dominated by watercolor, gouache, dry brush, fuzzy pigment, pasted craft, or realistic modeling.
+- Do not import subjects, clothing, accessories, text, props, or exact object coordinates from supporting references. A composition reference may contribute abstract hierarchy, crop, scale, spacing, and depth-order mechanisms only.
 - Use no typography reference when text is absent.
 
 ## 5. Lock the blueprint
@@ -77,10 +79,12 @@ The blueprint must resolve:
 - diagnostic features and allowable simplification for each main subject;
 - one global boundary plan for every major color junction: irregular narrow gap, exposed paper/light sliver, overlap, or registration offset;
 - texture type and intensity;
-- exact title/copy plan and typography placement;
+- text strategy, exact required/selected title or copy, and typography placement;
 - for posters, one exact typography-reference file plus its recorded font construction, size relationships, line breaks, alignment, spacing, baseline/rotation, and image-type interlock;
-- one side-stamp plan derived from a visible source element, normally occupying 3–10% of the canvas;
-- explicit information choice: `stamp only`, `title + stamp`, or user-required `no decoration`.
+- one or more stamp plans derived from visible source elements for image input, or concrete brief/identity anchors for text-only input, normally occupying 3–10% of the canvas in total;
+- independent text strategy and stamp strategy.
+
+No unresolved optional-text choice may remain. The prompt must state the completed random result, not ask the image model to decide whether text appears.
 
 Unless the route preserves layout, name at least one meaningful structural change. Do not force every image to use an enclosure, central subject, three supports, or square format. The stamp is a small supporting information element, not a fixed composition template.
 
@@ -98,7 +102,7 @@ State topology, output ratio, large/medium/small hierarchy, subject placement, c
 
 ### Treatment
 
-Name the exact palette-anchor file and state its ink families, area relationship, and contrast pattern. Then state diagnostic shape simplification, source-derived stamp/title, global registration-boundary behavior, material, texture intensity, black limit, and conditional rules such as featureless faces only when people appear.
+Name the exact palette-anchor file and state its ink families, area relationship, and contrast pattern. Then state diagnostic shape simplification, independent stamp and resolved text strategies, global registration-boundary behavior, material, texture intensity, black limit, and conditional rules such as featureless faces only when people appear. Include these literal visual constraints in the render prompt: neutral natural-white paper base; clearly visible low-frequency irregular contour wobble with clean readable silhouettes; narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets across major color junctions; localized halftone clusters, uneven ink density, and small missing-ink rubs. Do not replace them with vague words such as handmade, rough, vintage, or textured.
 
 ### Avoid
 
@@ -113,7 +117,7 @@ Inspect at two scales:
 - thumbnail: source recognition, hierarchy, count, topology, energy, density, palette;
 - full size: diagnostic features, global boundary behavior, line/detail budget, text, accidental objects, logos, watermarks, and texture.
 
-Typography, source-derived stamp, composition, palette, shapes, gaps, and print surface must all be present in this same render.
+Selected typography, selected input-derived stamp(s), composition, palette, shapes, gaps, and print surface must all be present in this same render.
 
 ## 8. Restart by failure type
 
