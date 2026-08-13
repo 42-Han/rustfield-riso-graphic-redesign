@@ -124,13 +124,13 @@ Prefer one dominant relationship over an evenly distributed inventory. Let the t
 
 Naïve geometry means deliberate simplification and slightly awkward construction; it does not mean preschool illustration. Preserve adult editorial control through decisive crop, unequal scale, layered space, asymmetric weight, subject-specific silhouettes, and purposeful negative space.
 
-## 7. Construct irregular geometry before print texture
+## 7. Construct expressive masses with printed edges
 
-Build the subject first from clean closed color masses that already feel drawn and assembled rather than exported from a vector template.
+Build the subject from readable color masses with subject-specific curves, blunt angles, leaning axes, asymmetry, and proportion shifts. Geometry controls mass organization and hierarchy; it never licenses rigid rectangular reduction, generic icon construction, or vector-smooth edge finish.
 
 Never impose a fixed whole-image shape count as a shortcut for simplification. Set local detail budgets by role. Reduce excessive facial, hair, anatomy, fold, decoration, or repeated micro-detail while preserving successful environmental structure, moderate block perspective, functional parts, sparse necessary lines, and enough information density to keep the established subject specific.
 
-- Use low-frequency, small-amplitude, nonuniform contour wobble on major silhouettes. Keep contours crisp and readable.
+- Use clearly visible low-frequency, nonuniform contour wobble on every major silhouette. The wobble should be broad and hand-pulled while preserving recognition, and it must remain visible at normal viewing size.
 - Vary repeated shapes instead of duplicating perfect copies. Break mechanical equality in width, radius, angle, spacing, alignment, and curvature.
 - Avoid standard circles, identical rounded rectangles, mirrored symmetry, equal gutters, ruler-straight parallel runs, perfect tangencies, and uniformly smooth Bézier curves as the dominant construction.
 - Use blunt corners, asymmetric bulges, slightly skewed axes, awkward-but-intentional proportions, off-center placement, cropping, rotation, and unstable spacing.
@@ -145,22 +145,22 @@ Make every major color junction participate in a shared but varied registration 
 - narrow light-paper gaps of unequal width;
 - exposed paper slivers;
 - small color overlaps;
-- slight offset joins;
-- occasional connected fields when hierarchy requires them.
+- visible offset joins;
+- rare local overlaps when hierarchy requires them, while the unequal global junction system remains evident.
 
 Do not snap every block edge-to-edge. Do not outline everything. Do not isolate every object with an equal white border or wide tiled gutter. Junction variation must be visible at thumbnail size without fragmenting the image.
 
 ## 9. Add local print evidence
 
-After the geometry reads clearly, add local ink-density shifts, small missing-ink rubs, restrained halftone dots or dot clusters, slight registration drift, and occasional uneven stamp pressure.
+After the masses read clearly, apply unmistakable physical print evidence: ink-density shifts, missing-ink rubs, concentrated halftone dots or dot clusters, visible registration drift, uneven stamp pressure, and a few short ink-drag marks.
 
 - Concentrate evidence inside selected large/medium masses and at meaningful junctions.
 - Vary density, scale, direction, and location. Keep some color masses almost clean.
 - Let small missing-ink rubs expose the paper without erasing the silhouette.
-- Use 5–15% local printed evidence for a normal image and increase only when the requested energy and selected material reference justify it.
+- Make the print evidence strong enough to define the finish at normal viewing size. Do not reduce it to microscopic grain or a weak post-process filter.
 - Keep the paper neutral or cool natural white unless the palette authority requires otherwise.
 
-Texture is secondary. Never simulate handmade quality with full-frame grain, uniform distress, fuzzy edges, wet bleed, brush strokes, pasted seams, or photographed paper craft.
+Print behavior must remain controlled but materially active. Never simulate it with full-frame grain, uniform distress, fuzzy watercolor bleed, brush-built silhouettes, pasted seams, or photographed paper craft.
 
 ## 10. Compile one short render prompt
 

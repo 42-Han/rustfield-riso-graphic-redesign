@@ -1,14 +1,14 @@
 # Material Language
 
-Use this gate for every generation. The project is defined by clean geometric color masses printed through screen-print or Riso logic.
+Use this gate for every generation. The project is defined by simplified expressive masses physically transformed by screen-print or Riso behavior: geometry controls mass organization, never edge finish.
 
 ## Non-negotiable visual result
 
 - Use a neutral natural-white paper base by default. Do not warm the paper toward cream, beige, yellow, sepia, or aged stock unless the user explicitly requests that paper color or the declared palette anchor makes it indispensable.
-- Build every major person, animal, object, and environmental carrier from closed, readable color shapes.
-- Keep the primary silhouette crisp and continuous while giving it clearly visible low-frequency irregular contour wobble, like a clean hand-pulled print or rough stamp edge. The wobble must alter the contour slightly without making it fuzzy, feathery, wet, pasted, brush-built, or finely noisy.
+- Build every major person, animal, object, and environmental carrier from readable color shapes. Allow subject-specific curves, blunt angles, leaning axes, asymmetry, and intentional awkwardness; do not reduce everything to boxes, polygons, or icons.
+- Keep the primary silhouette continuous while giving it plainly visible broad, low-frequency irregular contour wobble like a hand-pulled print or rough stamp edge. It must be visible at normal viewing size, not microscopic. Avoid fuzzy watercolor bleeding, brush-built silhouettes, and polished vector-smooth contours.
 - Make every major color junction participate in one shared registration-boundary system: a narrow irregular paper/light-color gap, slight overlap, or offset registration sliver. Vary the behavior by junction; do not make all joins edge-to-edge, uniformly outlined, or separated by equal wide gutters.
-- Let large and medium color fields carry the image. Texture, line, grain, halftone, and registration are secondary evidence.
+- Let large and medium color fields carry the image, but make ink contact, edge wobble, junction gaps, halftone, and registration strong enough to define the finish rather than read as a weak overlay filter.
 - For people, color masses must carry anatomy and identity. A figure should survive as a small set of abstract blocks without relying on line drawing.
 - Preserve a clear large/medium/small hierarchy at thumbnail size.
 - Use one declared user-board image as the palette authority. Copy its ink families, dominance order, approximate area ratios, and contrast pattern; do not synthesize a hybrid from several references. A separate material reference may refine print behavior only; it never overrides the palette authority.
@@ -18,16 +18,16 @@ Use this gate for every generation. The project is defined by clean geometric co
 ## Dominant surface: screen-print / risograph
 
 - Use 3–6 opaque ink families for quiet or medium images, and 5–8 for high-energy posters or dense scenes.
-- Place 5–15% local halftone dots, dot clusters, ink-density shifts, or small registration offsets inside closed shapes or along color boundaries.
+- Place concentrated local halftone fields, ink-density shifts, missing-ink rubs, and registration offsets inside shapes and along color boundaries. Their total coverage varies with the composition; never suppress them merely to preserve a polished surface.
 - Include localized halftone clusters, uneven ink density, and a few small missing-ink rubs where they support form or junctions; do not simulate them as one uniform full-frame grain filter.
 - Keep dots local and intentional. Do not cover the whole image with uniform distress.
 - Let pop energy come from color clash, scale, crop, flat contrast, and dot fields rather than random decoration.
 - Let junctions feel stamped by hand while preserving hierarchy. Strong connected fields may remain connected; registration behavior belongs at meaningful color boundaries, not as a grid that fragments every internal detail.
 - Do not use cut-paper material, pasted seams, visible paper thickness, cast/contact shadows, photographed craft texture, watercolor, gouache, or heavy dry-brush.
 
-## Geometric construction
+## Expressive mass construction
 
-- Build the image from simple assembled masses, blocks, slabs, bands, panels, circles, arches, grids, and irregular-but-clean silhouettes.
+- Build the image from simple assembled masses, bands, panels, circles, arches, tilted slabs, irregular organic silhouettes, and subject-specific curves. Mix geometry with awkward drawn forms; do not default to a rigid modular grid.
 - Show overlap and depth through color boundaries, occlusion, stacking, and shallow enclosure.
 - Keep object recognition tied to a few diagnostic features, not many small rendered details.
 - Avoid long runs of perfectly horizontal or vertical junctions unless they are needed for signage, panels, or typography. Break them with slight offsets, uneven margins, or small negative-space slivers.
@@ -49,10 +49,10 @@ Use this gate for every generation. The project is defined by clean geometric co
 
 ## Reference attachment gate
 
-Before attaching a style image, inspect it at thumbnail size and answer:
+Before attaching any optional style image, inspect it at thumbnail size and answer. Always attach `reference_images/material-calibration-riso-edge.png` separately as the mandatory material calibration:
 
-1. Are the main subjects readable primarily through closed geometric shapes?
-2. Are their outer edges clean even if the interior contains print grain, dots, or pencil marks?
+1. Are the main subjects readable primarily through decisive color masses rather than detailed linework?
+2. Do their outer edges visibly show broad print wobble and uneven ink contact rather than vector smoothness?
 3. Does the palette resemble the project board more than the source photo?
 4. Would the generator still understand the reference if its texture were removed?
 
@@ -60,16 +60,11 @@ Attach the image only if all answers are yes. If the image is valuable for actio
 
 ## Prompt lock
 
-Include one positive material sentence and one short exclusion sentence. For example:
+Use the complete mandatory material lock in `generation-path.md` verbatim as the final paragraph of every render prompt. Do not replace it with a shorter sentence such as `clean geometric masses`, `subtle texture`, or `slight RISO effect`; those formulations allow vector-smooth edges and weak filter-like grain to override the intended physical print behavior.
 
-```text
-Use palette anchor `<exact board file>` as opaque ink families, preserving its dominance order and approximate area ratios, on a neutral natural-white paper base. Render all forms as clean geometric masses in flat screen-print/Riso style, with clearly visible low-frequency irregular contour wobble, localized halftone clusters, uneven ink density, small missing-ink rubs, and a global junction system of narrow unequal gaps, exposed paper slivers, slight overlaps, and small registration offsets across every major color relationship.
-No yellowed, cream, beige, sepia, or aged paper; no cut-paper craft, watercolor, gouache, dry-brush fill, fuzzy painted edges, source-photo palette copying, pure-black dominance, perfectly tiled vector seams, uniform outlines, wide gutters, or all-over distress.
-```
-
-Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` without defining the clean silhouette and exact print mechanism. These words otherwise encourage painterly noise.
+Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` without the mandatory lock's explicit contour, junction, registration, halftone, ink-density, missing-ink, and paper-base requirements.
 
 ## Review gate
 
-Reject the image when any major object edge looks brushed, wet, furry, smudged, pasted, or rubbed. Reject it when the palette has no exact user-board source, blends several references into an invented relationship, or follows the source photo without authorization. Reject it when black dominates more than roughly one quarter of the canvas. Reject it when major color junctions are perfectly snapped everywhere, or when equal wide gaps fragment the composition. Reject it when the surface reads as paper craft, watercolor, gouache, generic vector, or full-frame noise rather than screen-print/Riso with local dot behavior.
+Reject the image when it has no visible broad contour wobble, no tactile ink breakup, or no unequal paper gaps at major color junctions. Reject any major edge that looks watercolor-wet, furry, pasted, brush-built, or polished vector-smooth. Reject it when the palette has no exact user-board source, blends several references into an invented relationship, or follows the source photo without authorization. Reject it when black dominates more than roughly one quarter of the canvas. Reject it when major color junctions are perfectly snapped everywhere, or when equal wide gaps fragment the composition. Reject it when the surface reads as paper craft, watercolor, gouache, generic vector, or full-frame noise rather than a physically imperfect screen-print/Riso impression.
 Reject it when a human figure still reads as a detailed character illustration because hair strands, clothing seams, shoe details, fingers, jewelry, or continuous contour lines are doing the work that large color masses should do.

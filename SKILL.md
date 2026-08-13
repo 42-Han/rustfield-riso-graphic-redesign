@@ -91,10 +91,10 @@ Assign every attached image exactly one role:
 - `composition` — hierarchy, crop, scale, spacing, and depth order;
 - `shape` — simplification and diagnostic construction for the same subject type;
 - `palette` — one exact user-board image controls only ink families, dominance order, approximate area ratios, and contrast pattern;
-- `material` — an optional clean-print reference controls only halftone, ink-density variation, registration behavior, and boundary character; when absent, use the default material language;
+- `material` — the project material calibration reference is mandatory for every render and controls only ink contact, halftone, density variation, registration behavior, gaps, and boundary character; it never contributes content, composition, or palette;
 - `typography` — font skeleton, weight/width, size hierarchy, line breaks, alignment, baseline/rotation, spacing, and image-type interlock for preserved copy or a deliberately designed title.
 
-Attach only references that change a real design decision. For image-input work, use the supplied image plus zero to four supporting references; for text-only work, keep all attached theme and project references to four or fewer. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. Record its ink families and approximate area proportions; do not blend several references into an invented palette. A material reference may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
+Attach only references that change a real design decision, except that `reference_images/material-calibration-riso-edge.png` is always attached as the mandatory material reference. For image-input work, use the supplied image plus the mandatory material calibration and up to three other supporting references; for text-only work, keep all attached theme and project references, including the calibration, to four or fewer. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. Record its ink families and approximate area proportions; do not blend several references into an invented palette. The material calibration may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
 
 Do not prompt for direct imitation of a living artist. Translate references into observable properties.
 
@@ -102,16 +102,16 @@ Do not prompt for direct imitation of a living artist. Translate references into
 
 Apply these invariants to every subject category:
 
-- Build every major subject and setting carrier from clean, closed, readable color masses.
+- Build every major subject and setting carrier from readable color masses with subject-specific curves, skew, asymmetry, and proportion shifts. Do not equate geometric simplification with rectangles, straight rulers, perfectly smooth vector curves, or minimal icon reduction.
 - Use diagnostic features and intentional proportion shifts instead of realistic rendering.
 - Compress depth through overlap, stacking, enclosure, panels, ground, horizon, or a support plane.
 - Keep a clear large/medium/small hierarchy at thumbnail size.
 - Copy the color relationship from one declared user-board palette anchor: ink families, dominance order, approximate area ratios, and contrast pattern. Do not synthesize an untraceable hybrid palette.
 - Make the default expression pop-leaning through exaggerated warm/cool or complementary contrast, high-chroma accents, decisive scale, and flat area clashes taken from that palette anchor.
 - Keep black secondary, normally below 20–25% of the canvas; use deep colored inks for large dark fields.
-- Use local screen-print/Riso evidence: restrained halftone, ink-density variation, and slight registration drift.
+- Make screen-print/Riso evidence visually unmistakable: tactile ink deposits, concentrated halftone clusters, uneven ink coverage, missing-ink rubs, and clearly visible registration drift.
 - Make every major color junction participate in one global registration-boundary system: narrow irregular gaps, exposed paper/light slivers, slight overlaps, or offset joins. Vary the behavior by junction; do not create uniform outlines or wide tiled gutters. Strong connected fields may remain connected when needed for hierarchy.
-- Keep texture subordinate to shape. Edges remain crisp, not brushed, wet, fuzzy, pasted, or rubbed.
+- Keep the subject readable while allowing the printed edge itself to be visibly uneven, dragged, under-inked, and broadly wobbled. Avoid wet watercolor bleeding, fuzzy brush-built silhouettes, pasted craft edges, and polished vector contours.
 - Use line only for necessary internal information such as motion, pattern, label, species mark, or sparse structural cue. Do not make continuous outline drawing the main construction system.
 - Do not impose a fixed whole-image shape count. Set detail budgets by subject, relationship, setting function, output scale, and the selected reference rather than treating maximal reduction as the goal.
 - Preserve successful environmental structure, moderate block perspective, functional parts, and sparse structural lines when they carry identity. Geometric construction simplifies and reorganizes the image; it does not automatically erase architecture, context, or adult editorial density.
@@ -169,6 +169,8 @@ Reject a candidate when any apply:
 - Its palette cannot be traced to one declared user-board image and its area relationship.
 - It was assembled through sequential edits or a separate text/material pass instead of one complete render.
 - It becomes anime/kawaii character art, generic corporate vector, cinematic concept art, realistic 3D, watercolor, gouache, heavy dry brush, or cut-paper craft.
+- It reads as polished vector geometry, over-reduced icon art, or rigid rectangular construction instead of tactile printed illustration.
+- The mandatory material calibration was not attached, or the result shows no visible contour wobble, no irregular large-junction gaps, or no tactile ink evidence at normal viewing size.
 - Color blocks are perfectly snapped everywhere, or the boundary treatment becomes uniform wide gutters.
 - Texture, outline, gradient, or perspective overwhelms the large color masses.
 - It violates an explicit content requirement in the current user prompt.

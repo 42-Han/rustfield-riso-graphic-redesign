@@ -48,11 +48,11 @@ Reference 1 — content: preserve its subject identity, count, action, relations
 Reference 2 — composition: use hierarchy, crop, scale, spacing, and depth order only.
 Reference 3 — shape: use simplification and diagnostic construction only; preserve source-specific anatomy/form.
 Reference 4 — palette: copy this exact user-board image's ink families, dominance order, approximate area ratios, and contrast only.
-Reference 5 — material: use clean-print surface behavior only: halftone, ink density, registration, and junction character; never alter palette or content.
+Reference 5 — mandatory material calibration: always attach `reference_images/material-calibration-riso-edge.png`; use only its coarse ink contact, low-frequency edge wobble, unequal paper gaps, halftone clusters, missing-ink rubs, and registration offsets; never use its colors, grid, or abstract block composition.
 Reference 6 — typography: use its recorded font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock only; preserve the planned wording exactly.
 ```
 
-Attach only the roles actually needed. Do not require a full set when no valid reference exists.
+Attach only the roles actually needed, except Reference 5, which is required for every render. Count it within the four-reference limit.
 
 Selection gates:
 
@@ -60,7 +60,7 @@ Selection gates:
 - Match composition to topology, energy, density, and output ratio—not to a shared decorative motif.
 - Let one exact user-board image control the complete palette relationship. Record its file name, 4–8 ink families, dominance order, and approximate area percentages before prompt writing.
 - Do not average, interpolate, or freely combine palette colors from multiple references. A composition, shape, material, or typography reference contributes no color unless it is separately declared as the sole palette anchor.
-- A material reference controls print behavior only. Reject one dominated by watercolor, gouache, dry brush, fuzzy pigment, pasted craft, or realistic modeling.
+- The mandatory material calibration controls print behavior only. It cannot be omitted because the written prompt seems sufficient. Reject any additional material reference dominated by watercolor, gouache, dry brush, fuzzy pigment, pasted craft, or realistic modeling.
 - Do not import subjects, clothing, accessories, text, props, or exact object coordinates from supporting references. A composition reference may contribute abstract hierarchy, crop, scale, spacing, and depth-order mechanisms only.
 - Use no typography reference when text is absent.
 
@@ -90,7 +90,7 @@ Unless the route preserves layout, name at least one meaningful structural chang
 
 ## 6. Compile the render prompt
 
-Keep the prompt normally between 90 and 200 words. Use four ordered blocks.
+Keep the source-specific portion concise, but never shorten, paraphrase, or remove the mandatory material lock to meet a word target. Use four ordered blocks.
 
 ### Identity lock
 
@@ -102,7 +102,15 @@ State topology, output ratio, large/medium/small hierarchy, subject placement, c
 
 ### Treatment
 
-Name the exact palette-anchor file and state its ink families, area relationship, and contrast pattern. Then state diagnostic shape simplification, independent stamp and resolved text strategies, global registration-boundary behavior, material, texture intensity, black limit, and conditional rules such as featureless faces only when people appear. Include these literal visual constraints in the render prompt: neutral natural-white paper base; clearly visible low-frequency irregular contour wobble with clean readable silhouettes; narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets across major color junctions; localized halftone clusters, uneven ink density, and small missing-ink rubs. Do not replace them with vague words such as handmade, rough, vintage, or textured.
+Name the exact palette-anchor file and state its ink families, area relationship, and contrast pattern. Then state diagnostic shape simplification, independent stamp and resolved text strategies, black limit, and conditional rules such as featureless faces only when people appear. Geometry controls hierarchy, scale, and abstraction only; it must not produce rigid rectangles, ruler-straight joins, polished vector curves, or generic icon reduction.
+
+Paste the following material lock verbatim as the final paragraph of every render prompt:
+
+Compatibility terms that must remain literal inside the lock: `neutral natural-white paper base`; `clearly visible low-frequency irregular contour wobble`; `narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets`; `localized halftone clusters, uneven ink density, and small missing-ink rubs`.
+
+```text
+MANDATORY MATERIAL LOCK — Attach material-calibration-riso-edge.png and copy only its physical print behavior, never its colors or layout. Use a neutral natural-white paper base with no yellowed or aged cast. Every major silhouette must have clearly visible low-frequency irregular contour wobble: broad and hand-pulled, readable but never vector-smooth, laser-cut, or digitally snapped. At every major color junction create narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets; do not let large blocks meet in perfect seams. Show tactile not-fully-set ink through localized halftone clusters, uneven ink density, and small missing-ink rubs, plus a few short ink-drag marks. These effects must be visible at normal viewing size, not hidden as microscopic grain. Geometry controls mass organization, never edge finish. No polished vector art, rigid rectangular reduction, watercolor, gouache, cut paper, fuzzy brushwork, beige paper, or uniform full-frame distress.
+```
 
 ### Avoid
 

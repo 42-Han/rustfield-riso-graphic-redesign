@@ -23,7 +23,7 @@ The active user-board archive contains 93 retained `board-###` images inside `re
 - Objects are recognized by optical mass first and internal detail second.
 - One object usually uses one dominant silhouette plus one to five identifying features.
 - Proportions are changed selectively: a bird body may become huge, a chair may become wider than plausible, or a hand may dominate an action scene.
-- Irregularity is distributed through print registration, halftone breakup, ink-density shifts, or sparse pencil marks. Major outer edges stay clean and decisive.
+- Irregularity is distributed through print registration, halftone breakup, ink-density shifts, or sparse pencil marks. Major outer edges stay readable and decisive while showing clearly visible broad print wobble and uneven ink contact.
 - Line is not automatically an outline. It may appear only as a face, grain, stripe, ingredient mark, label, or motion cue.
 - Viewpoints can mix, but object relationships remain intelligible.
 
@@ -51,14 +51,14 @@ The board is not universally pastel and does not always require a dark anchor. F
 
 ### Material
 
-Texture is branch-specific but always subordinate to closed shapes:
+Surface behavior is branch-specific, but the default RISO branch must look physically printed rather than merely filtered:
 
 | Surface mode | Typical influence | Behavior |
 |---|---:|---|
-| Clean flat print | 0–5% | near-solid ink color, selected registration or density variation |
-| Screen print/risograph, default | 5–15% | local grain, ink-density shift, local halftone dots, small registration error inside closed shapes |
-| Pencil/crayon accent | 0–8% | sparse internal marks, pattern, face, motion, or lettering only |
-| Xerox/halftone poster | 5–15% | local dots/noise with uninterrupted silhouettes |
+| Clean flat print | light | near-solid ink color, selected registration or density variation |
+| Screen print/risograph, default | unmistakable | visible contour wobble, unequal paper gaps, localized halftone clusters, ink-density shifts, missing-ink rubs, and registration offsets |
+| Pencil/crayon accent | sparse | internal marks, pattern, face, motion, or lettering only; never the dominant surface |
+| Xerox/halftone poster | strong | concentrated dots/noise, uneven ink coverage, and readable silhouettes |
 
 Never use watercolor, gouache, heavy dry-brush, fuzzy pigment, visible bristle direction, cut-paper craft, pasted seams, or contact shadows as the output surface. Do not use texture to construct an object edge or to hide generic shape design.
 
@@ -183,7 +183,7 @@ The project contains 23 active external-source images in `reference_images/` as 
 
 For a single person, do not use animal-only or abstract-module references as the primary figure-shape reference. Use `references/external-reference-routing.md` for the full routing and provenance rules.
 
-Material caution: retired references are not active palette or material anchors. Apply the same visual test to every retained candidate rather than assuming that grain alone proves the right print language.
+Material caution: retired references are not active palette or material anchors. Always attach `reference_images/material-calibration-riso-edge.png` as the dedicated material calibration. Palette, composition, and shape references remain independently selected and may not weaken or replace its edge, gap, ink-contact, halftone, and registration behavior.
 
 ## Outliers and caution
 

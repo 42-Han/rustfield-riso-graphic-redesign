@@ -29,7 +29,7 @@ Large / medium / small hierarchy:
 Structural redesign:
 Open-space or crowding target:
 Exact user-board palette anchor:
-Optional material reference / default material language:
+Mandatory material calibration: reference_images/material-calibration-riso-edge.png attached / missing:
 Palette ink families / dominance order / approximate area ratios:
 Identity-critical source-color exceptions:
 Shape/detail budget by main subject:
@@ -58,10 +58,10 @@ Do not generate until all apply:
 - Topology, energy, density, and output ratio are selected independently.
 - The setting skeleton survives when it carries identity.
 - The plan names one structural change unless layout preservation is requested.
-- One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. Any material reference is recorded separately and controls print behavior only.
+- One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. The mandatory material calibration is attached separately and controls print behavior only.
 - Each major subject has diagnostic features and a simplification budget.
 - Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
-- Shape is readable before texture; texture remains local and secondary.
+- Shape is readable before texture, while the calibration's edge wobble, ink breakup, junction gaps, and registration remain unmistakable at normal viewing size.
 - For a non-poster request with no explicit text instruction, make one unbiased 50/50 random draw between `optional title` and `no text`. Record the completed random result before selecting typography references or compiling the prompt. Do not leave the choice to the image model or override it because one outcome appears compositionally preferable.
 - When text is selected or required, it is exact and included in the same render. Optional title presence or absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
 - Selected composition, typography, stamp(s), palette, material, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
@@ -145,9 +145,9 @@ Conditional checks:
 Use [material-language.md](material-language.md) as the detailed source of truth. The default result has:
 
 - a neutral natural-white paper base, without cream, beige, yellow, sepia, or aged-paper cast unless explicitly requested;
-- crisp closed color masses;
-- clearly visible low-frequency irregular contour wobble without fuzzy or brush-built silhouettes;
-- local 5–15% halftone/dots or ink-density variation for standard Riso/screen print;
+- continuous readable color masses with expressive subject-specific curves and asymmetry rather than rigid vector modules;
+- plainly visible broad low-frequency irregular contour wobble without watercolor bleed or brush-built silhouettes;
+- concentrated local halftone fields and ink-density variation for physical Riso/screen print;
 - localized halftone clusters, uneven ink density, and small missing-ink rubs rather than a generic full-frame grain filter;
 - slight registration drift;
 - one shared irregular boundary system of narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets across major color junctions;
@@ -198,8 +198,14 @@ Use [material-language.md](material-language.md) as the detailed source of truth
 - Palette and approximate area hierarchy visibly correspond to the declared user-board anchor rather than an invented hybrid.
 - Contrast reads as pop-leaning through large color clashes and high-chroma accents from that anchor.
 - All major junctions participate in the global irregular gap/overlap/registration system without becoming uniformly outlined or fragmented.
-- Print evidence is local and subordinate.
+- Print evidence is controlled but unmistakable and materially active at normal viewing size; it must not collapse into a weak filter over vector-smooth shapes.
 - The result is closer to the project board than to anime/kawaii, generic vector, realistic 3D, watercolor storybook, painted concept art, or paper craft.
+
+### Enlarged material inspection
+
+- Inspect at least five enlarged major junctions distributed across the subject, environment, and any supporting stamp.
+- Each inspected junction must show at least two of these: broad contour wobble, unequal exposed-paper gap, white sliver, ink overlap, registration offset, halftone cluster, missing-ink rub, or short ink drag.
+- Reject immediately when the image has no visible contour wobble, when large blocks meet through polished edge-to-edge vector seams, or when the only material evidence is uniform full-frame grain.
 
 ### Information and boundaries
 
@@ -225,6 +231,7 @@ Any identity hard failure blocks delivery even when the image is aesthetically s
 | Untraceable palette | colors were synthesized or blended across references | choose one exact user-board palette anchor, state its area relationship, and generate fresh |
 | Material overreach | a material reference changed palette or imported content | restore the palette anchor and isolate the material reference to print behavior; generate fresh |
 | Generic vector | perfectly snapped geometry and uniform edges | strengthen the full irregular-boundary and print contract; generate fresh |
+| Material calibration lost | no visible contour wobble, tactile ink breakup, unequal junction gap, or registration offset | verify the mandatory calibration is attached, paste the material lock verbatim, and generate fresh from original inputs |
 | Fragmented gutters | every shape isolated by equal wide gaps | narrow and vary junctions in the full blueprint; generate fresh |
 | Texture overload | surface competes with form | reduce texture intensity in the complete prompt; generate fresh |
 | Brush/craft drift | material reference dominates with paint or pasted construction | replace it with a clean closed-mass reference; generate fresh |
