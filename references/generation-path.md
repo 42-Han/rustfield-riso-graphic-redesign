@@ -1,6 +1,6 @@
 # Generation Path
 
-Use this workflow for any input category. Fill it from the current source; never reuse subject nouns, props, layout devices, or palette words from a prior task.
+Use this workflow for any input category. Read [rustfield-visual-contract.md](rustfield-visual-contract.md) first. Fill it from the current source; never reuse subject nouns, props, layout devices, palette words, typography treatment, or reference choices from a prior task.
 
 ## 1. Declare the route and output
 
@@ -8,8 +8,8 @@ Record:
 
 - route: identity-preserving redesign, layout-preserving restyle, free semantic translation, or local edit;
 - intended use and aspect ratio;
-- output count;
-- text strategy: preserve required copy, required title, optional title, or no text; for a non-poster request with no explicit text instruction, record one unbiased 50/50 random draw between optional title and no text before selecting references;
+  - output count: use the user's explicit number; if none is given, select exactly one;
+  - text strategy: preserve required copy, required title, optional title, or no text; for a non-poster request with no explicit text instruction, randomly select exactly one of optional title or no text before selecting references;
 - stamp strategy: one or more input-derived stamps, or no stamp when explicitly requested or when a stamp would become template-like decoration;
 - exact title/copy when required or selected.
 
@@ -34,7 +34,7 @@ Choose independently:
 | Energy | still, warm, lively, kinetic, maximal-controlled |
 | Density | sparse, medium, dense, tiled |
 | Shape | geometric mass, geometric block, stepped modular mass, mixed clean shape-line |
-| Surface | clean flat print, screen print/Riso, restrained pencil accent, xerox-halftone |
+| Surface | screen print/Riso; pencil, xerox, or near-solid flat-ink behavior is only a sparse sub-treatment |
 | Information | none, caption, labels, title, full hierarchy |
 
 Do not infer one axis from another. A quiet still life need not be pastel; a dense scene need not become a poster; a person-led image need not be centered.
@@ -52,13 +52,13 @@ Reference 5 — mandatory material calibration: always attach `reference_images/
 Reference 6 — typography: use its recorded font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock only; preserve the planned wording exactly.
 ```
 
-Attach only the roles actually needed, except Reference 5, which is required for every render. Count it within the four-reference limit.
+Attach only the roles actually needed, except Reference 5, which is required for every render. For image input, the supplied image and Reference 5 are always attached; add a supporting role only when the blueprint still needs that evidence. For text-only input, Reference 5 is always attached; add theme/project references only when they resolve a concrete identity or blueprint decision. Stop when every required external decision has one role-assigned source; there is no arbitrary attachment quota and no mood-board attachment.
 
 Selection gates:
 
 - Match the shape reference to the subject category and subtype.
 - Match composition to topology, energy, density, and output ratio—not to a shared decorative motif.
-- Let one exact user-board image control the complete palette relationship. Record its file name, 4–8 ink families, dominance order, and approximate area percentages before prompt writing.
+- Select the palette anchor afresh for this source according to its topology, energy, density, and requested atmosphere. Let that one exact user-board image control the complete palette relationship. Record its file name, every visible ink family needed for the relationship, dominance order, and approximate area percentages before prompt writing; do not repeat a prior palette without a source-fit reason.
 - Do not average, interpolate, or freely combine palette colors from multiple references. A composition, shape, material, or typography reference contributes no color unless it is separately declared as the sole palette anchor.
 - The mandatory material calibration controls print behavior only. It cannot be omitted because the written prompt seems sufficient. Reject any additional material reference dominated by watercolor, gouache, dry brush, fuzzy pigment, pasted craft, or realistic modeling.
 - Do not import subjects, clothing, accessories, text, props, or exact object coordinates from supporting references. A composition reference may contribute abstract hierarchy, crop, scale, spacing, and depth-order mechanisms only.
@@ -77,14 +77,17 @@ The blueprint must resolve:
 - open-space or crowding target;
 - exact palette-anchor file, ink families, dominance order, approximate area ratios, and any identity-critical source-color exception;
 - diagnostic features and allowable simplification for each main subject;
+- a subject-specific shape/detail budget derived from diagnostic and relational value; do not use a fixed historical shape count or large-mass percentage as a quota;
 - one global boundary plan for every major color junction: irregular narrow gap, exposed paper/light sliver, overlap, or registration offset;
 - texture type and intensity;
 - text strategy, exact required/selected title or copy, and typography placement;
 - for posters, one exact typography-reference file plus its recorded font construction, size relationships, line breaks, alignment, spacing, baseline/rotation, and image-type interlock;
-- one or more stamp plans derived from visible source elements for image input, or concrete brief/identity anchors for text-only input, normally occupying 3–10% of the canvas in total;
+- a stamp plan derived from visible source elements for image input, or concrete brief/identity anchors for text-only input, kept visibly secondary;
 - independent text strategy and stamp strategy.
 
 No unresolved optional-text choice may remain. The prompt must state the completed random result, not ask the image model to decide whether text appears.
+
+Select the typography authority afresh when text is required or selected, fitting it to the current composition. Never reuse a fixed default font, title position, or title treatment merely because it worked in a previous render.
 
 Unless the route preserves layout, name at least one meaningful structural change. Do not force every image to use an enclosure, central subject, three supports, or square format. The stamp is a small supporting information element, not a fixed composition template.
 
@@ -106,15 +109,15 @@ Name the exact palette-anchor file and state its ink families, area relationship
 
 Paste the following material lock verbatim as the final paragraph of every render prompt:
 
-Compatibility terms that must remain literal inside the lock: `neutral natural-white paper base`; `clearly visible low-frequency irregular contour wobble`; `narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets`; `localized halftone clusters, uneven ink density, and small missing-ink rubs`.
+Compatibility terms that must remain literal inside the lock: `neutral natural-white paper base`; `clearly visible low-frequency irregular contour wobble`; `crisp, hard-edged printed boundary`; `narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets`; `localized halftone clusters, uneven ink density, and small missing-ink rubs`.
 
 ```text
-MANDATORY MATERIAL LOCK — Attach material-calibration-riso-edge.png and copy only its physical print behavior, never its colors or layout. Use a neutral natural-white paper base with no yellowed or aged cast. Every major silhouette must have clearly visible low-frequency irregular contour wobble: broad and hand-pulled, readable but never vector-smooth, laser-cut, or digitally snapped. At every major color junction create narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets; do not let large blocks meet in perfect seams. Show tactile not-fully-set ink through localized halftone clusters, uneven ink density, and small missing-ink rubs, plus a few short ink-drag marks. These effects must be visible at normal viewing size, not hidden as microscopic grain. Geometry controls mass organization, never edge finish. No polished vector art, rigid rectangular reduction, watercolor, gouache, cut paper, fuzzy brushwork, beige paper, or uniform full-frame distress.
+MANDATORY MATERIAL LOCK — Attach material-calibration-riso-edge.png and copy only its physical print behavior, never its colors or layout. Use a neutral natural-white paper base with no yellowed or aged cast. Every major silhouette must have a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble. The wobble changes contour location, not edge sharpness: use broad uneven arcs, blunt notches, uneven ink contact, or slight registration, never blur, feathering, fuzzy halos, soft-focus edges, wet bleed, or brush-built softness. At every major color junction create narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets; do not let large blocks meet in perfect seams. Show tactile not-fully-set ink through localized halftone clusters, uneven ink density, and small missing-ink rubs, plus a few short ink-drag marks. These effects must be visible at normal viewing size, not hidden as microscopic grain. Geometry controls mass organization, never edge finish. No polished vector art, rigid rectangular reduction, watercolor, gouache, cut paper, beige paper, or uniform full-frame distress.
 ```
 
 ### Avoid
 
-Name three to five failures most likely for this source: wrong count/species/action, lost setting, imported motifs, wrong material, or text failure. Do not paste the full global exclusion list.
+Name only the source-specific failures most likely for this source (for example wrong count/species/action, lost setting, imported motifs, wrong material, or text failure). Do not paste the full global exclusion list or use a fixed number of avoid items.
 
 ## 7. Generate and inspect
 
@@ -151,5 +154,5 @@ Final prompt:
 Identity review:
 Atmosphere review:
 Board-style review:
-Remaining uncertainty:
+Remaining non-material uncertainty (or `none`):
 ```

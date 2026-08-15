@@ -242,13 +242,28 @@
       "expected_output": "A researched text-only redesign that preserves Stardew Valley's compact figure grammar, oblique tiled world structure, farm-town-community relationships, and seasonal labor rhythm while translating its surface into a mature editorial Riso composition.",
       "expectations": [
         "The workflow builds a theme reference packet from complementary official game imagery covering character proportion, farm or town viewpoint, key building or tool forms, and activity or community relationships before composition design.",
-        "It records an anchor ledger with two to four primary visual identity anchors and a style-distance budget; each primary anchor names its evidence, visible rule, required survival mechanism, and allowed translation.",
+        "It records the minimum mutually reinforcing primary visual identity anchors needed to cover the named work's identity grammar (no fixed anchor count) and a style-distance budget; each primary anchor names its evidence, visible rule, required survival mechanism, and allowed translation.",
         "Riso replaces the raster surface without erasing the underlying block-and-tile logic, compact character proportions, oblique spatial grammar, modular crop rhythm, or farm-town-community world structure.",
         "It records a visual thesis and uses one dominant spatial or relational device rather than distributing crops, animals, buildings, and tools as explanatory icons.",
         "Any attached web images control only named content or setting facts; project-board references separately control palette, print material, shape, composition, and optional typography.",
         "The result preserves adult editorial composition through decisive crop, unequal scale, layered space, asymmetry, and purposeful negative space while retaining the project’s naïve geometry.",
         "The maturity gate rejects round doll figures, nursery-book cottages, identical flowers, cute generic animals, evenly scattered stickers, and preschool worksheet zoning unless explicitly required by the brief.",
         "The anchor coverage gate rejects a generic realistic farm, generic pastoral editorial scene, or generic cute farm game that could be relabeled without changing its visual construction."
+      ]
+    },
+    {
+      "id": 23,
+      "prompt": "综合三个历史批次共20张已认可的图像 Prompt，重绘一张新的输入图；不要照搬任何一个批次的构图、配色、标题或形状数量。",
+      "expected_output": "A one-pass source-specific redesign using the shared 20-image production backbone while recomputing all source-dependent decisions.",
+      "expectations": [
+        "The workflow treats the 20 images as evidence for shared production controls, not as a fixed fourth reference or a subject template.",
+        "The current source controls identity, count, action/state, relationships, setting function, and atmosphere; the result is not reduced to a generic genre symbol.",
+        "Exactly one current-fit project-board image is named as palette authority, while the material calibration is isolated to RISO print behavior.",
+        "The result uses a neutral natural-white paper base, high-chroma palette relationships when supported by the selected anchor, readable large/medium/small masses, and source-appropriate perspective or functional structure.",
+        "Major color junctions use varied unequal gaps, exposed paper slivers, overlaps, or registration offsets; boundaries remain clearly readable with the accepted broad irregular printed wobble.",
+        "RISO evidence is local and structural—halftone clusters, uneven ink density, missing-ink rubs, and registration drift—not a uniform full-frame filter.",
+        "Title behavior is conditional: poster or explicit title requests require exact title text; optional title/no-text decisions for other requests are not a regeneration criterion.",
+        "Any failure is regenerated as a fresh full render from original inputs; no generated candidate is edited or used as the next reference."
       ]
     }
   ]

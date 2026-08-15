@@ -1,6 +1,6 @@
 # Production Protocol
 
-Use this protocol to approve a complete one-pass candidate or restart a failed attempt. It contains no subject-specific default; all content fields come from the current source.
+Use this protocol to approve a complete one-pass candidate or restart a failed attempt. It contains no subject-specific preset; all content fields come from the current source.
 
 ## Preflight record
 
@@ -15,7 +15,7 @@ Action/state:
 Relationship graph:
 Setting function and required carriers:
 Atmosphere / energy / density / era cue:
-Text strategy: preserve required copy / required title / recorded 50/50 result = optional title or no text:
+Text strategy: preserve required copy / required title / recorded random result = optional title or no text:
 Stamp strategy: input-derived stamp(s) / user-required no stamp / no stamp because it would be template-like decoration:
 
 Identity anchors:
@@ -62,7 +62,7 @@ Do not generate until all apply:
 - Each major subject has diagnostic features and a simplification budget.
 - Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
 - Shape is readable before texture, while the calibration's edge wobble, ink breakup, junction gaps, and registration remain unmistakable at normal viewing size.
-- For a non-poster request with no explicit text instruction, make one unbiased 50/50 random draw between `optional title` and `no text`. Record the completed random result before selecting typography references or compiling the prompt. Do not leave the choice to the image model or override it because one outcome appears compositionally preferable.
+- For a non-poster request with no explicit text instruction, randomly select exactly one of `optional title` and `no text`. Record the completed result before selecting typography references or compiling the prompt. Do not leave the choice to the image model or override it because one outcome appears compositionally preferable.
 - When text is selected or required, it is exact and included in the same render. Optional title presence or absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
 - Selected composition, typography, stamp(s), palette, material, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
 - Reference roles are separate and no style reference contributes content.
@@ -102,7 +102,7 @@ Assign colors by function:
 Choose one exact image from the user's project board as palette authority. Record:
 
 - file name or board number;
-- 4–8 visible ink families;
+- every visible ink family needed to reproduce the selected palette relationship; no fixed color count;
 - dominance order;
 - approximate percentage range for each large color role;
 - the anchor's main contrast pattern.
@@ -111,13 +111,11 @@ Copy that relationship rather than freely selecting attractive colors. Do not bl
 
 Typical ranges:
 
-- quiet image: 3–6 ink families;
-- relational scene: 4–8;
-- saturated poster or grid: 5–8.
+- The number of ink families is determined by the selected palette anchor and the subject's information density. Do not impose a fixed color count.
 
-Keep black below roughly 20–25%. Use deep plum, cobalt, blue-green, forest green, brown, or another board dark for large fields.
+Keep black at or below 25% of the canvas, with a target below 20%. Use deep plum, cobalt, blue-green, forest green, brown, or another board dark for large fields.
 
-The default result is pop-leaning: retain at least one exaggerated high-contrast relationship from the palette anchor and one or two of its high-chroma accents. Do not soften the anchor into harmonious near-neutrals.
+Preserve the selected palette anchor's saturation and contrast. If that anchor is pop-leaning, retain at least one exaggerated high-contrast relationship and one or two of its high-chroma accents; do not soften it into harmonious near-neutrals.
 
 ## Shape gate
 
@@ -142,11 +140,11 @@ Conditional checks:
 
 ## Material gate
 
-Use [material-language.md](material-language.md) as the detailed source of truth. The default result has:
+Use [material-language.md](material-language.md) as the detailed source of truth. A valid result has:
 
 - a neutral natural-white paper base, without cream, beige, yellow, sepia, or aged-paper cast unless explicitly requested;
 - continuous readable color masses with expressive subject-specific curves and asymmetry rather than rigid vector modules;
-- plainly visible broad low-frequency irregular contour wobble without watercolor bleed or brush-built silhouettes;
+- crisp, hard-edged silhouettes with plainly visible broad low-frequency irregular contour wobble; the wobble changes contour location, not edge sharpness;
 - concentrated local halftone fields and ink-density variation for physical Riso/screen print;
 - localized halftone clusters, uneven ink density, and small missing-ink rubs rather than a generic full-frame grain filter;
 - slight registration drift;
@@ -160,14 +158,14 @@ Use [material-language.md](material-language.md) as the detailed source of truth
 - Mark each item `preserve exact`, `use as title`, `remove with authorization`, or `noise/unauthorized`.
 - Preserve language, characters, punctuation, dates, and reading order.
 - When the text strategy selects a title, use short exact wording derived from the source concept or supplied by the user. Use bold retro-poster display lettering and a declared typography reference.
-- When the text strategy uses a title, record one exact project typography reference and copy its observable font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock. Do not accept generic centered display type when these relationships are absent.
+- When the text strategy uses a title, select the typography authority afresh for the current composition and copy its observable font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock. Do not use a fixed default font or title position, and do not accept generic centered display type when these relationships are absent.
 - Include the title in the same full render. If it is wrong, reject the candidate and generate a new complete image from the original inputs.
 - In no-text mode, reject all pseudo-text, letters, numbers, signatures, and watermarks; a purely graphic input-derived stamp may remain.
 
 ## Input-derived stamp gate
 
 - For image input, extract one or more visible source elements such as a prop, tool, window form, landmark, ingredient, sign fragment, product detail, species feature, or silhouette. For text-only input, select equivalent elements from a concrete brief fact or declared identity anchor.
-- Reduce them to small secondary stamps with the same palette and print logic as the main image; keep their total area around 3–10% of the canvas.
+- Reduce them to small secondary stamps with the same palette and print logic as the main image.
 - Keep them secondary and compositionally connected; they are not generic badges, logos, or random stickers.
 - Use no stamp when the user explicitly requests no decoration or when a source-derived stamp would only create template-like decoration.
 
@@ -199,13 +197,13 @@ Use [material-language.md](material-language.md) as the detailed source of truth
 - Contrast reads as pop-leaning through large color clashes and high-chroma accents from that anchor.
 - All major junctions participate in the global irregular gap/overlap/registration system without becoming uniformly outlined or fragmented.
 - Print evidence is controlled but unmistakable and materially active at normal viewing size; it must not collapse into a weak filter over vector-smooth shapes.
-- The result is closer to the project board than to anime/kawaii, generic vector, realistic 3D, watercolor storybook, painted concept art, or paper craft.
+- The result follows the active board and material contract rather than drifting into polished vector, photographic, brush-built, or craft-like construction. Do not remove perspective or functional structure merely because the source is not a flat icon.
 
 ### Enlarged material inspection
 
 - Inspect at least five enlarged major junctions distributed across the subject, environment, and any supporting stamp.
 - Each inspected junction must show at least two of these: broad contour wobble, unequal exposed-paper gap, white sliver, ink overlap, registration offset, halftone cluster, missing-ink rub, or short ink drag.
-- Reject immediately when the image has no visible contour wobble, when large blocks meet through polished edge-to-edge vector seams, or when the only material evidence is uniform full-frame grain.
+- Reject immediately when the image has no visible contour wobble, when a major edge is a blurry, feathered, fuzzy, or soft-focus edge instead of a crisp printed boundary, when large blocks meet through polished edge-to-edge vector seams, or when the only material evidence is uniform full-frame grain.
 
 ### Information and boundaries
 
@@ -235,7 +233,7 @@ Any identity hard failure blocks delivery even when the image is aesthetically s
 | Fragmented gutters | every shape isolated by equal wide gaps | narrow and vary junctions in the full blueprint; generate fresh |
 | Texture overload | surface competes with form | reduce texture intensity in the complete prompt; generate fresh |
 | Brush/craft drift | material reference dominates with paint or pasted construction | replace it with a clean closed-mass reference; generate fresh |
-| Source-color drift | output follows photo hues by default | restore the declared board palette relationship; generate fresh |
+| Source-color drift | output follows photo hues without authorization | restore the declared board palette relationship; generate fresh |
 | Wrong stamp/title | stamp is generic, its source is unclear, or required copy is wrong | restate the input-derived element and exact wording; generate fresh |
 
 Every recovery starts again from the original content image and approved role references. Never feed a failed generated candidate into another generation, mask edit, inpaint, recolor, overlay, texture pass, or separate type pass.

@@ -4,20 +4,20 @@ Use this gate for every generation. The project is defined by simplified express
 
 ## Non-negotiable visual result
 
-- Use a neutral natural-white paper base by default. Do not warm the paper toward cream, beige, yellow, sepia, or aged stock unless the user explicitly requests that paper color or the declared palette anchor makes it indispensable.
+- MUST use a neutral natural-white paper base. Change the paper color only when the user explicitly requests a different paper color.
 - Build every major person, animal, object, and environmental carrier from readable color shapes. Allow subject-specific curves, blunt angles, leaning axes, asymmetry, and intentional awkwardness; do not reduce everything to boxes, polygons, or icons.
-- Keep the primary silhouette continuous while giving it plainly visible broad, low-frequency irregular contour wobble like a hand-pulled print or rough stamp edge. It must be visible at normal viewing size, not microscopic. Avoid fuzzy watercolor bleeding, brush-built silhouettes, and polished vector-smooth contours.
+- Keep the primary silhouette continuous with a crisp, hard-edged printed boundary and plainly visible broad, low-frequency irregular contour wobble. The wobble changes contour location, not edge sharpness: it should read as uneven ink contact or slight registration, not blur, feathering, fuzzy halo, wet bleed, brush-built softness, or polished vector-smoothness.
 - Make every major color junction participate in one shared registration-boundary system: a narrow irregular paper/light-color gap, slight overlap, or offset registration sliver. Vary the behavior by junction; do not make all joins edge-to-edge, uniformly outlined, or separated by equal wide gutters.
 - Let large and medium color fields carry the image, but make ink contact, edge wobble, junction gaps, halftone, and registration strong enough to define the finish rather than read as a weak overlay filter.
 - For people, color masses must carry anatomy and identity. A figure should survive as a small set of abstract blocks without relying on line drawing.
 - Preserve a clear large/medium/small hierarchy at thumbnail size.
 - Use one declared user-board image as the palette authority. Copy its ink families, dominance order, approximate area ratios, and contrast pattern; do not synthesize a hybrid from several references. A separate material reference may refine print behavior only; it never overrides the palette authority.
-- Keep the result pop-leaning through one large high-contrast color relationship and one or two high-chroma accents already present in the palette anchor.
-- Allow black only as a controlled ink: keep it below roughly 20–25% of the canvas, and prefer deep plum, deep cobalt, or deep green for large dark fields.
+- Preserve the selected palette anchor's saturation and contrast. If that anchor is pop-leaning, keep one large high-contrast relationship and one or two high-chroma accents already present in it; do not wash the anchor into near-neutrals.
+- Allow black only as a controlled ink: keep it at or below 25% of the canvas, with a target below 20%, and prefer deep plum, deep cobalt, or deep green for large dark fields.
 
 ## Dominant surface: screen-print / risograph
 
-- Use 3–6 opaque ink families for quiet or medium images, and 5–8 for high-energy posters or dense scenes.
+- Use the ink families present in the selected palette anchor. Do not impose a fixed color count.
 - Place concentrated local halftone fields, ink-density shifts, missing-ink rubs, and registration offsets inside shapes and along color boundaries. Their total coverage varies with the composition; never suppress them merely to preserve a polished surface.
 - Include localized halftone clusters, uneven ink density, and a few small missing-ink rubs where they support form or junctions; do not simulate them as one uniform full-frame grain filter.
 - Keep dots local and intentional. Do not cover the whole image with uniform distress.
@@ -27,7 +27,7 @@ Use this gate for every generation. The project is defined by simplified express
 
 ## Expressive mass construction
 
-- Build the image from simple assembled masses, bands, panels, circles, arches, tilted slabs, irregular organic silhouettes, and subject-specific curves. Mix geometry with awkward drawn forms; do not default to a rigid modular grid.
+- Build the image from simple assembled masses, bands, panels, circles, arches, tilted slabs, irregular organic silhouettes, and subject-specific curves. Mix geometry with awkward drawn forms; do not force a rigid modular grid.
 - Show overlap and depth through color boundaries, occlusion, stacking, and shallow enclosure.
 - Keep object recognition tied to a few diagnostic features, not many small rendered details.
 - Avoid long runs of perfectly horizontal or vertical junctions unless they are needed for signage, panels, or typography. Break them with slight offsets, uneven margins, or small negative-space slivers.
@@ -62,9 +62,9 @@ Attach the image only if all answers are yes. If the image is valuable for actio
 
 Use the complete mandatory material lock in `generation-path.md` verbatim as the final paragraph of every render prompt. Do not replace it with a shorter sentence such as `clean geometric masses`, `subtle texture`, or `slight RISO effect`; those formulations allow vector-smooth edges and weak filter-like grain to override the intended physical print behavior.
 
-Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` without the mandatory lock's explicit contour, junction, registration, halftone, ink-density, missing-ink, and paper-base requirements.
+Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` without the mandatory lock's explicit crisp boundary, contour wobble, junction, registration, halftone, ink-density, missing-ink, and paper-base requirements.
 
 ## Review gate
 
-Reject the image when it has no visible broad contour wobble, no tactile ink breakup, or no unequal paper gaps at major color junctions. Reject any major edge that looks watercolor-wet, furry, pasted, brush-built, or polished vector-smooth. Reject it when the palette has no exact user-board source, blends several references into an invented relationship, or follows the source photo without authorization. Reject it when black dominates more than roughly one quarter of the canvas. Reject it when major color junctions are perfectly snapped everywhere, or when equal wide gaps fragment the composition. Reject it when the surface reads as paper craft, watercolor, gouache, generic vector, or full-frame noise rather than a physically imperfect screen-print/Riso impression.
+Reject the image when it has no visible broad contour wobble, no tactile ink breakup, or no unequal paper gaps at major color junctions. Reject any major edge that looks blurry, feathered, fuzzy, soft-focus, watercolor-wet, furry, pasted, brush-built, or polished vector-smooth. Reject it when the palette has no exact user-board source, blends several references into an invented relationship, or follows the source photo without authorization. Reject it when black dominates more than roughly one quarter of the canvas. Reject it when major color junctions are perfectly snapped everywhere, or when equal wide gaps fragment the composition. Reject it when the surface reads as paper craft, watercolor, gouache, generic vector, or full-frame noise rather than a physically imperfect screen-print/Riso impression.
 Reject it when a human figure still reads as a detailed character illustration because hair strands, clothing seams, shoe details, fingers, jewelry, or continuous contour lines are doing the work that large color masses should do.

@@ -2,17 +2,19 @@
 
 This study covers the active user-board images named `reference_images/board-###.*`. Numeric gaps indicate retired low-fit references. Treat the retained set as a visual system, not a list of subjects or a single artist style.
 
+Reference numbers and numeric ranges in this file are `GUIDANCE` for selecting an appropriate board image. They are not output quotas, required object counts, or fixed palette rules.
+
 ## Main conclusion
 
-The board is best understood through orthogonal decisions rather than fixed style families. The project default is pop-leaning: strong flat contrast, exaggerated scale, high-chroma accents, and visible print logic remain present even when the subject itself is quiet.
+The board is best understood through orthogonal decisions rather than fixed style families. Its shared grammar is pop-leaning: strong flat contrast, exaggerated scale, high-chroma accents, and visible print logic remain available even when the subject itself is quiet.
 
 1. **Content topology:** single emblem, relational cluster, figure, group, shallow scene, taxonomy/grid, all-over field, typography-led poster, or abstract force field.
 2. **Energy and density:** quiet/sparse, warm/medium, lively/dense, or maximal/controlled.
 3. **Shape system:** geometric mass, geometric block, stepped modular mass, or mixed clean shape-line.
-4. **Surface system:** screen print, risograph, local halftone, restrained pencil accent, or clean flat print.
+4. **Surface system:** screen print/Riso is the dominant process; local halftone, restrained pencil marks, or near-solid flat-ink behavior may appear only as sparse sub-treatment.
 5. **Information system:** no text, caption, labels, dominant title, or full event hierarchy.
 
-Select each axis independently while keeping the clean geometric color-mass system invariant across all surface branches.
+Select each content axis independently while keeping the clean geometric color-mass system and physical RISO behavior invariant; only RISO intensity may vary.
 
 The active user-board archive contains 93 retained `board-###` images inside `reference_images/`. Low-fit, brush-dominant, overly childish, duplicated, or offline-only images have been retired rather than kept as routine references. Any retained image that feels painterly may support only offline subject, action, or relationship analysis; it must not define shape or surface.
 
@@ -39,26 +41,25 @@ The active user-board archive contains 93 retained `board-###` images inside `re
 
 The board is not universally pastel and does not always require a dark anchor. For each output, choose one exact user-board image as the palette anchor; copy its color relationship and area hierarchy rather than blending attractive colors from several images.
 
-- Quiet work often uses warm paper plus two to four muted or earthy colors.
+- Quiet work may use a neutral natural-white paper base plus muted or earthy colors.
 - Saturated work uses large fields of cobalt, tomato, grass green, yellow, pink, violet, orange, or cyan.
 - Strong images frequently use a warm/cool clash or one discordant color rather than harmonious near-duplicates.
 - Contrast may be supplied by ink-dark, deep green, navy, brown, saturated red, or a light cream shape against a dark field.
 - Color areas carry hierarchy: one large field, one or two medium masses, and smaller diagnostic marks.
-- When the board-palette rule is active, these project-board color relationships replace the source photo's hues. The source controls content identity, not default color.
+- The project-board color relationship replaces source-photo hues. The source controls content identity; source color is retained only when it is an identity-critical exception recorded in the blueprint.
 - Record the palette anchor's file number/name, ink families, dominance order, approximate area ratios, and warm/cool or complementary contrast. A composition, shape, or typography reference contributes no color unless it is separately chosen as the sole palette anchor.
 - Do not invent a hybrid such as “cobalt from one reference + coral from another + cream from a third.” Preserve identity-critical source color only as a documented exception.
 - Gradients and realistic light modeling are rare; tonal variation usually comes from pigment or print behavior.
 
 ### Material
 
-Surface behavior is branch-specific, but the default RISO branch must look physically printed rather than merely filtered:
+Surface behavior varies in intensity by source, but the required screen-print/Riso process must look physically printed rather than merely filtered:
 
-| Surface mode | Typical influence | Behavior |
-|---|---:|---|
-| Clean flat print | light | near-solid ink color, selected registration or density variation |
-| Screen print/risograph, default | unmistakable | visible contour wobble, unequal paper gaps, localized halftone clusters, ink-density shifts, missing-ink rubs, and registration offsets |
-| Pencil/crayon accent | sparse | internal marks, pattern, face, motion, or lettering only; never the dominant surface |
-| Xerox/halftone poster | strong | concentrated dots/noise, uneven ink coverage, and readable silhouettes |
+| RISO intensity | Role | Behavior |
+|---|---|---|
+| Near-solid ink fields | sub-treatment | large opaque fields with selected registration or density variation; never a clean-vector finish |
+| Screen print/Riso | MUST | visible contour wobble, unequal paper gaps, localized halftone clusters, ink-density shifts, missing-ink rubs, and registration offsets |
+| Sparse pencil/xerox marks | sub-treatment | internal pattern, face, motion, lettering, or concentrated dots only; never the dominant surface |
 
 Never use watercolor, gouache, heavy dry-brush, fuzzy pigment, visible bristle direction, cut-paper craft, pasted seams, or contact shadows as the output surface. Do not use texture to construct an object edge or to hide generic shape design.
 
@@ -75,7 +76,7 @@ Never use watercolor, gouache, heavy dry-brush, fuzzy pigment, visible bristle d
 ### Input-derived stamp
 
 - For image input, extract one or more small stamps from real visible source elements: object silhouettes, tools, window shapes, landmarks, ingredients, sign fragments, species features, or product details. For text-only input, derive equivalent stamps from concrete brief facts or declared identity anchors.
-- Place them as secondary masses totalling 3–10% of the canvas, using the same palette and Riso logic.
+- Place them as small secondary masses, using the same palette and Riso logic.
 - Treat stamps as a recurring information behavior, not a recurring motif: their content changes with every source or brief.
 - Do not replace it with generic stars, hearts, flowers, planets, smileys, or a fake logo.
 
@@ -149,7 +150,7 @@ Use when setting function or habitat is part of recognition.
 
 ## Topic reference index
 
-Select only the references needed for distinct roles—usually two to four, never more than four supporting attachments.
+Select only the references needed for distinct roles. Stop when every required external decision has one role-assigned source, and never attach a reference whose role is not recorded.
 
 | Need | Strong starting references |
 |---|---|
@@ -188,7 +189,7 @@ Material caution: retired references are not active palette or material anchors.
 ## Outliers and caution
 
 - `97`, `98`, and `104` carry stronger contemporary poster, halftone, or design-system behavior than the quiet illustration core. Use them for energy, type, or module logic—not as universal surface references.
-- `115` is more polished and commercial; use its nine-panel information system only when appropriate, not its rendering finish as the board default.
+- `115` is more polished and commercial; use its nine-panel information system only when the current composition needs it, never as a universal surface authority.
 - Platform watermarks, signatures, copied brand marks, and Pinterest export artifacts are never style evidence.
 - Cute subject matter is not proof of kawaii styling. Judge anatomy, polish, facial emphasis, accessory detail, and commercial character treatment.
 

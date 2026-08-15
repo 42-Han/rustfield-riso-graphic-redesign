@@ -2,6 +2,8 @@
 
 Read only the sections matching the current input. Identify one dominant topology before combining categories.
 
+All numeric ranges in this file are `GUIDANCE` for planning simplification. The user's or source image's exact count, action, relationship, and required information are `MUST` constraints and always override these ranges.
+
 ## Universal rule
 
 Separate simplification from omission:
@@ -25,7 +27,7 @@ Preserve:
 
 Simplify:
 
-- face to a featureless head/skin silhouette by default;
+- face to a featureless head/skin silhouette unless the current user explicitly requires facial features;
 - hair to one or two masses;
 - clothing to one to three major fields plus one diagnostic pattern when required;
 - limbs, hands, feet, and shoes to blunt masses unless action depends on them;
@@ -45,7 +47,7 @@ Preserve:
 - necessary variation in silhouette, hair/hat, clothing, scale, and position;
 - social temperature and density.
 
-Use one body grammar with controlled variation. Remove facial features by default and make group figures more pictographic than a single figure. Never collapse a group into one symbolic person or scatter unrelated people as decoration.
+Use one body grammar with controlled variation. Remove facial features unless the current user explicitly requires them, and make group figures more pictographic than a single figure. Never collapse a group into one symbolic person or scatter unrelated people as decoration.
 
 ## Animals
 
@@ -149,4 +151,4 @@ When several categories appear, choose the dominant relationship:
 - group in vehicle/room → group topology plus shared enclosure;
 - poster containing scene → typography-led only when information hierarchy is indispensable.
 
-Write one combined identity kernel. Do not independently add the default supports from every category.
+Write one combined identity kernel. Do not independently add every category's supports; keep only supports required by the combined relationship.

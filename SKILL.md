@@ -9,41 +9,59 @@ Transform any subject through one reusable pop-leaning visual grammar. Preserve 
 
 ## Route by user input
 
-- If the user supplied at least one image, follow the existing image-input workflow below unchanged.
-- If the user supplied only text, read and follow [references/text-to-image-path.md](references/text-to-image-path.md), including theme-reference research before composition design and explicit visual identity anchors before rendering.
-- Images selected by this Skill from the project board or web do not change a text-only request into an image-input request.
+- `IF` the user supplied at least one image, select the image-input route and use [references/subject-extraction.md](references/subject-extraction.md).
+- `IF` the user supplied no image, select the text-only route and use [references/text-to-image-path.md](references/text-to-image-path.md), including theme-reference research before composition design and explicit visual identity anchors before rendering.
+- Images selected by this Skill from the project board or web are supporting references only; they never change a text-only request into an image-input request.
+
+## Rule status and mandatory reading order
+
+Interpret every instruction using these statuses:
+
+- `MUST` — a hard requirement; a candidate that fails it is rejected.
+- `IF` — a conditional requirement; apply it only when the stated condition is true.
+- `SELECT` — choose exactly one recorded option before writing the prompt.
+- `GUIDANCE` — a planning aid; it never overrides the user's exact content, count, text, or explicit material request.
+
+When statements appear to conflict, use this priority order: the current user's explicit instruction; exact facts in the supplied image or researched subject; the shared visual contract; then `GUIDANCE`. If two requirements at the same priority level conflict, stop and ask the user. Do not invent an unrecorded requirement.
+
+`IF` the user does not specify a variant count, generate and deliver exactly one image. Generate multiple images only when the user explicitly requests a number or distinct directions.
+
+Read the following files in this exact order for every generation:
+
+1. [references/rustfield-visual-contract.md](references/rustfield-visual-contract.md) — shared visual rules;
+2. [references/generation-path.md](references/generation-path.md) — route, reference roles, blueprint, prompt, and restart sequence;
+3. [references/material-language.md](references/material-language.md) — mandatory print-surface lock;
+4. exactly one route file: [references/subject-extraction.md](references/subject-extraction.md) for image input, or [references/text-to-image-path.md](references/text-to-image-path.md) for text-only input;
+5. [references/reference-board-analysis.md](references/reference-board-analysis.md) — select the current palette and any supporting board references;
+6. [references/external-reference-routing.md](references/external-reference-routing.md) — only when an active `reference_images/ref-###-*` or web-derived external image is being used;
+7. [references/production-protocol.md](references/production-protocol.md) — final preflight, review, and restart.
+
+Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request. `agents/openai.yaml` is interface metadata and `evals/evals.json` is validation data; neither is part of the runtime generation path.
 
 ## Core contract
 
-For a supplied image, default to `identity-preserving redesign`:
+For image input, `IF` the user did not explicitly request another route, select `identity-preserving redesign`:
 
 - Preserve subject type and count, defining appearance, action/state, relationship topology, setting function, atmosphere, and indispensable text.
 - Rebuild scale, crop, coordinates, depth, shape construction, palette, and material.
 - Simplify construction, not meaning. Fewer shapes per object must not become fewer source-specific ideas.
-- Let the input control content. Let the project reference board control palette and print language unless the user explicitly requests source-color preservation.
+- Let the input control content. Let the project reference board control palette and the mandatory RISO print language unless the user explicitly requests source-color preservation.
 - Treat any named color, label, product form, uniform, landmark, or species marking as a possible identity anchor before replacing it.
 
 Never import a recurring subject, motif, layout, prop, or title from a previous task. Every image begins with a fresh extraction from its own source.
+
+The accepted historical batches are evidence for the shared process, not a reusable subject template: recompute palette, topology, mass budget, title, stamps, and source-specific avoid items for every new input.
 
 ## Choose the route
 
 Choose one route before planning:
 
-1. `identity-preserving redesign` — default for a supplied reference; preserve identity and relational structure while changing visual construction.
+1. `identity-preserving redesign` — selected for supplied image input unless the user explicitly requests another route; preserve identity and relational structure while changing visual construction.
 2. `layout-preserving restyle` — use only when the user asks to keep the same composition or pose.
 3. `free semantic translation` — use only when the user authorizes a more distant metaphor or abstraction.
 4. `local edit` — use only when the user explicitly asks to edit an existing supplied image; complete the requested edit in one render.
 
-State an assumption only when the route materially changes the result.
-
-## Load only the needed references
-
-- Read [references/generation-path.md](references/generation-path.md) for every generation or redesign.
-- Read [references/material-language.md](references/material-language.md) for every generation or material edit.
-- Read only the matching sections of [references/subject-extraction.md](references/subject-extraction.md).
-- Read [references/reference-board-analysis.md](references/reference-board-analysis.md) when selecting local style references or palette families.
-- Read [references/production-protocol.md](references/production-protocol.md) for preflight, review, and repair.
-- Read [references/external-reference-routing.md](references/external-reference-routing.md) only when using active external references named `reference_images/ref-###-*`.
+IF an unresolved ambiguity changes subject identity, count, action, relationship, setting function, required text, paper/material, route, or reference role, ask the user before generating. Otherwise record one explicit assumption in the blueprint. Never leave a material choice implicit.
 
 ## Build the source model
 
@@ -78,7 +96,7 @@ Select each axis from the current source rather than as a bundled style preset:
 - energy: still, warm, lively, kinetic, or maximal-controlled;
 - density: sparse, medium, dense, or tiled;
 - shape: geometric mass, geometric block, stepped modular mass, or mixed clean shape-line;
-- surface: clean flat print, screen print/Riso, restrained pencil accent, or xerox-halftone;
+- surface: screen print/Riso (MUST; pencil, xerox, or flat-ink variation may appear only as sparse sub-treatment, never as the dominant medium);
 - information: none, caption, labels, title, or full hierarchy.
 
 Unless layout preservation was requested, change at least one meaningful structural device: scale, crop, rotation, asymmetry, enclosure, overlap, viewpoint compression, module distribution, or depth order.
@@ -94,7 +112,7 @@ Assign every attached image exactly one role:
 - `material` — the project material calibration reference is mandatory for every render and controls only ink contact, halftone, density variation, registration behavior, gaps, and boundary character; it never contributes content, composition, or palette;
 - `typography` — font skeleton, weight/width, size hierarchy, line breaks, alignment, baseline/rotation, spacing, and image-type interlock for preserved copy or a deliberately designed title.
 
-Attach only references that change a real design decision, except that `reference_images/material-calibration-riso-edge.png` is always attached as the mandatory material reference. For image-input work, use the supplied image plus the mandatory material calibration and up to three other supporting references; for text-only work, keep all attached theme and project references, including the calibration, to four or fewer. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. Record its ink families and approximate area proportions; do not blend several references into an invented palette. The material calibration may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
+Attach only references that change a real design decision, except that `reference_images/material-calibration-riso-edge.png` is always attached as the mandatory material reference. For image input, attach the supplied image plus the calibration; add supporting references only when they resolve a remaining content, composition, shape, palette, or typography decision. For text-only work, attach the calibration plus only the theme/project references needed to make the researched identity and the blueprint concrete. Stop attaching when every required external decision has one role-assigned source; there is no arbitrary attachment quota. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. Record every visible ink family needed for that relationship and its approximate area proportions; do not blend several references into an invented palette. The material calibration may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
 
 Do not prompt for direct imitation of a living artist. Translate references into observable properties.
 
@@ -107,26 +125,26 @@ Apply these invariants to every subject category:
 - Compress depth through overlap, stacking, enclosure, panels, ground, horizon, or a support plane.
 - Keep a clear large/medium/small hierarchy at thumbnail size.
 - Copy the color relationship from one declared user-board palette anchor: ink families, dominance order, approximate area ratios, and contrast pattern. Do not synthesize an untraceable hybrid palette.
-- Make the default expression pop-leaning through exaggerated warm/cool or complementary contrast, high-chroma accents, decisive scale, and flat area clashes taken from that palette anchor.
-- Keep black secondary, normally below 20–25% of the canvas; use deep colored inks for large dark fields.
+- Preserve the selected palette anchor's saturation and contrast. `IF` the anchor is pop-leaning, retain its exaggerated warm/cool or complementary clash, high-chroma accents, decisive scale, and flat area relationships; do not wash it into near-neutrals.
+- MUST keep black secondary: black may occupy at most 25% of the canvas, with a target below 20%; use deep colored inks for large dark fields.
 - Make screen-print/Riso evidence visually unmistakable: tactile ink deposits, concentrated halftone clusters, uneven ink coverage, missing-ink rubs, and clearly visible registration drift.
 - Make every major color junction participate in one global registration-boundary system: narrow irregular gaps, exposed paper/light slivers, slight overlaps, or offset joins. Vary the behavior by junction; do not create uniform outlines or wide tiled gutters. Strong connected fields may remain connected when needed for hierarchy.
-- Keep the subject readable while allowing the printed edge itself to be visibly uneven, dragged, under-inked, and broadly wobbled. Avoid wet watercolor bleeding, fuzzy brush-built silhouettes, pasted craft edges, and polished vector contours.
+- Keep the subject readable through crisp printed boundaries with clearly visible broad, low-frequency contour wobble. The wobble changes contour location, not edge sharpness; show uneven ink contact, slight registration, and small under-inked breaks without blur, feathering, fuzzy halos, wet watercolor bleeding, pasted craft edges, or polished vector contours.
 - Use line only for necessary internal information such as motion, pattern, label, species mark, or sparse structural cue. Do not make continuous outline drawing the main construction system.
-- Do not impose a fixed whole-image shape count. Set detail budgets by subject, relationship, setting function, output scale, and the selected reference rather than treating maximal reduction as the goal.
+- Do not impose a fixed whole-image shape count. Set a subject-specific mass/detail budget from diagnostic value, relationship, setting function, output scale, and selected reference; never turn a historical count or percentage into a quota.
 - Preserve successful environmental structure, moderate block perspective, functional parts, and sparse structural lines when they carry identity. Geometric construction simplifies and reorganizes the image; it does not automatically erase architecture, context, or adult editorial density.
 
-When people appear, preserve pose, body/crop identity, clothing blocks, action props, and social relationships. Remove facial features by default and reduce hair strands, anatomy lines, seams, folds, fingers, laces, jewelry, and fashion-rendering detail until color masses carry the figure. This is a conditional figure rule, not the default subject model for the whole Skill.
+When people appear, preserve pose, body/crop identity, clothing blocks, action props, and social relationships. `MUST` remove facial features unless the current user explicitly requires them. Reduce hair strands, anatomy lines, seams, folds, fingers, laces, jewelry, and fashion-rendering detail until color masses carry the figure. This is a conditional figure rule, not a rule for non-human subjects.
 
 ## Information layer
 
 Resolve the text strategy and stamp strategy independently before prompting.
 
-- `text strategy` — preserve required source copy; add a required title; add an optional title; or use no text. Typography is an information choice, not a default prohibition. When the user has not required or prohibited text and the request is not explicitly a poster, make one unbiased 50/50 random draw between `optional title` and `no text`, record the result before reference selection and prompt writing, and follow that result for the complete render. Do not use composition quality, reference availability, or personal preference to override the draw.
-- `stamp strategy` — by default, use one or more small input-derived stamps when they support the composition. Use no stamp when the user explicitly requests no decoration or when an input-derived stamp would only create template-like decoration. For an image input, derive them from visible source elements. For text-only work, derive them from a concrete brief fact or declared identity anchor. Use actual props, silhouettes, sign fragments, tools, landmarks, species features, window forms, ingredients, product details, or key-form fragments; keep their combined area secondary at roughly 3–10% of the canvas.
+- `text strategy` — preserve required source copy; add a required title; add an optional title; or use no text. MUST: an explicit poster/海报 request or explicit title instruction produces a required exact title. IF the request is not a poster and does not require or prohibit text, randomly SELECT exactly one of `optional title` or `no text` before reference selection and prompt writing, record the result, and follow it for the complete render. Optional title presence is never a regeneration reason.
+- `stamp strategy` — IF the user explicitly requests no decoration, use no stamp. Otherwise SELECT either `input-derived stamp(s)` or `no stamp when no suitable source/brief element exists`; never use a generic decorative stamp. For image input, derive stamps from visible source elements. For text-only work, derive them from a concrete brief fact or declared identity anchor. Keep stamps visibly secondary.
 - When the current user explicitly requests a `海报` or poster, set `required title`. Derive the shortest exact title from the named subject unless the user supplied exact copy.
 - When the text strategy uses a title, inspect the project board and attach one exact typography reference unless the user supplied a complete typography system. Record its observable font construction and layout behavior; do not settle for a generic centered title or let the reference contribute wording, subjects, or palette.
-- For non-poster work without an explicit text instruction, use the recorded 50/50 draw. If it selects `optional title`, derive short exact wording from the current source concept or preserve supplied/source text and use a typography reference. If it selects `no text`, prohibit words and pseudo-text in the prompt. Either outcome is valid and is never a regeneration criterion.
+- For non-poster work without an explicit text instruction, use the recorded random choice. If it selects `optional title`, derive short exact wording from the current source concept or preserve supplied/source text and use a typography reference. If it selects `no text`, prohibit words and pseudo-text in the prompt. Either outcome is valid and is never a regeneration criterion.
 - Build titles with bold retro-poster display lettering: condensed, expanded, irregular, rotated, arched, or interlocked with image masses according to the selected typography reference.
 - An explicit no-text request prohibits words but may still use a purely graphic input-derived stamp. An explicit no-decoration request prohibits stamps but does not by itself prohibit required text.
 - Do not use generic stars, hearts, planets, flowers, badges, slogans, or pseudo-text when the source does not support them.
@@ -168,7 +186,7 @@ Reject a candidate when any apply:
 - Its stamp is not derived from a visible source element (image input) or a concrete brief/identity anchor (text-only input).
 - Its palette cannot be traced to one declared user-board image and its area relationship.
 - It was assembled through sequential edits or a separate text/material pass instead of one complete render.
-- It becomes anime/kawaii character art, generic corporate vector, cinematic concept art, realistic 3D, watercolor, gouache, heavy dry brush, or cut-paper craft.
+- Its surface or construction contradicts the active RISO/graphic contract (for example, polished vector seams, full-frame filter grain, or brush-built material) rather than the current source-specific brief. Do not reject a candidate merely because the source requires perspective, functional parts, mature density, or moderate structural detail.
 - It reads as polished vector geometry, over-reduced icon art, or rigid rectangular construction instead of tactile printed illustration.
 - The mandatory material calibration was not attached, or the result shows no visible contour wobble, no irregular large-junction gaps, or no tactile ink evidence at normal viewing size.
 - Color blocks are perfectly snapped everywhere, or the boundary treatment becomes uniform wide gutters.
@@ -183,4 +201,4 @@ Reject a candidate when any apply:
 
 Show only reviewed final candidates and only the requested number of variants. Keep rejected drafts and superseded repairs out of the final delivery.
 
-Return the image/path plus a compact record of route, source sentence, identity kernel, reference roles, final prompt, and remaining uncertainty. Return image-only when explicitly requested.
+Return the image/path plus a compact record of route, source sentence, identity kernel, reference roles, final prompt, and any remaining non-material uncertainty (or `none`). Return image-only when explicitly requested.

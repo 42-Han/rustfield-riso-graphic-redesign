@@ -6,7 +6,7 @@ Use this path only when the user supplied no image. Project-board or web images 
 
 Extract the user's subject, count, defining features, action/state, relationships, setting, atmosphere, energy, density, era or regional cues, required text, and explicit avoid items. Treat the user's wording as the content authority. Do not replace it with a generic theme, a familiar poster formula, or subject matter found in references.
 
-Resolve only ambiguities that materially change the result. When a reasonable assumption keeps the same subject and intention, record it and continue.
+If an unresolved ambiguity changes subject identity, count, action, relationship, setting function, required text, paper/material, route, or reference role, stop and ask the user. For any other ambiguity, record one explicit assumption and continue.
 
 Write:
 
@@ -26,7 +26,7 @@ Collect a small theme reference packet that answers four different questions:
 - `thematic composition` — what image relationships express the idea beyond a literal inventory of objects;
 - `era and atmosphere` — what scale, density, gesture, light logic, social distance, and historical or regional cues create the correct emotional temperature.
 
-Search by these questions rather than by style labels alone. Prefer official or primary imagery for a named fictional work, authoritative archives for historical subjects, and strong editorial or documentary photography for ordinary real-world subjects. Look beyond key art: include relevant locations, tools, rituals, production design, clothing blocks, landscape structure, still-life arrangements, or group behavior. Use three to eight useful findings; several findings may answer different questions.
+Search by these questions rather than by style labels alone. Prefer official or primary imagery for a named fictional work, authoritative archives for historical subjects, and strong editorial or documentary photography for ordinary real-world subjects. Look beyond key art: include relevant locations, tools, rituals, production design, clothing blocks, landscape structure, still-life arrangements, or group behavior. Stop when all four research questions have concrete, non-duplicated answers; there is no fixed finding count.
 
 Write a short research synthesis before selecting project-board references:
 
@@ -58,9 +58,9 @@ Supporting anchor — evidence source; visible rule; how it may support recognit
 Style-distance budget — what surface properties may change and what identity structure may not change.
 ```
 
-Primary anchors are hard constraints, not optional inspiration. Usually declare two to four mutually reinforcing primary anchors. A named work must remain recognizable through their combination even after removing its logo, title, actor likeness, screenshot crop, and original rendering medium. The surface medium is replaceable; the identity grammar is not.
+Primary anchors are hard constraints, not optional inspiration. For an established subject, SELECT the minimum mutually reinforcing primary anchors needed to preserve the identity grammar, and stop when every required identity category above has concrete evidence; there is no fixed anchor count. For a simple fictional brief, use only the identity facts explicitly present in the brief. A named work must remain recognizable through its selected anchors even after removing its logo, title, actor likeness, screenshot crop, and original rendering medium. The surface medium is replaceable; the identity grammar is not.
 
-The `style-distance budget` may authorize a new palette, Riso/screen-print surface, simplified geometry, new crop, and new composition. It may not silently replace characteristic body proportions, viewpoint, spatial modularity, key silhouettes, world scale, social relationships, or energy with a generic editorial scene. When translating pixel art, remove raster pixel simulation only if desired; retain the underlying block, tile, module, proportion, and viewpoint logic that carries the visual identity.
+The allowed translation is a new project-board palette relationship, the mandatory RISO/screen-print surface, simplified geometry, a new crop, and a new composition. The forbidden translation is silently replacing characteristic body proportions, viewpoint, spatial modularity, key silhouettes, world scale, social relationships, or energy with a generic editorial scene. When translating pixel art, remove raster pixel simulation only if desired; retain the underlying block, tile, module, proportion, and viewpoint logic that carries the visual identity.
 
 ## 3. Decide what to attach
 
@@ -69,13 +69,13 @@ For every web theme image, choose one action:
 - `attach as content reference` when exact subject construction, spatial structure, action, relationship, era geometry, or setting function would be difficult to preserve from words alone;
 - `analyze only` when its useful facts can be written compactly or attaching it would leak a composition, actor, branding, palette, photographic finish, or copyrighted key-art layout.
 
-When attached, state exactly which content facts it controls. It must not control palette, print material, wording, or exact object coordinates. Normally attach one to three complementary theme images, and keep all attached theme plus project references to four or fewer. Analyze additional useful sources in the research packet rather than attaching a mood board. Attach no image only when the written brief and research synthesis already define the specific content and structural relationship without ambiguity.
+When attached, state exactly which content facts it controls. It must not control palette, print material, wording, or exact object coordinates. Attach only the theme images needed to make a concrete identity or structural relationship visible; stop when each required external decision has one role-assigned source. Analyze additional useful sources in the research packet rather than attaching a mood board. Attach no image when the written brief and research synthesis already define the specific content and structural relationship without ambiguity.
 
-For a visually distinctive named work, analysis-only references are insufficient when the generation model needs to see the defining construction. Attach complementary official or primary content references for the primary anchors—normally one for subject/proportion, one for environment/viewpoint, and one for action, relationship, or key forms—unless those categories are absent or the written constraints are already unambiguous. Never rely on one promotional image to represent the whole identity system.
+For a visually distinctive named work, analysis-only references are insufficient when the generation model needs to see defining construction. Attach the minimum complementary official or primary content references needed to cover subject/proportion, environment/viewpoint, and action/relationship/key forms; omit a category only when the written constraints already define it unambiguously. Never rely on one promotional image to represent the whole identity system.
 
 ## 4. Build a role-separated project reference set
 
-Always inspect the project board. Select one exact project image as the sole `palette` authority and record its ink families, dominance order, approximate area ratios, and contrast pattern. Select a separate optional `material` reference only when it improves the chosen print behavior; it may control edge character, dots, ink-density variation, and registration behavior, but never the palette.
+Always inspect the project board. Select one exact project image as the sole `palette` authority and record its ink families, dominance order, approximate area ratios, and contrast pattern. The mandatory material calibration is always attached. Add a second `material` reference only when it improves the chosen print behavior; it may control edge character, dots, ink-density variation, and registration behavior, but never the palette.
 
 Select other project images only when needed:
 
@@ -101,7 +101,7 @@ For an established subject, the dominant device must express the anchor ledger r
 
 ## 6. Choose the composition before prompting
 
-Select topology, ratio, energy, density, shape family, surface, and information level independently. Build one resolved blueprint with:
+Select topology, ratio, energy, density, shape family, and information level independently. The surface is always screen print/Riso; only its ink-density and halftone intensity may vary with the source. Build one resolved blueprint with:
 
 - large, medium, and small masses;
 - subject placement, crop, direction, overlap, and relationship graph;
@@ -112,11 +112,11 @@ Select topology, ratio, energy, density, shape family, surface, and information 
 - text plan according to the existing Skill rules.
 - visible placement and construction for every primary anchor in the anchor ledger.
 
-Resolve text strategy and stamp strategy separately. Do not default to no text merely because the user did not request a poster. When a non-poster request neither requires nor prohibits text, make one unbiased 50/50 random draw between `optional title` and `no text`, record it before reference selection, and compile that resolved outcome into the prompt. Do not let composition preference or typography-reference availability override the draw, and do not ask the image model to decide. Independently choose input-derived stamp(s), unless the user explicitly requests no decoration or the stamp would become template-like decoration. Optional title presence or absence is not a quality gate. An explicit no-text request remains binding but may still permit purely graphic stamps.
+Resolve text strategy and stamp strategy separately. A non-poster request does not imply no text. When it neither requires nor prohibits text, randomly select exactly one of `optional title` and `no text`, record it before reference selection, and compile that resolved outcome into the prompt. Do not let composition preference or typography-reference availability override the selection, and do not ask the image model to decide. Independently choose input-derived stamp(s), unless the user explicitly requests no decoration or no suitable source/brief element exists. Optional title presence or absence is not a quality gate. An explicit no-text request remains binding but may still permit purely graphic stamps.
 
 If the user explicitly requests a `海报` or poster, the text plan must include a short exact title identifying the named subject. The title is a required prompt constraint and must be rendered in the same complete image.
 
-When the text strategy uses a title, select one exact project image as the typography authority unless the user supplied a complete typography system. Before prompting, record its font construction, title-to-body size ratio, line breaking, alignment, spacing, baseline/rotation, and overlap or interlock with image masses. Copy those relationships, not its wording, subjects, palette, or decorative motifs. A generic centered title is not an acceptable substitute.
+When the text strategy uses a title, select the typography authority afresh to fit the current composition unless the user supplied a complete typography system. Before prompting, record its font construction, title-to-body size ratio, line breaking, alignment, spacing, baseline/rotation, and overlap or interlock with image masses. Copy those relationships, not its wording, subjects, palette, or decorative motifs. Do not use a fixed default font or title position; a generic centered title is not an acceptable substitute.
 
 Do not begin with a centered icon, balanced card, symmetrical badge, standard poster frame, or one-person-plus-three-symbol template unless the user's brief specifically requires it.
 
@@ -130,7 +130,7 @@ Build the subject from readable color masses with subject-specific curves, blunt
 
 Never impose a fixed whole-image shape count as a shortcut for simplification. Set local detail budgets by role. Reduce excessive facial, hair, anatomy, fold, decoration, or repeated micro-detail while preserving successful environmental structure, moderate block perspective, functional parts, sparse necessary lines, and enough information density to keep the established subject specific.
 
-- Use clearly visible low-frequency, nonuniform contour wobble on every major silhouette. The wobble should be broad and hand-pulled while preserving recognition, and it must remain visible at normal viewing size.
+- Use a crisp, hard-edged printed boundary with clearly visible low-frequency, nonuniform contour wobble on every major silhouette. The wobble changes contour location, not edge sharpness; it should preserve recognition and remain visible at normal viewing size without blur, feathering, fuzzy halos, soft-focus edges, wet bleed, or brush-built softness.
 - Vary repeated shapes instead of duplicating perfect copies. Break mechanical equality in width, radius, angle, spacing, alignment, and curvature.
 - Avoid standard circles, identical rounded rectangles, mirrored symmetry, equal gutters, ruler-straight parallel runs, perfect tangencies, and uniformly smooth Bézier curves as the dominant construction.
 - Use blunt corners, asymmetric bulges, slightly skewed axes, awkward-but-intentional proportions, off-center placement, cropping, rotation, and unstable spacing.
@@ -158,7 +158,7 @@ After the masses read clearly, apply unmistakable physical print evidence: ink-d
 - Vary density, scale, direction, and location. Keep some color masses almost clean.
 - Let small missing-ink rubs expose the paper without erasing the silhouette.
 - Make the print evidence strong enough to define the finish at normal viewing size. Do not reduce it to microscopic grain or a weak post-process filter.
-- Keep the paper neutral or cool natural white unless the palette authority requires otherwise.
+- Keep the paper neutral natural white. Change it only when the user explicitly requests another paper color.
 
 Print behavior must remain controlled but materially active. Never simulate it with full-frame grain, uniform distress, fuzzy watercolor bleed, brush-built silhouettes, pasted seams, or photographed paper craft.
 
@@ -170,7 +170,7 @@ Order the prompt:
 2. visual thesis, composition blueprint, and relationship graph;
 3. theme reference synthesis, declared project references, and any attached web content reference with isolated roles; distinguish palette authority from any separate material reference;
 4. exact palette-area relationship, irregular geometric construction, global junction system, and local print evidence;
-5. three to five source-specific avoid items.
+5. only the source-specific avoid items that materially reduce risk; do not use a fixed count.
 
 State observable mechanisms. Replace vague words such as `organic`, `rough`, or `handmade` with low-frequency contour wobble, unequal spacing, irregular light gaps, offset overlaps, local ink-density shifts, missing-ink rubs, halftone clusters, and registration drift.
 
