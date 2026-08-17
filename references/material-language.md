@@ -4,11 +4,11 @@ Use this gate for every generation. The project is defined by simplified express
 
 ## Non-negotiable visual result
 
-- MUST use a neutral natural-white paper base. Change the paper color only when the user explicitly requests a different paper color.
+- MUST use a neutral natural-white paper base. Do not warm the paper toward cream, beige, yellow, sepia, or aged stock; change the paper color only when the user explicitly requests a different paper color.
 - Build every major person, animal, object, and environmental carrier from readable color shapes. Allow subject-specific curves, blunt angles, leaning axes, asymmetry, and intentional awkwardness; do not reduce everything to boxes, polygons, or icons.
 - Keep the primary silhouette continuous with a crisp, hard-edged printed boundary and plainly visible broad, low-frequency irregular contour wobble. The wobble changes contour location, not edge sharpness: it should read as uneven ink contact or slight registration, not blur, feathering, fuzzy halo, wet bleed, brush-built softness, or polished vector-smoothness.
 - Make every major color junction participate in one shared registration-boundary system: a narrow irregular paper/light-color gap, slight overlap, or offset registration sliver. Vary the behavior by junction; do not make all joins edge-to-edge, uniformly outlined, or separated by equal wide gutters.
-- Let large and medium color fields carry the image, but make ink contact, edge wobble, junction gaps, halftone, and registration strong enough to define the finish rather than read as a weak overlay filter.
+- Let large and medium color fields carry the image. Ink contact, edge wobble, junction gaps, halftone, and registration are local supporting evidence; they must not compete with or replace the silhouettes.
 - For people, color masses must carry anatomy and identity. A figure should survive as a small set of abstract blocks without relying on line drawing.
 - Preserve a clear large/medium/small hierarchy at thumbnail size.
 - Use one declared user-board image as the palette authority. Copy its ink families, dominance order, approximate area ratios, and contrast pattern; do not synthesize a hybrid from several references. A separate material reference may refine print behavior only; it never overrides the palette authority.
@@ -18,10 +18,10 @@ Use this gate for every generation. The project is defined by simplified express
 ## Dominant surface: screen-print / risograph
 
 - Use the ink families present in the selected palette anchor. Do not impose a fixed color count.
-- Place concentrated local halftone fields, ink-density shifts, missing-ink rubs, and registration offsets inside shapes and along color boundaries. Their total coverage varies with the composition; never suppress them merely to preserve a polished surface.
-- Include localized halftone clusters, uneven ink density, and a few small missing-ink rubs where they support form or junctions; do not simulate them as one uniform full-frame grain filter.
+- Place concentrated local halftone fields, ink-density shifts, missing-ink rubs, and registration offsets inside selected shapes and meaningful color boundaries. Use roughly 5–15% visible local ink-event coverage as a starting guide, adjusting only when the declared board reference clearly supports denser evidence.
+- Include localized halftone clusters, uneven ink density, and a few small missing-ink rubs where they support form or junctions; keep some large fields almost clean and never simulate the material as one uniform full-frame grain filter.
 - Keep dots local and intentional. Do not cover the whole image with uniform distress.
-- Let pop energy come from color clash, scale, crop, flat contrast, and dot fields rather than random decoration.
+- Let pop energy come first from color clash, scale, crop, flat contrast, and mass relationships; dot fields are secondary evidence, not the source of the composition.
 - Let junctions feel stamped by hand while preserving hierarchy. Strong connected fields may remain connected; registration behavior belongs at meaningful color boundaries, not as a grid that fragments every internal detail.
 - Do not use cut-paper material, pasted seams, visible paper thickness, cast/contact shadows, photographed craft texture, watercolor, gouache, or heavy dry-brush.
 

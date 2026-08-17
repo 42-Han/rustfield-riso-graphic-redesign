@@ -15,7 +15,9 @@ Action/state:
 Relationship graph:
 Setting function and required carriers:
 Atmosphere / energy / density / era cue:
-Text strategy: preserve required copy / required title / recorded random result = optional title or no text:
+Visual thesis:
+Title decision gate (before topology and composition): 需要标题 / 不需要标题 / 只保留输入图已有文字、不新增标题:
+Text strategy: preserve required copy / resolved title answer / stamp-only / no text:
 Stamp strategy: input-derived stamp(s) / user-required no stamp / no stamp because it would be template-like decoration:
 
 Identity anchors:
@@ -26,15 +28,20 @@ Noise to discard:
 
 Topology:
 Large / medium / small hierarchy:
-Structural redesign:
+Original arrangement:
+Planned arrangement:
+Primary structural change (hierarchy):
+Secondary structural change (relation/rhythm):
 Open-space or crowding target:
 Exact user-board palette anchor:
 Mandatory material calibration: reference_images/material-calibration-riso-edge.png attached / missing:
 Palette ink families / dominance order / approximate area ratios:
 Identity-critical source-color exceptions:
-Shape/detail budget by main subject:
+Shape/detail budget by main subject (starting point: 6–18 major masses; adjust only for identity/relationship/setting):
 Global color-boundary plan:
-Surface mode and intensity:
+Surface mode and intensity (local print evidence; starting coverage roughly 5–15%):
+Paper substrate versus colored field:
+Boundary lock (crisp edge / broad wobble / unequal gaps / overlaps / registration):
 Exact title/copy and retro typography plan:
 Image-input source element or text-only brief/identity anchor used for stamp(s) / placement / total scale:
 
@@ -52,21 +59,30 @@ Primary risks:
 Do not generate until all apply:
 
 - The source and planned-result sentences describe the same specific subject, action/state, relationship or setting function, and atmosphere unless the chosen route authorizes change.
+- The visual thesis names one dominant meaning or tension and one visible structural device; it is not a list of props or mood adjectives.
 - Subject type and count are explicit.
 - Every identity and relationship anchor has a visible place, scale, or structural expression.
 - For image input, every stamp comes from a named visible source element. For text-only input, every stamp comes from a concrete brief fact or declared identity anchor. Any required or selected title has exact concept-derived, supplied, or preserved wording.
 - Topology, energy, density, and output ratio are selected independently.
 - The setting skeleton survives when it carries identity.
-- The plan names one structural change unless layout preservation is requested.
+- The plan records the original arrangement, the planned arrangement, one primary hierarchy change, and one secondary relation/rhythm change unless layout preservation is requested.
+- The planned arrangement does not preserve the source's complete coordinate graph when layout preservation was not requested.
 - One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. The mandatory material calibration is attached separately and controls print behavior only.
+- If more than one palette anchor fits, the plan records the energy/density match used to choose one; if still tied, it records the anchor whose color-area relationship is clearest to reproduce. No palette choice remains implicit.
+- The output palette lock is documented separately from saturation: each major mass has a clean dominant ink family, supporting inks have explicit roles, and adjacent masses remain visibly separated rather than muddy. A restrained or near-monochrome anchor is valid when its hue, value structure, and boundaries are clear.
 - Each major subject has diagnostic features and a simplification budget.
+- The shape plan is completed before any texture plan: each main subject has one dominant silhouette, two to five diagnostics, and only necessary internal lines. Use the accepted batches' 6–18 major-mass range only as a starting guide, never as a universal quota.
 - Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
-- Shape is readable before texture, while the calibration's edge wobble, ink breakup, junction gaps, and registration remain unmistakable at normal viewing size.
-- For a non-poster request with no explicit text instruction, randomly select exactly one of `optional title` and `no text`. Record the completed result before selecting typography references or compiling the prompt. Do not leave the choice to the image model or override it because one outcome appears compositionally preferable.
+- Natural-white is recorded as the paper substrate and exposed paper, not as a requirement for a white-dominant image.
+- The boundary lock separates crisp edge sharpness from broad contour wobble; wobble may move the contour but may not blur it.
+- Shape is readable before texture. The calibration's edge wobble, unequal junction gaps, and registration are visible at normal viewing size, while local ink evidence remains subordinate to the large masses.
+- The prompt's source-specific portion follows the fixed order identity → thesis/composition → shape/palette/information → boundary/print → source-specific avoids and stays normally within 90–200 words before the fixed material lock.
+- The title decision gate is complete before topology and composition: use the explicit user answer, or ask the title question before proceeding. Record the completed answer before selecting typography references or compiling the prompt; carry it unchanged into the complete render.
 - When text is selected or required, it is exact and included in the same render. Optional title presence or absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
 - Selected composition, typography, stamp(s), palette, material, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
 - Reference roles are separate and no style reference contributes content.
 - No unresolved alternatives remain in the prompt.
+- The render contract is complete: route, title mode/copy/role, source identity, topology/energy/density, primary and secondary structural changes, palette anchor, paper-versus-field decision, silhouettes, boundary behavior, local print evidence, stamps, and source-specific avoids each have one value.
 
 ## Information budget by topology
 
@@ -159,6 +175,7 @@ Use [material-language.md](material-language.md) as the detailed source of truth
 - Preserve language, characters, punctuation, dates, and reading order.
 - When the text strategy selects a title, use short exact wording derived from the source concept or supplied by the user. Use bold retro-poster display lettering and a declared typography reference.
 - When the text strategy uses a title, select the typography authority afresh for the current composition and copy its observable font skeleton, weight/width, size hierarchy, line breaks, alignment, spacing, baseline/rotation, and image-type interlock. Do not use a fixed default font or title position, and do not accept generic centered display type when these relationships are absent.
+- Resolve one title role before rendering: bottom title band, side information block, or integrated display-type block. The title must be legible display lettering with planned hierarchy and spacing; it is not casual handwriting or unresolved pseudo-text.
 - Include the title in the same full render. If it is wrong, reject the candidate and generate a new complete image from the original inputs.
 - In no-text mode, reject all pseudo-text, letters, numbers, signatures, and watermarks; a purely graphic input-derived stamp may remain.
 

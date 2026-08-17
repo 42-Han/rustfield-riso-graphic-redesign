@@ -38,6 +38,20 @@ Read the following files in this exact order for every generation:
 
 Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request. `agents/openai.yaml` is interface metadata and `evals/evals.json` is validation data; neither is part of the runtime generation path.
 
+## Fixed production order
+
+The runtime sequence is not interchangeable: route → title decision gate → meaning → visual thesis → large subject-specific silhouettes → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
+
+## Title decision gate
+
+Resolve whether the image needs a new text title before choosing topology, negative space, typography reference, or composition. If the user already required a title or no title, use that answer. Otherwise ask one concise question: **“这张图需要加入文字标题吗？请选择：需要标题 / 不需要标题 / 只保留输入图已有文字、不新增标题。”**
+
+An explicit `海报`/`poster` request remains a title request unless the user explicitly overrides it. Once the answer is recorded, use it for the complete render; do not infer, randomize, or change it later.
+
+## Render contract gate
+
+Before writing the prompt, freeze one compact contract from [references/generation-path.md](references/generation-path.md): route; title mode and exact copy when applicable; source/identity kernel; topology/energy/density; one primary and one secondary structural change; one palette-anchor file with roles and area relationship; paper substrate versus colored field; dominant silhouettes and diagnostics; boundary behavior; gap/overlap/registration behavior; local print evidence; and stamp strategy. Every field must have one value. Do not carry unresolved alternatives into the prompt.
+
 ## Core contract
 
 For image input, `IF` the user did not explicitly request another route, select `identity-preserving redesign`:
@@ -99,7 +113,7 @@ Select each axis from the current source rather than as a bundled style preset:
 - surface: screen print/Riso (MUST; pencil, xerox, or flat-ink variation may appear only as sparse sub-treatment, never as the dominant medium);
 - information: none, caption, labels, title, or full hierarchy.
 
-Unless layout preservation was requested, change at least one meaningful structural device: scale, crop, rotation, asymmetry, enclosure, overlap, viewpoint compression, module distribution, or depth order.
+Unless layout preservation was requested, choose one primary and one secondary structural device from scale, crop, rotation, asymmetry, enclosure, overlap, viewpoint compression, module distribution, depth order, or negative-space pattern. The primary change must alter hierarchy; the secondary change must alter relation or rhythm. Do not use two changes merely to satisfy a count.
 
 ## Reference roles
 
@@ -112,7 +126,7 @@ Assign every attached image exactly one role:
 - `material` — the project material calibration reference is mandatory for every render and controls only ink contact, halftone, density variation, registration behavior, gaps, and boundary character; it never contributes content, composition, or palette;
 - `typography` — font skeleton, weight/width, size hierarchy, line breaks, alignment, baseline/rotation, spacing, and image-type interlock for preserved copy or a deliberately designed title.
 
-Attach only references that change a real design decision, except that `reference_images/material-calibration-riso-edge.png` is always attached as the mandatory material reference. For image input, attach the supplied image plus the calibration; add supporting references only when they resolve a remaining content, composition, shape, palette, or typography decision. For text-only work, attach the calibration plus only the theme/project references needed to make the researched identity and the blueprint concrete. Stop attaching when every required external decision has one role-assigned source; there is no arbitrary attachment quota. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. Record every visible ink family needed for that relationship and its approximate area proportions; do not blend several references into an invented palette. The material calibration may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
+Attach only references that change a real design decision, except that `reference_images/material-calibration-riso-edge.png` is always attached as the mandatory material reference. For image input, attach the supplied image plus the calibration; add supporting references only when they resolve a remaining content, composition, shape, palette, or typography decision. For text-only work, attach the calibration plus only the theme/project references needed to make the researched identity and the blueprint concrete. Stop attaching when every required external decision has one role-assigned source; there is no arbitrary attachment quota. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. If several anchors fit, prefer the one matching the current energy and density; if still tied, choose the one whose color-area relationship is clearest to reproduce and record its file number. Record every visible ink family needed for that relationship and its approximate area proportions; do not blend several references into an invented palette. The material calibration may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
 
 Do not prompt for direct imitation of a living artist. Translate references into observable properties.
 
@@ -126,12 +140,14 @@ Apply these invariants to every subject category:
 - Keep a clear large/medium/small hierarchy at thumbnail size.
 - Copy the color relationship from one declared user-board palette anchor: ink families, dominance order, approximate area ratios, and contrast pattern. Do not synthesize an untraceable hybrid palette.
 - Preserve the selected palette anchor's saturation and contrast. `IF` the anchor is pop-leaning, retain its exaggerated warm/cool or complementary clash, high-chroma accents, decisive scale, and flat area relationships; do not wash it into near-neutrals.
+- Keep the output's colors clean and separable: each major mass has a readable dominant ink family, supporting colors have explicit roles, and adjacent masses do not dissolve into uncontrolled gray, brown, yellow, or muddy blends. Low-saturation anchors remain valid when their color boundaries, hierarchy, and contrast pattern are clear; do not force every source into a high-saturation palette.
+- Treat neutral natural-white as the paper substrate and exposed slivers/margins; it does not require a white-dominant image when the selected palette uses a colored field.
 - MUST keep black secondary: black may occupy at most 25% of the canvas, with a target below 20%; use deep colored inks for large dark fields.
 - Make screen-print/Riso evidence visually unmistakable: tactile ink deposits, concentrated halftone clusters, uneven ink coverage, missing-ink rubs, and clearly visible registration drift.
 - Make every major color junction participate in one global registration-boundary system: narrow irregular gaps, exposed paper/light slivers, slight overlaps, or offset joins. Vary the behavior by junction; do not create uniform outlines or wide tiled gutters. Strong connected fields may remain connected when needed for hierarchy.
 - Keep the subject readable through crisp printed boundaries with clearly visible broad, low-frequency contour wobble. The wobble changes contour location, not edge sharpness; show uneven ink contact, slight registration, and small under-inked breaks without blur, feathering, fuzzy halos, wet watercolor bleeding, pasted craft edges, or polished vector contours.
 - Use line only for necessary internal information such as motion, pattern, label, species mark, or sparse structural cue. Do not make continuous outline drawing the main construction system.
-- Do not impose a fixed whole-image shape count. Set a subject-specific mass/detail budget from diagnostic value, relationship, setting function, output scale, and selected reference; never turn a historical count or percentage into a quota.
+- Use a small subject-specific mass/detail budget before adding surface. The accepted batches often began around 6–18 major closed masses and, when the topology supported it, about 70–85% large readable masses; these are starting guides only, never a universal output quota.
 - Preserve successful environmental structure, moderate block perspective, functional parts, and sparse structural lines when they carry identity. Geometric construction simplifies and reorganizes the image; it does not automatically erase architecture, context, or adult editorial density.
 
 When people appear, preserve pose, body/crop identity, clothing blocks, action props, and social relationships. `MUST` remove facial features unless the current user explicitly requires them. Reduce hair strands, anatomy lines, seams, folds, fingers, laces, jewelry, and fashion-rendering detail until color masses carry the figure. This is a conditional figure rule, not a rule for non-human subjects.
@@ -140,23 +156,26 @@ When people appear, preserve pose, body/crop identity, clothing blocks, action p
 
 Resolve the text strategy and stamp strategy independently before prompting.
 
-- `text strategy` — preserve required source copy; add a required title; add an optional title; or use no text. MUST: an explicit poster/海报 request or explicit title instruction produces a required exact title. IF the request is not a poster and does not require or prohibit text, randomly SELECT exactly one of `optional title` or `no text` before reference selection and prompt writing, record the result, and follow it for the complete render. Optional title presence is never a regeneration reason.
+- `text strategy` — preserve required source copy; use the user's resolved title answer; use stamp-only; or use no text. The title answer is recorded before topology and composition, then carried unchanged into reference selection and prompt writing.
 - `stamp strategy` — IF the user explicitly requests no decoration, use no stamp. Otherwise SELECT either `input-derived stamp(s)` or `no stamp when no suitable source/brief element exists`; never use a generic decorative stamp. For image input, derive stamps from visible source elements. For text-only work, derive them from a concrete brief fact or declared identity anchor. Keep stamps visibly secondary.
-- When the current user explicitly requests a `海报` or poster, set `required title`. Derive the shortest exact title from the named subject unless the user supplied exact copy.
-- When the text strategy uses a title, inspect the project board and attach one exact typography reference unless the user supplied a complete typography system. Record its observable font construction and layout behavior; do not settle for a generic centered title or let the reference contribute wording, subjects, or palette.
-- For non-poster work without an explicit text instruction, use the recorded random choice. If it selects `optional title`, derive short exact wording from the current source concept or preserve supplied/source text and use a typography reference. If it selects `no text`, prohibit words and pseudo-text in the prompt. Either outcome is valid and is never a regeneration criterion.
-- Build titles with bold retro-poster display lettering: condensed, expanded, irregular, rotated, arched, or interlocked with image masses according to the selected typography reference.
+- When the resolved title answer is `需要标题`, derive the shortest exact title from user-supplied wording, identity-critical source copy, or the named subject, in that precedence order.
+- When the text strategy uses a title, inspect the project board and attach one exact typography reference unless the user supplied a complete typography system. Record its observable font construction and layout behavior before composing the image.
+- If the resolved title answer is `需要标题`, resolve the title block before surface treatment: choose one role from a bottom title band, side information block, or integrated display-type block according to the topology and negative space; then record exact wording, line breaks, scale hierarchy, alignment, baseline/rotation, spacing, and overlap/interlock with image masses. If the answer is `不需要标题`, do not reserve a title block or attach a typography reference.
+- Build titles with legible retro-poster display lettering: condensed, expanded, irregular, rotated, arched, or interlocked according to the selected typography reference. Irregularity belongs to the printed edge and spacing, not to casual handwritten or pseudo-text lettering.
 - An explicit no-text request prohibits words but may still use a purely graphic input-derived stamp. An explicit no-decoration request prohibits stamps but does not by itself prohibit required text.
 - Do not use generic stars, hearts, planets, flowers, badges, slogans, or pseudo-text when the source does not support them.
 
 ## Prompt and review
 
-Follow [references/generation-path.md](references/generation-path.md) to compile a short prompt with four ordered blocks:
+Follow [references/generation-path.md](references/generation-path.md) to compile a short prompt with five ordered blocks:
 
 1. identity lock;
-2. composition and relationship graph;
-3. exact palette provenance and area relationship, shape, independent text and stamp strategies, global boundary behavior, and material;
-4. only the highest-risk avoid items for this source.
+2. visual thesis and redesigned composition;
+3. shape, exact palette provenance, and independent text/stamp strategies;
+4. global boundary and local print behavior;
+5. only the highest-risk avoid items for this source.
+
+Keep the source-specific prompt concise and concrete (normally 90–200 words) before the fixed material lock. Do not append a mood-board essay or a universal negative list.
 
 Review in this order:
 
@@ -181,6 +200,7 @@ Reject a candidate when any apply:
 - It changes an indispensable count, action, relationship, setting, species, product form, or information anchor.
 - It imports subjects or motifs from style references or previous tasks.
 - It traces the source layout without meaningful redesign, unless layout preservation was requested.
+- It preserves the source coordinate graph and only adds a material/filter treatment when layout preservation was not requested.
 - It becomes a fixed poster template regardless of the input category.
 - It removes necessary environment or group structure in the name of simplicity.
 - Its stamp is not derived from a visible source element (image input) or a concrete brief/identity anchor (text-only input).
@@ -191,8 +211,9 @@ Reject a candidate when any apply:
 - The mandatory material calibration was not attached, or the result shows no visible contour wobble, no irregular large-junction gaps, or no tactile ink evidence at normal viewing size.
 - Color blocks are perfectly snapped everywhere, or the boundary treatment becomes uniform wide gutters.
 - Texture, outline, gradient, or perspective overwhelms the large color masses.
+- It contains too many micro-elements or uses texture to construct a shape that should have been designed as a large readable mass.
 - It violates an explicit content requirement in the current user prompt.
-- A prompt explicitly requesting a `海报` or poster produces no title or the title does not identify the requested subject.
+- A prompt explicitly requesting a `海报` or poster whose resolved title answer is `需要标题` produces no title or the title does not identify the requested subject.
 - A required or selected title has no declared typography reference or cannot be traced to that reference's recorded font construction, hierarchy, line breaking, alignment, spacing, and image-type relationship.
 - Optional title presence, absence, wording, or quality is not a rejection or regeneration criterion. Never regenerate solely to add, remove, or improve optional text.
 - User-required text is wrong, or an explicit no-text request contains text or pseudo-text.

@@ -2,6 +2,8 @@
 
 Use this path only when the user supplied no image. Project-board or web images selected by the Skill remain supporting references; they do not change the route.
 
+Use the same production order as the image-input path: route → title decision gate → meaning/theme anchors → visual thesis → shape masses → title-aware redesigned composition → role-separated references and palette → text/stamps → global junctions → local print evidence → one short prompt → one complete render.
+
 ## 1. Lock the text brief
 
 Extract the user's subject, count, defining features, action/state, relationships, setting, atmosphere, energy, density, era or regional cues, required text, and explicit avoid items. Treat the user's wording as the content authority. Do not replace it with a generic theme, a familiar poster formula, or subject matter found in references.
@@ -15,7 +17,15 @@ Write:
 - `invention budget` — details the Skill may design because the user did not specify them;
 - `forbidden drift` — content that would contradict or dilute the user's request.
 
-## 2. Build a theme reference packet
+## 2. Title decision gate (MUST happen before research-driven composition)
+
+If the user explicitly required a title or no title, record that answer. Otherwise ask before choosing topology, negative space, typography reference, or composition:
+
+> 这张图需要加入文字标题吗？请选择：需要标题 / 不需要标题 / 只保留输入图已有文字、不新增标题。
+
+The word `海报`/`poster` is treated as a title request unless the user explicitly overrides it. Do not begin composition planning until the answer is recorded. Once recorded, carry it unchanged through research, references, prompt writing, and the complete render.
+
+## 3. Build a theme reference packet
 
 Do theme-reference research before choosing the composition. For a named film, game, book, event, place, culture, era, profession, product category, or other established subject, web research is required. For an ordinary theme, search when the brief lacks enough concrete setting, activity, object, or relationship information to avoid a generic scene.
 
@@ -62,7 +72,7 @@ Primary anchors are hard constraints, not optional inspiration. For an establish
 
 The allowed translation is a new project-board palette relationship, the mandatory RISO/screen-print surface, simplified geometry, a new crop, and a new composition. The forbidden translation is silently replacing characteristic body proportions, viewpoint, spatial modularity, key silhouettes, world scale, social relationships, or energy with a generic editorial scene. When translating pixel art, remove raster pixel simulation only if desired; retain the underlying block, tile, module, proportion, and viewpoint logic that carries the visual identity.
 
-## 3. Decide what to attach
+## 4. Decide what to attach
 
 For every web theme image, choose one action:
 
@@ -73,7 +83,7 @@ When attached, state exactly which content facts it controls. It must not contro
 
 For a visually distinctive named work, analysis-only references are insufficient when the generation model needs to see defining construction. Attach the minimum complementary official or primary content references needed to cover subject/proportion, environment/viewpoint, and action/relationship/key forms; omit a category only when the written constraints already define it unambiguously. Never rely on one promotional image to represent the whole identity system.
 
-## 4. Build a role-separated project reference set
+## 5. Build a role-separated project reference set
 
 Always inspect the project board. Select one exact project image as the sole `palette` authority and record its ink families, dominance order, approximate area ratios, and contrast pattern. The mandatory material calibration is always attached. Add a second `material` reference only when it improves the chosen print behavior; it may control edge character, dots, ink-density variation, and registration behavior, but never the palette.
 
@@ -87,7 +97,7 @@ Each reference has one declared role. It may not contribute subjects, props, clo
 
 Project references translate the declared identity into this Skill's palette, print, shape, composition, and typography language. They may not overwrite primary anchors. If a project shape or composition reference conflicts with the anchor ledger, replace that project reference rather than weakening the named subject.
 
-## 5. Write the visual thesis
+## 6. Write the visual thesis
 
 Before drawing a blueprint, write one `visual thesis` sentence:
 
@@ -99,7 +109,7 @@ The thesis must connect the user's subject to visible structure. Examples of str
 
 For an established subject, the dominant device must express the anchor ledger rather than merely illustrate its broad category. A farm game cannot become generic agriculture; a cyberpunk game cannot become an interchangeable neon city; a specific film cannot become a poster for its genre alone.
 
-## 6. Choose the composition before prompting
+## 7. Choose the composition before prompting
 
 Select topology, ratio, energy, density, shape family, and information level independently. The surface is always screen print/Riso; only its ink-density and halftone intensity may vary with the source. Build one resolved blueprint with:
 
@@ -107,24 +117,25 @@ Select topology, ratio, energy, density, shape family, and information level ind
 - subject placement, crop, direction, overlap, and relationship graph;
 - setting carriers and support/enclosure structure;
 - asymmetry, scale contrast, rotation, viewpoint compression, and open-space target;
+- one primary hierarchy change and one secondary relation/rhythm change, recorded before prompting;
 - one or more brief-derived small stamps when the existing information rules call for them;
 - exact palette roles from the declared palette authority and any separate material behavior;
 - text plan according to the existing Skill rules.
 - visible placement and construction for every primary anchor in the anchor ledger.
 
-Resolve text strategy and stamp strategy separately. A non-poster request does not imply no text. When it neither requires nor prohibits text, randomly select exactly one of `optional title` and `no text`, record it before reference selection, and compile that resolved outcome into the prompt. Do not let composition preference or typography-reference availability override the selection, and do not ask the image model to decide. Independently choose input-derived stamp(s), unless the user explicitly requests no decoration or no suitable source/brief element exists. Optional title presence or absence is not a quality gate. An explicit no-text request remains binding but may still permit purely graphic stamps.
+Resolve text strategy and stamp strategy separately. Use the recorded title answer exactly: `需要标题` reserves a title block and typography reference; `不需要标题` leaves the composition free of new title text; `只保留输入图已有文字、不新增标题` preserves only the recorded source copy. Independently choose input-derived stamp(s), unless the user explicitly requests no decoration or no suitable source/brief element exists. An explicit no-text request remains binding but may still permit purely graphic stamps.
 
-If the user explicitly requests a `海报` or poster, the text plan must include a short exact title identifying the named subject. The title is a required prompt constraint and must be rendered in the same complete image.
+If the recorded title answer is `需要标题`, the text plan must include a short exact title identifying the named subject. The title is a required prompt constraint and must be rendered in the same complete image.
 
-When the text strategy uses a title, select the typography authority afresh to fit the current composition unless the user supplied a complete typography system. Before prompting, record its font construction, title-to-body size ratio, line breaking, alignment, spacing, baseline/rotation, and overlap or interlock with image masses. Copy those relationships, not its wording, subjects, palette, or decorative motifs. Do not use a fixed default font or title position; a generic centered title is not an acceptable substitute.
+When the recorded title answer is `需要标题`, select the typography authority afresh to fit the current composition unless the user supplied a complete typography system. Choose one title role before prompting: bottom title band, side information block, or integrated display-type block. Record its font construction, title-to-body size ratio, line breaking, alignment, spacing, baseline/rotation, and overlap or interlock with image masses. Copy those relationships, not its wording, subjects, palette, or decorative motifs. The title should be legible retro display lettering; the reference may vary the block's position, but it must be a resolved information block rather than casual handwriting, unresolved pseudo-text, or an afterthought.
 
 Do not begin with a centered icon, balanced card, symmetrical badge, standard poster frame, or one-person-plus-three-symbol template unless the user's brief specifically requires it.
 
 Prefer one dominant relationship over an evenly distributed inventory. Let the theme reference packet determine subject placement, context, pose, viewpoint, and scale. Then redesign those relationships using project-board composition logic. A text-only image should not look like disconnected clip-art objects placed on a blank field.
 
-Naïve geometry means deliberate simplification and slightly awkward construction; it does not mean preschool illustration. Preserve adult editorial control through decisive crop, unequal scale, layered space, asymmetric weight, subject-specific silhouettes, and purposeful negative space.
+Naïve geometry means deliberate simplification and slightly awkward construction; it does not mean preschool illustration. Preserve adult editorial control through the recorded primary and secondary composition changes, unequal scale, layered space, asymmetric weight, subject-specific silhouettes, and purposeful negative space.
 
-## 7. Construct expressive masses with printed edges
+## 8. Construct expressive masses with printed edges
 
 Build the subject from readable color masses with subject-specific curves, blunt angles, leaning axes, asymmetry, and proportion shifts. Geometry controls mass organization and hierarchy; it never licenses rigid rectangular reduction, generic icon construction, or vector-smooth edge finish.
 
@@ -138,7 +149,7 @@ Never impose a fixed whole-image shape count as a shortcut for simplification. S
 - Avoid juvenile shorthand: round-headed doll figures, smiling suns or clouds, identical flowers, nursery-book cottages, evenly scattered stickers, primary-school diagrams, and generic cute animals unless the brief specifically requires them.
 - Do not reduce a complex place, work, story, or culture to one childlike mascot plus several small labels. Keep enough environmental and relational structure to make the subject specific.
 
-## 8. Apply one global junction system
+## 9. Apply one global junction system
 
 Make every major color junction participate in a shared but varied registration system:
 
@@ -150,33 +161,33 @@ Make every major color junction participate in a shared but varied registration 
 
 Do not snap every block edge-to-edge. Do not outline everything. Do not isolate every object with an equal white border or wide tiled gutter. Junction variation must be visible at thumbnail size without fragmenting the image.
 
-## 9. Add local print evidence
+## 10. Add local print evidence
 
 After the masses read clearly, apply unmistakable physical print evidence: ink-density shifts, missing-ink rubs, concentrated halftone dots or dot clusters, visible registration drift, uneven stamp pressure, and a few short ink-drag marks.
 
 - Concentrate evidence inside selected large/medium masses and at meaningful junctions.
 - Vary density, scale, direction, and location. Keep some color masses almost clean.
 - Let small missing-ink rubs expose the paper without erasing the silhouette.
-- Make the print evidence strong enough to define the finish at normal viewing size. Do not reduce it to microscopic grain or a weak post-process filter.
-- Keep the paper neutral natural white. Change it only when the user explicitly requests another paper color.
+- Make the print evidence visible at normal viewing size but subordinate to the large shapes. Do not reduce it to microscopic grain, and do not let it become a full-frame noise filter.
+- Keep the paper substrate neutral natural white; colored fields may still dominate the composition. Change the substrate only when the user explicitly requests another paper color.
 
 Print behavior must remain controlled but materially active. Never simulate it with full-frame grain, uniform distress, fuzzy watercolor bleed, brush-built silhouettes, pasted seams, or photographed paper craft.
 
-## 10. Compile one short render prompt
+## 11. Compile one short render prompt
 
-Order the prompt:
+Keep the source-specific portion normally within 90–200 words and order the prompt exactly as follows:
 
 1. user-text identity lock, the primary visual identity anchors, their allowed translations, and explicit requirements;
 2. visual thesis, composition blueprint, and relationship graph;
 3. theme reference synthesis, declared project references, and any attached web content reference with isolated roles; distinguish palette authority from any separate material reference;
-4. exact palette-area relationship, irregular geometric construction, global junction system, and local print evidence;
+4. exact palette-area relationship, clean separable ink roles, irregular geometric construction, global junction system, and local print evidence;
 5. only the source-specific avoid items that materially reduce risk; do not use a fixed count.
 
 State observable mechanisms. Replace vague words such as `organic`, `rough`, or `handmade` with low-frequency contour wobble, unequal spacing, irregular light gaps, offset overlaps, local ink-density shifts, missing-ink rubs, halftone clusters, and registration drift.
 
 Generate the entire image once. Never use a generated candidate as an edit, mask, recolor, retexture, or typography input.
 
-## 11. Review and restart
+## 12. Review and restart
 
 Apply the maturity gate at thumbnail and full size. Reject and generate fresh when the result reads as juvenile or like a preschool worksheet because it relies on cute generic shorthand, evenly spaced icons, round doll anatomy, literal object-per-zone explanation, a nursery palette relationship, or insufficient environmental and relational structure. Simplicity alone is not a failure: reject only when the simplification removes thematic specificity or editorial composition.
 
@@ -192,11 +203,11 @@ Reject and generate fresh from the original text and approved references when an
 - Irregularity destroys diagnostic form, legibility, count, action, or relationship.
 - Texture overtakes shape or becomes watercolor, gouache, heavy dry brush, fuzzy paint, cut-paper craft, or full-frame distress.
 - The result violates an explicit requirement in the user's prompt.
-- A requested `海报` or poster has no declared typography authority, or its title layout cannot be traced to the recorded font and composition relationships of that authority.
+- A requested `海报` or poster whose resolved title answer is `需要标题` has no declared typography authority, or its title layout cannot be traced to the recorded font and composition relationships of that authority.
 - The named or research-dependent theme has no recorded theme reference packet, or the final composition cannot be traced to its content and structural findings.
 - The anchor ledger is missing, a primary anchor is absent or contradicted, the style-distance budget was exceeded, or the result reads as a generic genre substitute instead of the named subject.
 
-Optional title presence is not a rejection criterion. A prompt explicitly requesting a `海报` or poster counts as a required-title request; reject it when no title identifies the named subject.
+Optional title presence is not a rejection criterion. A prompt explicitly requesting a `海报` or poster counts as a required-title request unless the user overrides it; reject it when the resolved answer is `需要标题` but no title identifies the named subject.
 
 ## Output record
 

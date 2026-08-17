@@ -5,7 +5,7 @@ This is the compact, source-independent contract for every Rustfield render. It 
 ## Positive production recipe
 
 1. Extract one source-specific identity kernel and one visual thesis before choosing references.
-2. Select one current-fit palette anchor, one current-fit structure or typography authority when needed, and the material calibration as a physical-process reference only.
+2. Select one current-fit palette anchor, one current-fit structure or typography authority when needed, and the material calibration as a physical-process reference only; record the chosen file for each role.
 3. Rebuild the image from a few large, subject-specific masses and diagnostic forms; preserve the relationships and environmental carriers that make the subject identifiable.
 4. Make the RISO behavior part of those masses during the first render: vivid ink contrast, crisp irregular boundaries, clean unequal paper gaps, localized halftone, registration drift, and missing-ink variation.
 5. Resolve text and source-derived stamps in the same composition, then inspect at thumbnail size and at enlarged color junctions. If a gate fails, discard the candidate and render once again from the original source.
@@ -28,22 +28,23 @@ This is the compact, source-independent contract for every Rustfield render. It 
 
 ## Palette and paper
 
-- Select one exact retained project-board image afresh for each render according to the current source's energy, density, topology, and requested atmosphere. Do not use a fixed default palette or repeat the last palette merely for convenience.
+- Select one exact retained project-board image afresh for each render according to the current source's energy, density, topology, and requested atmosphere. If several fit, choose the one whose color-area relationship is clearest to reproduce and record its file. Do not use a fixed default palette or repeat the last palette merely for convenience.
 - Copy that anchor's ink families, saturation relationship, dominance order, contrast pattern, and approximate area hierarchy. Do not blend attractive colors from multiple anchors or copy the source photograph's accidental hues.
 - Favor the board's high-chroma pop contrast when the source and selected anchor support it: large warm/cool or complementary clashes, one dominant field, one or two supporting masses, and small diagnostic accents. Quiet anchors remain valid when the source genuinely calls for restraint.
-- Use a neutral natural-white paper base. Do not tint it yellow, cream, beige, sepia, or aged unless the user explicitly requests that paper color.
+- Regardless of saturation, keep the output colors clean and separable: major masses use readable dominant ink families, supporting inks have explicit roles, and adjacent areas do not dissolve into muddy gray, brown, yellow, or uncontrolled overmixing. A clear near-monochrome relationship is valid.
+- Use a neutral natural-white paper base and exposed paper slivers. This defines the substrate, not a white-dominant background; colored fields may still carry the composition. Do not tint the substrate yellow, cream, beige, sepia, or aged unless the user explicitly requests that paper color.
 - Keep black secondary: black may occupy at most 25% of the canvas, with a target below 20%; use deep colored inks for dark fields.
 
 ## Typography and information
 
 - Typography is variable, not a fixed font preset. When text is absent, do not invent pseudo-text. When text is required or selected, select the typography authority afresh to fit the composition; record its observable construction, weight/width, hierarchy, line breaks, alignment, rotation, spacing, and interlock with image masses.
 - Do not use a fixed default font, fixed title position, or repeated title treatment. Typography may be absent, a caption, labels, a side stamp, an oversized title, or an interlocked poster hierarchy.
-- A prompt containing `海报` or `poster` requires a short exact title identifying the requested subject. Otherwise use the recorded random optional-title/no-text choice when the user has not required or prohibited text. Optional text presence is not a quality gate.
+- Before topology and composition, resolve the title decision from the user: `需要标题`, `不需要标题`, or `只保留输入图已有文字、不新增标题`. If the prompt does not answer it, ask the user. An explicit `海报`/`poster` request counts as `需要标题` unless the user overrides it. Optional text presence is not a quality gate once the answer is recorded.
 - Preserve user-required or identity-critical source text exactly in the same complete render. Never add a later type layer.
 
 ## Composition and stamps
 
-- Redesign the composition in one pass while keeping the source's identity kernel. Change at least one structural device unless layout preservation was explicitly requested: crop, scale, rotation, asymmetry, overlap, enclosure, viewpoint, depth order, or negative-space pattern.
+- Redesign the composition in one pass while keeping the source's identity kernel. Unless layout preservation was explicitly requested, choose one primary hierarchy change and one secondary relation/rhythm change from crop, scale, rotation, asymmetry, overlap, enclosure, viewpoint, depth order, or negative-space pattern.
 - Use input-derived stamp(s) only when supported by the current input or concrete brief. Extract real source elements—objects, tools, landmarks, species marks, ingredients, sign fragments, product details, or key-form fragments—and keep them visibly secondary.
 - Stamps are an information behavior, not a recurring motif. Do not add generic hearts, stars, flowers, planets, smileys, fake logos, or slogans without source support.
 

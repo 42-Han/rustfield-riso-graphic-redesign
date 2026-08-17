@@ -262,7 +262,7 @@
         "The result uses a neutral natural-white paper base, high-chroma palette relationships when supported by the selected anchor, readable large/medium/small masses, and source-appropriate perspective or functional structure.",
         "Major color junctions use varied unequal gaps, exposed paper slivers, overlaps, or registration offsets; boundaries remain clearly readable with the accepted broad irregular printed wobble.",
         "RISO evidence is local and structural—halftone clusters, uneven ink density, missing-ink rubs, and registration drift—not a uniform full-frame filter.",
-        "Title behavior is conditional: poster or explicit title requests require exact title text; optional title/no-text decisions for other requests are not a regeneration criterion.",
+        "Title behavior is resolved before topology and composition: ask the user when title need is unspecified, then carry the answer into the title block, typography reference, layout, and one-pass prompt; optional title presence is not a regeneration criterion after the answer is recorded.",
         "Any failure is regenerated as a fresh full render from original inputs; no generated candidate is edited or used as the next reference."
       ]
     }
