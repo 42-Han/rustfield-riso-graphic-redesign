@@ -67,11 +67,13 @@ Do not generate until all apply:
 - The setting skeleton survives when it carries identity.
 - The plan records the original arrangement, the planned arrangement, one primary hierarchy change, and one secondary relation/rhythm change unless layout preservation is requested.
 - The planned arrangement does not preserve the source's complete coordinate graph when layout preservation was not requested.
+- The abstraction gate is complete before prompt writing: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and a mass replacement for every removed identity-bearing detail.
+- Unless layout preservation was requested, the planned arrangement has at least two visible structural changes; color, texture, a small crop, or a filter does not count.
 - One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. The mandatory material calibration is attached separately and controls print behavior only.
 - If more than one palette anchor fits, the plan records the energy/density match used to choose one; if still tied, it records the anchor whose color-area relationship is clearest to reproduce. No palette choice remains implicit.
 - The output palette lock is documented separately from saturation: each major mass has a clean dominant ink family, supporting inks have explicit roles, and adjacent masses remain visibly separated rather than muddy. A restrained or near-monochrome anchor is valid when its hue, value structure, and boundaries are clear.
 - Each major subject has diagnostic features and a simplification budget.
-- The shape plan is completed before any texture plan: each main subject has one dominant silhouette, two to five diagnostics, and only necessary internal lines. Use the accepted batches' 6–18 major-mass range only as a starting guide, never as a universal quota.
+- The shape plan is completed before any texture plan: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and only necessary internal lines. Use the accepted batches' 6–18 major-mass range only as a starting guide, never as a universal quota.
 - Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
 - Natural-white is recorded as the paper substrate and exposed paper, not as a requirement for a white-dominant image.
 - The boundary lock separates crisp edge sharpness from broad contour wobble; wobble may move the contour but may not blur it.
@@ -102,7 +104,7 @@ Use these as starting ranges, not caps:
 
 Preserve additional anchors as simplified masses when the source needs them. Do not meet an object limit by erasing the setting or relationship.
 
-Do not impose a fixed whole-image shape count. Allocate detail by diagnostic and relational value: a figure may need aggressive reduction while a successful ship, street, room, machine, or landscape retains moderate block perspective, functional parts, and sparse structural lines. Repair the failing layer in the next complete blueprint without reducing unrelated layers merely to make the whole image more geometric.
+Do not impose a fixed whole-image shape count. Allocate detail by diagnostic and relational value: a figure may need aggressive reduction while a ship, street, room, machine, or landscape keeps only the broad planes and functional marks needed for recognition. Dense texture, hair/fur/foliage rendering, clothing folds, and repeated architectural lines are removed before print evidence is added. Repair the failing layer in the next complete blueprint without reverting to a source-photo trace.
 
 ## Palette gate
 

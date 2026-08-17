@@ -8,7 +8,7 @@ This is the runtime order for every render. Do not reorder the stages and do not
 2. **Title decision gate** — resolve whether a new title is needed before topology, negative space, typography reference, or composition.
 3. **Meaning** — identify the exact subject, count, action/state, relationships, setting function, atmosphere, and required information.
 4. **Visual thesis** — state what the image is about and the one dominant spatial, relational, or scale device that expresses it.
-5. **Shape first** — reduce the source to readable subject-specific silhouettes and a small diagnostic set. Do not add texture before the silhouettes and relationships read at thumbnail size.
+5. **Shape first** — reduce the source to readable subject-specific silhouettes and a small diagnostic set, then complete the abstraction gate below. Do not add texture before the silhouettes and relationships read at thumbnail size.
 6. **Title-aware composition** — write the original arrangement and the planned arrangement, reserve the resolved title block only when the user selected a title, then choose one primary and one secondary structural change: crop, scale, rotation, asymmetry, overlap, viewpoint, depth order, enclosure, or negative-space pattern. The primary change alters hierarchy; the secondary changes relation or rhythm. A filter over the original coordinate graph is a failure.
 7. **Reference roles** — choose only the references needed for content, composition, shape, palette, material, and typography. Each reference has one role.
 8. **Palette and information** — select one exact project-board palette authority, then bind the resolved title/copy mode and source-derived stamp(s) without changing the subject or importing reference content.
@@ -67,6 +67,16 @@ Remove photographic micro-detail: eyes, nose, mouth, hair strands, anatomy conto
 
 The shape must read before texture. Do not use dots, scratches, grain, or brush marks to make an otherwise generic silhouette recognizable.
 
+### Abstraction gate (MUST be complete before the prompt)
+
+This gate controls construction, not surface. For image input, the default redesign must visibly replace photographic construction with a small set of geometric/organic color masses in the first render:
+
+- For every main subject, record a dominant silhouette, two to five diagnostics, and an explicit removed-detail list. The removed-detail list must name the source features that will not be drawn (for example hair strands, fur texture, cloth folds, seams, foliage texture, window grids, or repeated architectural lines).
+- State how the same subject-specific information is carried by the new masses. If a subject is still recognizable only because of photographic micro-detail, the shape plan is incomplete.
+- The planned arrangement must make **at least two visible structural changes** from the source: one changes hierarchy (crop, scale, viewpoint, or depth order) and one changes relation/rhythm (asymmetry, overlap, rotation, enclosure, module distribution, or negative-space pattern). A small crop or color swap alone is not a redesign.
+- Before the prompt is written, compare the source and planned coordinate graphs. If the dominant subject placement, viewpoint, depth order, and surrounding negative space remain materially the same, return to the composition step and redesign it.
+- Functional environments may remain, but translate dense texture or line inventory into a few broad planes, bands, or silhouette carriers. Keep only structural marks that are required to identify the setting or action.
+
 ## 5. Redesign the composition explicitly
 
 Record both sides of the redesign:
@@ -78,7 +88,7 @@ Primary structural change: [one hierarchy change: crop, scale, viewpoint, or dep
 Secondary structural change: [one relation/rhythm change: asymmetry, overlap, enclosure, rotation, module distribution, or negative-space pattern].
 ```
 
-Preserve subject identity and relationship topology, but do not preserve the source's complete coordinate graph unless layout preservation was requested. Prefer one dominant relationship over an inventory of equally weighted objects. Use crop, unequal scale, off-center weight, overlap, enclosure, shallow perspective, and purposeful open space to make the redesign visibly new.
+Preserve subject identity and relationship topology, but do not preserve the source's complete coordinate graph unless layout preservation was requested. Prefer one dominant relationship over an inventory of equally weighted objects. Use crop, unequal scale, off-center weight, overlap, enclosure, shallow perspective, and purposeful open space to make the redesign visibly new. The planned arrangement must satisfy the abstraction gate before any material language is added.
 
 ## 6. Assign reference roles
 
@@ -138,6 +148,7 @@ Secondary structural change:
 Palette anchor file / ink roles / area relationship:
 Paper substrate versus colored field:
 Dominant silhouettes / diagnostics / mass budget:
+Abstraction: removed-detail list + how each identity anchor is carried by the new masses:
 Boundary: crisp edge + broad low-frequency wobble:
 Junctions: unequal gaps + paper slivers + overlaps + registration:
 Local print evidence:
@@ -153,7 +164,7 @@ Keep the source-specific portion short and concrete (normally 90–200 words). U
 
 1. **Identity lock** — user/source subject, count, action/state, relationship, setting function, atmosphere, and required information;
 2. **Visual thesis and redesigned composition** — planned dominant device, topology, ratio, placement, crop, scale, overlap, rotation/viewpoint, depth order, open space, and the recorded primary and secondary structural changes;
-3. **Shape and palette** — dominant silhouettes, diagnostic features, mass budget, exact palette-anchor file, ink families, dominance order, area relationship, black limit, text strategy, and stamp strategy;
+3. **Shape and palette** — dominant silhouettes, diagnostic features, mass budget, removed-detail list and their mass replacements, exact palette-anchor file, ink families, dominance order, area relationship, black limit, text strategy, and stamp strategy;
 4. **Boundary and print behavior** — clean separable ink families with explicit dominance, crisp printed edges with broad contour wobble, global unequal gaps/slivers/overlaps/registration, local halftone and ink-density events, and neutral natural-white paper as substrate rather than a forced white field;
 5. **Source-specific avoids only** — wrong count/species/action, lost setting, imported motifs, wrong text, or the one material failure most likely for this source.
 
@@ -178,7 +189,7 @@ Review in this order:
 5. global gaps/overlaps/registration and local print evidence at normal size;
 6. text, stamps, logos, pseudo-text, and watermarks.
 
-Reject and regenerate from the original when the result is a source-photo trace with a filter, has too many micro-elements, has no clear dominant silhouettes, preserves the original coordinate graph, loses source identity, uses an untraceable palette, lets adjacent color masses dissolve into muddy uncontrolled mixtures, turns the paper substrate yellow, makes the contour wobble blurry, replaces unequal junction behavior with uniform outlines/gutters, or lets texture compete with shape. Optional title presence alone is never a failure.
+Reject and regenerate from the original when the result is a source-photo trace with a print filter, has too many micro-elements, has no clear dominant silhouettes, fails the two visible structural changes, preserves the original coordinate graph, loses source identity, uses an untraceable palette, lets adjacent color masses dissolve into muddy uncontrolled mixtures, turns the paper substrate yellow, makes the contour wobble blurry, replaces unequal junction behavior with uniform outlines/gutters, or lets texture compete with shape. Optional title presence alone is never a failure.
 
 ## Output record
 

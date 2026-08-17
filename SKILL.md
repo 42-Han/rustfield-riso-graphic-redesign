@@ -40,7 +40,7 @@ Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request
 
 ## Fixed production order
 
-The runtime sequence is not interchangeable: route → title decision gate → meaning → visual thesis → large subject-specific silhouettes → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
+The runtime sequence is not interchangeable: route → title decision gate → meaning → visual thesis → large subject-specific silhouettes → abstraction gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
 
 ## Title decision gate
 
@@ -59,6 +59,8 @@ For image input, `IF` the user did not explicitly request another route, select 
 - Preserve subject type and count, defining appearance, action/state, relationship topology, setting function, atmosphere, and indispensable text.
 - Rebuild scale, crop, coordinates, depth, shape construction, palette, and material.
 - Simplify construction, not meaning. Fewer shapes per object must not become fewer source-specific ideas.
+- The first render must visibly convert photographic construction into broad subject-specific masses. Record one dominant silhouette, two to five diagnostics, and the detail that is intentionally removed for each main subject before writing the prompt.
+- Unless layout preservation was explicitly requested, make at least two visible structural changes: one hierarchy change and one relation/rhythm change. A filter, recolor, small crop, or unchanged coordinate graph does not count as redesign.
 - Let the input control content. Let the project reference board control palette and the mandatory RISO print language unless the user explicitly requests source-color preservation.
 - Treat any named color, label, product form, uniform, landmark, or species marking as a possible identity anchor before replacing it.
 
@@ -148,7 +150,7 @@ Apply these invariants to every subject category:
 - Keep the subject readable through crisp printed boundaries with clearly visible broad, low-frequency contour wobble. The wobble changes contour location, not edge sharpness; show uneven ink contact, slight registration, and small under-inked breaks without blur, feathering, fuzzy halos, wet watercolor bleeding, pasted craft edges, or polished vector contours.
 - Use line only for necessary internal information such as motion, pattern, label, species mark, or sparse structural cue. Do not make continuous outline drawing the main construction system.
 - Use a small subject-specific mass/detail budget before adding surface. The accepted batches often began around 6–18 major closed masses and, when the topology supported it, about 70–85% large readable masses; these are starting guides only, never a universal output quota.
-- Preserve successful environmental structure, moderate block perspective, functional parts, and sparse structural lines when they carry identity. Geometric construction simplifies and reorganizes the image; it does not automatically erase architecture, context, or adult editorial density.
+- Preserve only the environmental structure, functional parts, and perspective planes that carry identity. Translate dense foliage, fur, hair, clothing folds, reflections, and architectural line inventories into broad masses or a few structural bands; do not carry photographic detail into the first render.
 
 When people appear, preserve pose, body/crop identity, clothing blocks, action props, and social relationships. `MUST` remove facial features unless the current user explicitly requires them. Reduce hair strands, anatomy lines, seams, folds, fingers, laces, jewelry, and fashion-rendering detail until color masses carry the figure. This is a conditional figure rule, not a rule for non-human subjects.
 
@@ -171,7 +173,7 @@ Follow [references/generation-path.md](references/generation-path.md) to compile
 
 1. identity lock;
 2. visual thesis and redesigned composition;
-3. shape, exact palette provenance, and independent text/stamp strategies;
+3. shape abstraction (dominant masses, diagnostics, removed-detail list), exact palette provenance, and independent text/stamp strategies;
 4. global boundary and local print behavior;
 5. only the highest-risk avoid items for this source.
 
@@ -189,7 +191,7 @@ Review in this order:
 
 Generate every candidate once from the original content source and approved role references. Never use a generated candidate as the input for masking, inpainting, recoloring, texture passes, regional repair, or separate typography. If review fails, discard that candidate, revise the complete blueprint/prompt, and start a fresh full render from the original inputs.
 
-When only one layer fails, diagnose that layer before rewriting the complete blueprint. Simplify the failing subject or detail layer without flattening an already successful setting, spatial relationship, or information density. A more reduced candidate is not automatically a better candidate.
+When only one layer fails, diagnose that layer before rewriting the complete blueprint. Simplify the failing subject or detail layer without flattening an already successful setting, spatial relationship, or information density. If the failure is literal detail or unchanged composition, revise the complete abstraction and composition gates and generate fresh from the original. Do not preserve photographic detail merely to avoid simplifying a source-specific layer.
 
 ## Hard failures
 
@@ -201,12 +203,14 @@ Reject a candidate when any apply:
 - It imports subjects or motifs from style references or previous tasks.
 - It traces the source layout without meaningful redesign, unless layout preservation was requested.
 - It preserves the source coordinate graph and only adds a material/filter treatment when layout preservation was not requested.
+- It fails the abstraction gate: photographic hair/fur/foliage/cloth folds/architectural linework still carry the image instead of broad readable masses.
+- It changes only color or texture, or makes only a small crop, while leaving the source hierarchy, viewpoint, and relational arrangement materially unchanged.
 - It becomes a fixed poster template regardless of the input category.
 - It removes necessary environment or group structure in the name of simplicity.
 - Its stamp is not derived from a visible source element (image input) or a concrete brief/identity anchor (text-only input).
 - Its palette cannot be traced to one declared user-board image and its area relationship.
 - It was assembled through sequential edits or a separate text/material pass instead of one complete render.
-- Its surface or construction contradicts the active RISO/graphic contract (for example, polished vector seams, full-frame filter grain, or brush-built material) rather than the current source-specific brief. Do not reject a candidate merely because the source requires perspective, functional parts, mature density, or moderate structural detail.
+- Its surface or construction contradicts the active RISO/graphic contract (for example, polished vector seams, full-frame filter grain, or brush-built material) rather than the current source-specific brief. Keep only the functional perspective and structural detail required for identity; do not treat photographic density as a reason to reject abstraction.
 - It reads as polished vector geometry, over-reduced icon art, or rigid rectangular construction instead of tactile printed illustration.
 - The mandatory material calibration was not attached, or the result shows no visible contour wobble, no irregular large-junction gaps, or no tactile ink evidence at normal viewing size.
 - Color blocks are perfectly snapped everywhere, or the boundary treatment becomes uniform wide gutters.
