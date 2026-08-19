@@ -75,7 +75,7 @@ Never use watercolor, gouache, heavy dry-brush, fuzzy pigment, visible bristle d
 
 ### Input-derived stamp
 
-- For image input, extract one or more small stamps from real visible source elements: object silhouettes, tools, window shapes, landmarks, ingredients, sign fragments, species features, or product details. For text-only input, derive equivalent stamps from concrete brief facts or declared identity anchors.
+- For image input, extract one small stamp from a real visible source element: object silhouette, tool, window shape, landmark, ingredient, sign fragment, species feature, or product detail. For text-only input, derive an equivalent stamp from a concrete brief fact or declared identity anchor. Add further stamps only when they improve the planned composition.
 - Place them as small secondary masses, using the same palette and Riso logic.
 - Treat stamps as a recurring information behavior, not a recurring motif: their content changes with every source or brief.
 - Do not replace it with generic stars, hearts, flowers, planets, smileys, or a fake logo.

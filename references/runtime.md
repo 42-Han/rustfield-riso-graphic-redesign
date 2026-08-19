@@ -111,9 +111,9 @@ For selected titles, choose typography after the title module is known. Copy the
 
 ## 6. Information and stamps
 
-Preserve required source copy exactly. `不新增标题` creates no new title; `只保留输入图已有文字` preserves only the recorded identity-critical source copy. When a title is required or selected, render its exact words in the same complete image and review legibility.
+Preserve required source copy exactly. `不加标题` creates no new title; indispensable source copy remains preserved. When a title is required or selected, render its exact words in the same complete image and review legibility.
 
-Use zero or more source-derived stamps. For image input, a stamp comes from a visible prop, tool, landmark, ingredient, sign fragment, species feature, product detail, or silhouette. For text-only work, it comes from a concrete brief fact or declared identity anchor. Stamps remain secondary and compositionally connected; they are not default decoration.
+Select one source-derived stamp for every render and record its source, location, scale, and visual role. For image input, it comes from a visible prop, tool, landmark, ingredient, sign fragment, species feature, product detail, or silhouette. For text-only work, it comes from a concrete brief fact or declared identity anchor. Add one or two further stamps only when they improve the declared composition. Omit stamps only when the user explicitly requests an extremely minimal result or the source has no meaningful secondary anchor. Stamps remain secondary and compositionally connected; they are not generic decoration.
 
 ## 7. Surface: physical print behavior
 
@@ -141,7 +141,7 @@ Reference roles:
 Palette authority / ink roles / area relationship / color exception:
 Paper substrate / boundary and junction system:
 Named local print zones:
-Stamp strategy:
+Stamp strategy: source / location / scale / role, or recorded reason for omission:
 Source-specific risks:
 ```
 
@@ -164,7 +164,7 @@ Review in this order:
 1. identity, count, action, relationship, setting function, and indispensable copy;
 2. thumbnail-scale anchor, broad masses, and genuinely redesigned coordinate graph;
 3. declared palette relation and clean color separation;
-4. title module, exact copy, typography hierarchy, and source-derived stamps when present;
+4. title module, exact copy, typography hierarchy, and the recorded source-derived stamp;
 5. enlarged print behavior at at least five major junctions.
 
 At each enlarged junction, confirm at least two visible forms of print evidence: contour wobble, unequal gap, paper sliver, overlap, registration offset, halftone, missing ink, or short ink drag. Restart from the original when the candidate is a source-photo trace, retains photographic micro-detail, lacks the new composition, uses an untraceable palette, turns the substrate yellow, blurs the contour wobble, makes smooth vector seams, fragments into equal gutters, or lets texture outweigh mass hierarchy.
