@@ -171,17 +171,11 @@ After the masses read clearly, apply unmistakable physical print evidence: ink-d
 
 Print behavior must remain controlled but materially active. Never simulate it with full-frame grain, uniform distress, fuzzy watercolor bleed, brush-built silhouettes, pasted seams, or photographed paper craft.
 
-## 11. Compile one short render prompt
+## 11. Compile one per-image execution prompt
 
-Keep the source-specific portion normally within 90–200 words and order the prompt exactly as follows:
+Use the same seven-block compiler in `generation-path.md`: render/role authorities → identity lock → visual redesign → object conversion → palette/information → surface allocation → source-specific avoids. In the text-only route, the identity block begins with the approved theme-reference packet and anchor ledger; the visual-redesign and object-conversion blocks must turn those researched anchors into a concrete new spatial arrangement and named broad masses before surface language is added.
 
-1. user-text identity lock, the primary visual identity anchors, their allowed translations, and explicit requirements;
-2. visual thesis, composition blueprint, and relationship graph;
-3. theme reference synthesis, declared project references, and any attached web content reference with isolated roles; distinguish palette authority from any separate material reference;
-4. exact palette-area relationship, clean separable ink roles, irregular geometric construction, global junction system, and local print evidence;
-5. only the source-specific avoid items that materially reduce risk; do not use a fixed count.
-
-State observable mechanisms. Replace vague words such as `organic`, `rough`, or `handmade` with low-frequency contour wobble, unequal spacing, irregular light gaps, offset overlaps, local ink-density shifts, missing-ink rubs, halftone clusters, and registration drift.
+State observable mechanisms. Replace vague words such as `organic`, `rough`, or `handmade` with named mass roles, placement changes, low-frequency contour wobble, unequal spacing, irregular paper gaps, offset overlaps, and the few selected local ink-density, rub, halftone, or registration zones.
 
 Generate the entire image once. Never use a generated candidate as an edit, mask, recolor, retexture, or typography input.
 

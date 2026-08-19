@@ -62,6 +62,6 @@ This is the compact, source-independent contract for every Rustfield render. It 
 
 ## Generation and review
 
-- Compile one short source-specific prompt plus the complete material lock. Render the entire image once from the original content and approved references.
+- Compile one per-image execution prompt with an explicit mass plan, redesigned placement, palette roles, and surface allocation. Render the entire image once from the original content and approved references.
 - Never edit a generated candidate with masking, inpainting, recoloring, overlay, texture pass, or separate typography. If a gate fails, discard it, revise the complete blueprint/prompt, and generate a fresh candidate from the original source.
 - Reject polished vector geometry, over-reduced icons, rigid rectangles, generic genre substitutes, yellow paper, perfectly snapped seams, absent palette provenance, absent identity anchors, unchanged source construction, photographic micro-detail, or any result that does not follow the user's actual description. Reject watercolor/gouache/dry-brush or craft-like surfaces only when they contradict the active RISO material contract. Keep functional perspective only as a few broad planes or bands; do not carry over dense texture, foliage, clothing folds, or architectural line inventories merely because they exist in the source.

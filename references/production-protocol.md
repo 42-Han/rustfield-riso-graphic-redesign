@@ -42,7 +42,7 @@ Palette ink families / dominance order / approximate area ratios:
 Identity-critical source-color exceptions:
 Shape/detail budget by main subject (smallest set that preserves identity, relationship, setting, and information):
 Global color-boundary plan:
-Surface mode and intensity (local print evidence limited to selected structural areas):
+Surface allocation (mostly solid fields; named local print zones only):
 Paper substrate versus colored field:
 Boundary lock (crisp edge / broad wobble / unequal gaps / overlaps / registration):
 Exact title/copy and retro typography plan:
@@ -84,7 +84,7 @@ Do not generate until all apply:
 - The boundary lock separates crisp edge sharpness from broad contour wobble; wobble may move the contour but may not blur it.
 - Shape is readable before texture. The calibration's edge wobble, unequal junction gaps, and registration are visible at normal viewing size, while local ink evidence remains subordinate to the large masses.
 - Keep most large fields clean; localized halftone, ink-density shifts, missing-ink rubs, and ink drags are selected accents, not a dense texture layer across every subject.
-- The prompt's source-specific portion follows the fixed order identity → thesis/composition → shape/palette/information → boundary/print → source-specific avoids and stays normally within 90–200 words before the fixed material lock.
+- The prompt follows the execution-compiler order: render/role authorities → identity → visual redesign → object conversion → palette/information → surface allocation → source-specific avoids. It names concrete masses, placements, and local print zones rather than delegating those decisions to generic style language.
 - The title decision gate is complete before topology and composition: use the explicit user answer, or invoke the structured title-choice dialog before proceeding. Record the completed answer before selecting typography references or compiling the prompt; carry it unchanged into the complete render.
 - When the title decision was not explicit, it was collected through the structured choice dialog; for multiple sources, the title mode is recorded per source or as an explicit all-source setting. Do not require free-text answers for these choices.
 - When text is selected or required, it is exact and included in the same render. Optional title presence or absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
@@ -255,7 +255,7 @@ Any identity hard failure blocks delivery even when the image is aesthetically s
 | Untraceable palette | colors were synthesized or blended across references | choose one exact user-board palette anchor, state its area relationship, and generate fresh |
 | Material overreach | a material reference changed palette or imported content | restore the palette anchor and isolate the material reference to print behavior; generate fresh |
 | Generic vector | perfectly snapped geometry and uniform edges | strengthen the full irregular-boundary and print contract; generate fresh |
-| Material calibration lost | no visible contour wobble, tactile ink breakup, unequal junction gap, or registration offset | verify the mandatory calibration is attached, paste the material lock verbatim, and generate fresh from original inputs |
+| Material calibration lost | no visible contour wobble, tactile ink breakup, unequal junction gap, or registration offset | verify the mandatory calibration is attached, name the failed boundary and local print zones in the surface allocation, and generate fresh from original inputs |
 | Fragmented gutters | every shape isolated by equal wide gaps | narrow and vary junctions in the full blueprint; generate fresh |
 | Texture overload | surface competes with form | reduce texture intensity in the complete prompt; generate fresh |
 | Brush/craft drift | material reference dominates with paint or pasted construction | replace it with a clean closed-mass reference; generate fresh |

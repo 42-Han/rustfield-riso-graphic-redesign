@@ -176,23 +176,26 @@ Source-specific avoids:
 
 Every line must contain one resolved value. This record is the only bridge between planning and the final prompt; do not add a second style summary.
 
-## 10. Compile the prompt in this exact order
+## 10. Compile a per-image execution prompt
 
-Keep the source-specific portion short and concrete (normally 90–200 words). Use five blocks, in this order:
+The compiler does not ask the renderer to decide the design. It turns the frozen blueprint into one concrete execution sheet for this image. Do not append a second mood-board description, generic style essay, or a long universal negative list.
 
-1. **Identity lock** — user/source subject, count, action/state, relationship, setting function, atmosphere, and required information;
-2. **Visual thesis and redesigned composition** — planned dominant device, topology, ratio, placement, crop, scale, overlap, rotation/viewpoint, depth order, open space, and the recorded primary and secondary structural changes;
-3. **Shape and palette** — dominant silhouettes, diagnostic features, mass budget, removed-detail list and their mass replacements, exact palette-anchor file, ink families, dominance order, area relationship, black limit, text strategy, and stamp strategy;
-4. **Boundary and print behavior** — clean separable ink families with explicit dominance, crisp printed edges with broad contour wobble, global unequal gaps/slivers/overlaps/registration, local halftone and ink-density events, and neutral natural-white paper as substrate rather than a forced white field;
-5. **Source-specific avoids only** — wrong count/species/action, lost setting, imported motifs, wrong text, or the one material failure most likely for this source.
+Attachment order: source content → graphic construction → palette → material → typography.
 
-Do not append a second mood-board description, a generic style essay, or a long universal negative list. State observable mechanisms rather than vague words such as `rough`, `organic`, `handmade`, or `textured`.
+- Keep every attached reference in its declared role. `graphic construction` is the selected composition or shape reference; it supplies only the observed mass rhythm, crop, or spatial grammar needed by this image. If no external graphic-construction reference is needed, state that rhythm directly from the blueprint rather than letting the palette image supply it.
+- In the prompt, name the attachments by that same role. The renderer must never infer that a palette/material image supplies source content or layout.
 
-Paste the following material lock verbatim as the final paragraph of the prompt:
+Use these seven blocks in this exact order:
 
-```text
-MATERIAL LOCK — Use a neutral natural-white paper base. Build readable closed color masses first. Each subject must remain a few broad, cut-paper-like flat masses without cut-paper craft material: no individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines; a printed version of a fine detail is still fine detail. At thumbnail size read one visual anchor plus supporting mass groups, preserving source-required counts and relationships inside those groups. Give every major silhouette a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble, broad and uneven but still sharp; the wobble changes contour location, not edge sharpness, and never becomes blur, feathering, fuzzy halo, wet bleed, or brush-built softness. At meaningful color junctions use narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets. Add localized halftone clusters, uneven ink density, and small missing-ink rubs only after the shapes read; keep most large fields clean and reserve print evidence for a few deliberate zones, never use uniform full-frame grain. No yellowed paper, polished vector seams, watercolor, gouache, cut-paper craft, or rigid rectangular reduction.
-```
+1. **Render and authorities** — declare one complete render and name the content authority. Name any graphic-construction, palette, material, and typography authorities with their narrow roles.
+2. **Identity lock** — exact subject, count, action/state, relationship, setting function, atmosphere, and indispensable information.
+3. **Visual redesign** — state the new composition as direct actions: which source form becomes the visual anchor, where it moves, which forms become counterweights, what becomes open space, and how the primary hierarchy change plus secondary relation/rhythm change are visible. Do not describe the original layout as the planned layout.
+4. **Object conversion** — for every main subject or setting carrier, state how source information becomes a few specific broad masses. Name the mass plan directly (for example, `one tilted enclosure; several closed fish bodies; one dark reflection silhouette; short light bands`) and state the source detail it replaces. This block carries form; no renderer may reconstruct hair, fur, folds, foliage, reflections, or line inventories from the source.
+5. **Palette and information** — name the selected palette's actual ink families, dominance order, area roles, source-critical color exception, exact title/copy, title block role, and source-derived stamp when selected. Do not write only a board number or a general color adjective.
+6. **Surface allocation** — state a neutral natural-white paper base, mostly solid large ink fields, and a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble on the major silhouettes. State narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets as the varied global junction system. Name the few specific shapes or junctions that receive localized halftone clusters, uneven ink density, and small missing-ink rubs, plus optional ink drags, overprint, or registration drift; every other large field remains clean. Wobble moves a sharp contour and never blurs it.
+7. **Source-specific avoids** — only the identity, material, or information mistakes that are genuinely likely for this image.
+
+State observable actions, masses, locations, and roles rather than vague words such as `rough`, `organic`, `handmade`, or `textured`. The completed prompt is a single execution brief: broad form and new composition are resolved before the renderer reads surface behavior.
 
 ## 11. Generate, review, and restart
 

@@ -199,15 +199,9 @@ Resolve the text strategy and stamp strategy independently before prompting.
 
 ## Prompt and review
 
-Follow [references/generation-path.md](references/generation-path.md) to compile a short prompt with five ordered blocks:
+Follow [references/generation-path.md](references/generation-path.md) to compile one per-image execution prompt. It must resolve, in order: render/role authorities; identity; visual redesign; object conversion; palette and information; surface allocation; then only the highest-risk source-specific avoids.
 
-1. identity lock;
-2. visual thesis and redesigned composition;
-3. shape abstraction (dominant masses, diagnostics, removed-detail list), exact palette provenance, and independent text/stamp strategies;
-4. global boundary and local print behavior;
-5. only the highest-risk avoid items for this source.
-
-Keep the source-specific prompt concise and concrete (normally 90–200 words) before the fixed material lock. Do not append a mood-board essay or a universal negative list.
+The prompt must state the chosen mass plan, placements, and local print zones directly. Do not append a mood-board essay, a universal negative list, or a static material paragraph that can override the source-specific design.
 
 Review in this order:
 

@@ -60,11 +60,11 @@ Before attaching any optional style image, inspect it at thumbnail size and answ
 
 Attach the image only if all answers are yes. If the image is valuable for action, relationship, or subject analysis but fails the material gate, analyze it offline and encode only the semantic observation in the blueprint. Do not attach it to the generator.
 
-## Prompt lock
+## Prompt compilation
 
-Use the complete mandatory material lock in `generation-path.md` verbatim as the final paragraph of every render prompt. Do not replace it with a shorter sentence such as `clean geometric masses`, `subtle texture`, or `slight RISO effect`; those formulations allow vector-smooth edges and weak filter-like grain to override the intended physical print behavior.
+Use the per-image `Surface allocation` block in `generation-path.md`; do not append a static universal material paragraph after the image-specific design. That block MUST name the neutral natural-white substrate, sharp low-frequency contour wobble, varied global junction behavior, mostly solid fields, and the specific local zones selected for halftone, ink-density change, rubs, drags, overprint, or registration.
 
-Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` without the mandatory lock's explicit crisp boundary, contour wobble, junction, registration, halftone, ink-density, missing-ink, and paper-base requirements.
+Do not use vague phrases such as `handmade`, `rough`, `organic`, or `paper texture` in place of those observable decisions. A surface instruction is valid only when it says which forms stay clean and where the physical print evidence appears.
 
 ## Review gate
 
