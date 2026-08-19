@@ -30,7 +30,7 @@ For a person-led source image:
 
 Every attached image must have exactly one declared role: `composition`, `shape`, `palette`, `material`, or `typography`. A reference may not contribute new subjects or replace source identity. `palette` means ink families, dominance order, area proportions, and contrast only; `material` means print behavior only. Use the minimum attached set that resolves the design; stop when every required external decision has one role-assigned source, and do not attach a mood board.
 
-Apply `material-language.md` before attachment. Relationship references are relationship evidence and animal references are animal-shape evidence, not material evidence. Printed-scene references support clean printed color masses; modular references support composition and print-layer behavior. Select only the active neutral reference files as generator inputs.
+Apply the attachment and print rules in [runtime.md](runtime.md) before attachment. Relationship references are relationship evidence and animal references are animal-shape evidence, not material evidence. Printed-scene references support clean printed color masses; modular references support composition and print-layer behavior. Select only the active neutral reference files as generator inputs.
 
 ## Use boundary
 

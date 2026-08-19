@@ -5,249 +5,37 @@ description: Use when generating or redesigning any reference image, prompt, or 
 
 # Rustfield RISO Graphic Redesign
 
-Transform any subject through one reusable pop-leaning visual grammar. Preserve what makes the input specific; change how it is organized and rendered. Build every delivered image as one complete render rather than a stack of corrective edits.
+Transform any subject through one reusable pop-leaning visual grammar. Preserve what makes the current input specific; change how it is organized and rendered. Every delivery is one complete render, never a stack of corrective edits.
 
-## First-principles contract
+## Runtime contract
 
-Four decisions control every render:
+The causal order is `identity → form → composition → surface`. Typography, stamps, palette, gaps, registration, and halftone support those decisions; they never replace an unresolved form or composition.
 
-1. **Identity** — what must remain recognizable from the user's image or brief.
-2. **Form** — how that identity is reduced to a few broad, subject-specific masses.
-3. **Composition** — how those masses are re-staged so one visual anchor reads clearly.
-4. **Surface** — how the resolved masses receive the selected palette and restrained local RISO evidence.
+Interpret `MUST` as a hard requirement, `IF` as conditional, `SELECT` as one recorded choice, and `GUIDANCE` as non-overriding planning help. Priority is: current user instruction → supplied/researched facts → [runtime.md](references/runtime.md) → guidance. Ask only when a conflict changes identity, count, action, relationship, setting function, required copy, route, or material.
 
-This is the causal chain `identity → form → composition → surface`. Palette, typography, stamps, gaps, registration, and halftone support these four decisions; they never replace an unresolved form or composition decision.
+Read these files in this order for every generation:
 
-## Route by user input
+1. [references/runtime.md](references/runtime.md) — the sole source of truth for route gates, render contract, prompt compiler, print language, and review;
+2. exactly one route file: [references/subject-extraction.md](references/subject-extraction.md) for supplied image input, or [references/text-to-image-path.md](references/text-to-image-path.md) for text-only input;
+3. [references/reference-board-analysis.md](references/reference-board-analysis.md) — choose one palette authority and any needed composition, shape, or typography authority;
+4. [references/external-reference-routing.md](references/external-reference-routing.md) — only when using an active `ref-###` or web-derived image.
 
-- `IF` the user supplied at least one image, select the image-input route and use [references/subject-extraction.md](references/subject-extraction.md).
-- `IF` the user supplied no image, select the text-only route and use [references/text-to-image-path.md](references/text-to-image-path.md), including theme-reference research before composition design and explicit visual identity anchors before rendering.
-- Images selected by this Skill from the project board or web are supporting references only; they never change a text-only request into an image-input request.
+Do not read both route files. `agents/openai.yaml` and `evals/evals.json` are metadata and validation, not runtime instructions.
 
-## Rule status and mandatory reading order
+## Input route
 
-Interpret every instruction using these statuses:
+- `IF` the user supplied at least one image, use the image-input route. The default is identity-preserving redesign: retain the subject, count, action/state, relationship, setting function, atmosphere, and indispensable information while rebuilding the visual construction.
+- `IF` the user supplied no image, use the text-only route. Research named/established themes before composition so their visual identity is retained rather than replaced by genre shorthand.
+- Project-board and web images are supporting references only. They never change a text-only request into an image-input request.
 
-- `MUST` — a hard requirement; a candidate that fails it is rejected.
-- `IF` — a conditional requirement; apply it only when the stated condition is true.
-- `SELECT` — choose exactly one recorded option before writing the prompt.
-- `GUIDANCE` — a planning aid; it never overrides the user's exact content, count, text, or explicit material request.
+## Output count and title gate
 
-When statements appear to conflict, use this priority order: the current user's explicit instruction; exact facts in the supplied image or researched subject; the shared visual contract; then `GUIDANCE`. If two requirements at the same priority level conflict, stop and ask the user. Do not invent an unrecorded requirement.
+For one supplied image, produce one final image unless the user requested variants. For `N ≥ 2` images, use the structured multi-image choice in `runtime.md` before per-image planning. Do not merge them, duplicate drafts, or reuse one image's blueprint for another unless the user selects a combined output.
 
-`IF` the user supplied one source image and did not specify a variant count, generate and deliver exactly one final image. `IF` the user supplied `N ≥ 2` source images, the default output is one final image per source image; do not merge the inputs or show duplicate drafts unless the user selects a different multi-image mode below. If the user explicitly requests `K` distinct directions, generate `K` complete candidates per selected source and deliver only those final candidates.
-
-Read the following files in this exact order for every generation:
-
-1. [references/rustfield-visual-contract.md](references/rustfield-visual-contract.md) — shared visual rules;
-2. [references/generation-path.md](references/generation-path.md) — route, reference roles, blueprint, prompt, and restart sequence;
-3. [references/material-language.md](references/material-language.md) — mandatory print-surface lock;
-4. exactly one route file: [references/subject-extraction.md](references/subject-extraction.md) for image input, or [references/text-to-image-path.md](references/text-to-image-path.md) for text-only input;
-5. [references/reference-board-analysis.md](references/reference-board-analysis.md) — select the current palette and any supporting board references;
-6. [references/external-reference-routing.md](references/external-reference-routing.md) — only when an active `reference_images/ref-###-*` or web-derived external image is being used;
-7. [references/production-protocol.md](references/production-protocol.md) — final preflight, review, and restart.
-
-Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request. `agents/openai.yaml` is interface metadata and `evals/evals.json` is validation data; neither is part of the runtime generation path.
-
-## Fixed production order
-
-The runtime sequence is not interchangeable: route → multi-image gate when applicable → title decision gate → meaning → large subject-specific silhouettes → abstraction and detail-compression gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
-
-## Multi-image gate
-
-When `N ≥ 2` user source images are supplied, resolve the batch mode with a structured choice dialog before per-image planning. Use the platform's structured user-input tool or native quick-reply UI; do not ask the user to type a sentence or a number.
-
-Show exactly these choices:
-
-1. `逐图独立重构（推荐）` — produce `N` final images; each source gets its own identity kernel, composition, palette decision, shape budget, and source-derived stamp.
-2. `统一系列重构` — produce `N` final images; share the selected visual family, material behavior, and (when appropriate) palette/typography system, but redesign each source separately.
-3. `合成一张图` — combine the sources into one final composition only when the user selects this option.
-
-If the user asks for multiple directions, record the requested direction count separately from the batch mode. Never use one source image's blueprint as the template for another source.
-
-## Title decision gate
-
-Resolve whether the image needs a new text title before choosing topology, negative space, typography reference, or composition. If the user already required a title or no title, use that answer. Otherwise open a structured choice dialog, not an open-ended text question.
-
-For one source image, show `需要新增标题`, `不新增标题`, and `只保留输入图已有文字`.
-
-For multiple source images, first show `逐图自定义（推荐）`, `全部新增标题`, and `全部不新增标题`. When `逐图自定义` is selected, open the same three-choice title dialog once for each source image. Record the selection per source; do not ask the user to type a sentence or option number. If the user supplied exact copy in the prompt, preserve that copy instead of deriving new wording.
-
-An explicit `海报`/`poster` request remains a title request unless the user explicitly overrides it. Once the answer is recorded, use it for the complete render; do not infer, randomize, or change it later.
-
-## Render contract gate
-
-Before writing the prompt, freeze one compact contract from [references/generation-path.md](references/generation-path.md): route; batch mode and source index when applicable; title mode and exact copy when applicable; source/identity kernel; topology/energy/density; one primary and one secondary structural change; one palette-anchor file with roles and area relationship; paper substrate versus colored field; dominant silhouettes and diagnostics; boundary behavior; gap/overlap/registration behavior; local print evidence; and stamp strategy. Every field must have one value. Do not carry unresolved alternatives into the prompt.
-
-## Core contract
-
-For image input, `IF` the user did not explicitly request another route, select `identity-preserving redesign`:
-
-- Preserve subject type and count, defining appearance, action/state, relationship topology, setting function, atmosphere, and indispensable text.
-- Rebuild scale, crop, coordinates, depth, shape construction, palette, and material.
-- Simplify construction, not meaning. Fewer shapes per object must not become fewer source-specific ideas.
-- The first render must visibly convert photographic construction into broad subject-specific masses. Record one dominant silhouette, two to five diagnostics, and the detail that is intentionally removed for each main subject before writing the prompt.
-- Abstraction and detail-compression gate: express each subject with a cut-paper-like arrangement of a few flat, interlocking masses, but do not render cut-paper craft material. Individual strands, hairs, fur strokes, fabric patterns, and repeated texture lines are removed unless one broad mark is indispensable to identity; a printed version of a detail is still detail.
-- At thumbnail size, the hierarchy must read as one visual anchor plus supporting mass groups. Preserve source-required counts and relationships inside those groups; texture, pattern, or ink speckle may never be the reason the subject is recognizable.
-- Unless layout preservation was explicitly requested, make at least two visible structural changes: one hierarchy change and one relation/rhythm change. A filter, recolor, small crop, or unchanged coordinate graph does not count as redesign.
-- The recomposed arrangement must be visibly different at thumbnail size and must make the dominant subject clearer through scale, spacing, overlap, crop, or negative space; do not retain the source's crowded coordinate graph.
-- Let the input control content. Let the project reference board control palette and the mandatory RISO print language unless the user explicitly requests source-color preservation.
-- Treat any named color, label, product form, uniform, landmark, or species marking as a possible identity anchor before replacing it.
-
-Never import a recurring subject, motif, layout, prop, or title from a previous task. Every image begins with a fresh extraction from its own source.
-
-The accepted historical batches are evidence for the shared process, not a reusable subject template: recompute palette, topology, mass budget, title, stamps, and source-specific avoid items for every new input.
-
-## Choose the route
-
-Choose one route before planning:
-
-1. `identity-preserving redesign` — selected for supplied image input unless the user explicitly requests another route; preserve identity and relational structure while changing visual construction.
-2. `layout-preserving restyle` — use only when the user asks to keep the same composition or pose.
-3. `free semantic translation` — use only when the user authorizes a more distant metaphor or abstraction.
-4. `local edit` — use only when the user explicitly asks to edit an existing supplied image; complete the requested edit in one render.
-
-IF an unresolved ambiguity changes subject identity, count, action, relationship, setting function, required text, paper/material, route, or reference role, ask the user before generating. Otherwise record one explicit assumption in the blueprint. Never leave a material choice implicit.
-
-## Build the source model
-
-Before choosing a composition, record:
-
-| Field | Required observation |
-|---|---|
-| Subject | exact type, count band, and defining silhouette/features |
-| Action/state | what each subject is doing or how it is positioned |
-| Relationships | inside, around, touching, facing, sharing, holding, containing, supporting, or repeating |
-| Setting function | the place or container and why it matters |
-| Context carriers | minimum environmental cues needed to preserve the setting |
-| Atmosphere | energy, density, emotional temperature, contrast, scale, and era cue |
-| Information | exact text, labels, dates, signage, interface, or no text |
-| Noise | duplicated detail, watermark, platform UI, unauthorized branding, and accidental clutter |
-
-Classify visible features:
-
-- `identity anchor` — removal breaks recognition;
-- `relationship anchor` — removal breaks action or scene logic;
-- `atmosphere carrier` — preserve its effect through rhythm, color, scale, or density;
-- `style surface` — replace with the project language;
-- `noise` — discard.
-
-Write one specific source sentence and one planned-result sentence. They must name the same subject, action/state, relationship or setting function, and atmosphere unless the chosen route authorizes a change.
-
-## Choose structure independently
-
-Select each axis from the current source rather than as a bundled style preset:
-
-- topology: single emblem, relational cluster, single figure, group system, shallow scene, taxonomy/grid, all-over field, typography-led poster, or abstract force field;
-- energy: still, warm, lively, kinetic, or maximal-controlled;
-- density: sparse, medium, dense, or tiled;
-- shape: geometric mass, geometric block, stepped modular mass, or mixed clean shape-line;
-- surface: screen print/Riso (MUST; pencil, xerox, or flat-ink variation may appear only as sparse sub-treatment, never as the dominant medium);
-- information: none, caption, labels, title, or full hierarchy.
-
-Unless layout preservation was requested, choose one primary and one secondary structural device from scale, crop, rotation, asymmetry, enclosure, overlap, viewpoint compression, module distribution, depth order, or negative-space pattern. The primary change must alter hierarchy; the secondary change must alter relation or rhythm. Do not use two changes merely to satisfy a count.
-
-## Reference roles
-
-Assign every attached image exactly one role:
-
-- `content` — identity, action, relationships, setting, and atmosphere;
-- `composition` — hierarchy, crop, scale, spacing, and depth order;
-- `shape` — simplification and diagnostic construction for the same subject type;
-- `palette` — one exact user-board image controls only ink families, dominance order, approximate area ratios, and contrast pattern;
-- `material` — the project material calibration reference is mandatory for every render and controls only ink contact, halftone, density variation, registration behavior, gaps, and boundary character; it never contributes content, composition, or palette;
-- `typography` — font skeleton, weight/width, size hierarchy, line breaks, alignment, baseline/rotation, spacing, and image-type interlock for preserved copy or a deliberately designed title.
-
-Attach only references that change a real design decision, except that `reference_images/material-calibration-riso-edge.png` is always attached as the mandatory material reference. For image input, attach the supplied image plus the calibration; add supporting references only when they resolve a remaining content, composition, shape, palette, or typography decision. For text-only work, attach the calibration plus only the theme/project references needed to make the researched identity and the blueprint concrete. Stop attaching when every required external decision has one role-assigned source; there is no arbitrary attachment quota. Analyze additional sources in notes rather than attaching a mood board. Name one exact user-board file as the palette anchor. If several anchors fit, prefer the one matching the current energy and density; if still tied, choose the one whose color-area relationship is clearest to reproduce and record its file number. Record every visible ink family needed for that relationship and its approximate area proportions; do not blend several references into an invented palette. The material calibration may refine print behavior but may not change that palette. A style reference may not contribute new subjects, props, clothing, anatomy, wording, setting, or exact object coordinates. If no shape reference truly matches, let the content source control construction instead of attaching a misleading reference.
-
-Do not prompt for direct imitation of a living artist. Translate references into observable properties.
-
-## Visual grammar
-
-Apply these invariants to every subject category:
-
-- Build every major subject and setting carrier from readable color masses with subject-specific curves, skew, asymmetry, and proportion shifts. Do not equate geometric simplification with rectangles, straight rulers, perfectly smooth vector curves, or minimal icon reduction.
-- Use diagnostic features and intentional proportion shifts instead of realistic rendering.
-- Compress depth through overlap, stacking, enclosure, panels, ground, horizon, or a support plane.
-- Keep a clear large/medium/small hierarchy at thumbnail size.
-- Copy the color relationship from one declared user-board palette anchor: ink families, dominance order, approximate area ratios, and contrast pattern. Do not synthesize an untraceable hybrid palette.
-- Preserve the selected palette anchor's saturation and contrast. `IF` the anchor is pop-leaning, retain its exaggerated warm/cool or complementary clash, high-chroma accents, decisive scale, and flat area relationships; do not wash it into near-neutrals.
-- Keep the output's colors clean and separable: each major mass has a readable dominant ink family, supporting colors have explicit roles, and adjacent masses do not dissolve into uncontrolled gray, brown, yellow, or muddy blends. Low-saturation anchors remain valid when their color boundaries, hierarchy, and contrast pattern are clear; do not force every source into a high-saturation palette.
-- Treat neutral natural-white as the paper substrate and exposed slivers/margins; it does not require a white-dominant image when the selected palette uses a colored field.
-- MUST keep black secondary: black may occupy at most 25% of the canvas, with a target below 20%; use deep colored inks for large dark fields.
-- Make screen-print/Riso evidence visually unmistakable: tactile ink deposits, concentrated halftone clusters, uneven ink coverage, missing-ink rubs, and clearly visible registration drift.
-- Make every major color junction participate in one global registration-boundary system: narrow irregular gaps, exposed paper/light slivers, slight overlaps, or offset joins. Vary the behavior by junction; do not create uniform outlines or wide tiled gutters. Strong connected fields may remain connected when needed for hierarchy.
-- Keep the subject readable through crisp printed boundaries with clearly visible broad, low-frequency contour wobble. The wobble changes contour location, not edge sharpness; show uneven ink contact, slight registration, and small under-inked breaks without blur, feathering, fuzzy halos, wet watercolor bleeding, pasted craft edges, or polished vector contours.
-- Use line only for necessary internal information such as motion, pattern, label, species mark, or sparse structural cue. Do not make continuous outline drawing the main construction system.
-- Use the smallest subject-specific mass/detail budget that preserves identity, relationship, setting function, and information. Do not impose a fixed whole-image shape count.
-- Preserve only the environmental structure, functional parts, and perspective planes that carry identity. Translate dense foliage, fur, hair, clothing folds, reflections, and architectural line inventories into broad masses or a few structural bands; do not carry photographic detail into the first render.
-
-When people appear, preserve pose, body/crop identity, clothing blocks, action props, and social relationships. `MUST` remove facial features unless the current user explicitly requires them. Reduce hair strands, anatomy lines, seams, folds, fingers, laces, jewelry, and fashion-rendering detail until color masses carry the figure. This is a conditional figure rule, not a rule for non-human subjects.
-
-## Information layer
-
-Resolve the text strategy and stamp strategy independently before prompting.
-
-- `text strategy` — preserve required source copy; use the user's resolved title answer; use stamp-only; or use no text. The title answer is recorded before topology and composition, then carried unchanged into reference selection and prompt writing.
-- `stamp strategy` — IF the user explicitly requests no decoration, use no stamp. Otherwise SELECT either `input-derived stamp(s)` or `no stamp when no suitable source/brief element exists`; never use a generic decorative stamp. For image input, derive stamps from visible source elements. For text-only work, derive them from a concrete brief fact or declared identity anchor. Keep stamps visibly secondary.
-- When the resolved title answer is `需要标题`, derive the shortest exact title from user-supplied wording, identity-critical source copy, or the named subject, in that precedence order.
-- When the text strategy uses a title, inspect the project board and attach one exact typography reference unless the user supplied a complete typography system. Record its observable font construction and layout behavior before composing the image.
-- If the resolved title answer is `需要标题`, resolve the title block before surface treatment: choose one role from a bottom title band, side information block, or integrated display-type block according to the topology and negative space; then record exact wording, line breaks, scale hierarchy, alignment, baseline/rotation, spacing, and overlap/interlock with image masses. If the answer is `不需要标题`, do not reserve a title block or attach a typography reference.
-- Build titles with legible retro-poster display lettering: condensed, expanded, irregular, rotated, arched, or interlocked according to the selected typography reference. Irregularity belongs to the printed edge and spacing, not to casual handwritten or pseudo-text lettering.
-- An explicit no-text request prohibits words but may still use a purely graphic input-derived stamp. An explicit no-decoration request prohibits stamps but does not by itself prohibit required text.
-- Do not use generic stars, hearts, planets, flowers, badges, slogans, or pseudo-text when the source does not support them.
-
-## Prompt and review
-
-Follow [references/generation-path.md](references/generation-path.md) to compile one per-image execution prompt. It must resolve, in order: render/role authorities; identity; visual redesign; object conversion; palette and information; surface allocation; then only the highest-risk source-specific avoids.
-
-The prompt must state the chosen mass plan, placements, and local print zones directly. Do not append a mood-board essay, a universal negative list, or a static material paragraph that can override the source-specific design.
-
-Review in this order:
-
-1. source identity and count;
-2. action, relationship, and setting function;
-3. atmosphere, density, and era cue;
-4. composition hierarchy and thumbnail read;
-5. palette and material family;
-6. subject-specific diagnostics;
-7. exact text, unwanted text, logos, and watermarks.
-
-Generate every candidate once from the original content source and approved role references. Never use a generated candidate as the input for masking, inpainting, recoloring, texture passes, regional repair, or separate typography. If review fails, discard that candidate, revise the complete blueprint/prompt, and start a fresh full render from the original inputs.
-
-When only one layer fails, diagnose that layer before rewriting the complete blueprint. Simplify the failing subject or detail layer without flattening an already successful setting, spatial relationship, or information density. If the failure is literal detail or unchanged composition, revise the complete abstraction and composition gates and generate fresh from the original. Do not preserve photographic detail merely to avoid simplifying a source-specific layer.
-
-## Hard failures
-
-Reject a candidate when any apply:
-
-- It matches only a generic theme rather than the same specific source sentence.
-- A text-only result for an established subject keeps only its broad genre while losing the declared visual identity anchors that make the named work, world, era, place, or product recognizable.
-- It changes an indispensable count, action, relationship, setting, species, product form, or information anchor.
-- It imports subjects or motifs from style references or previous tasks.
-- It traces the source layout without meaningful redesign, unless layout preservation was requested.
-- It preserves the source coordinate graph and only adds a material/filter treatment when layout preservation was not requested.
-- It fails the abstraction gate: photographic hair/fur/foliage/cloth folds/architectural linework still carry the image instead of broad readable masses.
-- It changes only color or texture, or makes only a small crop, while leaving the source hierarchy, viewpoint, and relational arrangement materially unchanged.
-- It becomes a fixed poster template regardless of the input category.
-- It removes necessary environment or group structure in the name of simplicity.
-- Its stamp is not derived from a visible source element (image input) or a concrete brief/identity anchor (text-only input).
-- Its palette cannot be traced to one declared user-board image and its area relationship.
-- It was assembled through sequential edits or a separate text/material pass instead of one complete render.
-- Its surface or construction contradicts the active RISO/graphic contract (for example, polished vector seams, full-frame filter grain, or brush-built material) rather than the current source-specific brief. Keep only the functional perspective and structural detail required for identity; do not treat photographic density as a reason to reject abstraction.
-- It reads as polished vector geometry, over-reduced icon art, or rigid rectangular construction instead of tactile printed illustration.
-- The mandatory material calibration was not attached, or the result shows no visible contour wobble, no irregular large-junction gaps, or no tactile ink evidence at normal viewing size.
-- Color blocks are perfectly snapped everywhere, or the boundary treatment becomes uniform wide gutters.
-- Texture, outline, gradient, or perspective overwhelms the large color masses.
-- It contains too many micro-elements or uses texture to construct a shape that should have been designed as a large readable mass.
-- It violates an explicit content requirement in the current user prompt.
-- A prompt explicitly requesting a `海报` or poster whose resolved title answer is `需要标题` produces no title or the title does not identify the requested subject.
-- A required or selected title has no declared typography reference or cannot be traced to that reference's recorded font construction, hierarchy, line breaking, alignment, spacing, and image-type relationship.
-- Optional title presence, absence, wording, or quality is not a rejection or regeneration criterion. Never regenerate solely to add, remove, or improve optional text.
-- User-required text is wrong, or an explicit no-text request contains text or pseudo-text.
+Resolve title need before composition. A poster/`海报` request needs a title unless overridden. When the host supports structured choices, use the required title dialog; otherwise ask one explicit title question instead of inventing an answer. Literal title copy is not globally fixed: user-supplied wording takes precedence, then indispensable source copy, then a short title derived from the current subject or visual thesis. Once written into this render's contract, the exact copy is fixed for that render.
 
 ## Delivery
 
-Show only reviewed final candidates and only the requested number of variants. Keep rejected drafts and superseded repairs out of the final delivery.
+Generate from the original content and approved role references in one complete pass. If a candidate fails review, discard it and generate a fresh complete candidate from the original input; never use masking, inpainting, recoloring, overlays, texture passes, or separate typography.
 
-Return the image/path plus a compact record of route, source sentence, identity kernel, reference roles, final prompt, and any remaining non-material uncertainty (or `none`). Return image-only when explicitly requested.
+Deliver only reviewed final candidates. Return the image/path plus the compact render contract and final prompt unless the user requested image-only.

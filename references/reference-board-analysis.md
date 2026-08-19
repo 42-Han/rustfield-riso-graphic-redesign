@@ -142,6 +142,19 @@ Use when setting function or habitat is part of recognition.
 - Use `6`, `22`, `27`, `29`, `58`, `74`, `84`, and `93` as core references for title/image hierarchy.
 - Use `97`, `98`, and `104` for energetic contemporary typography, halftone, and modular layouts only when the source calls for that intensity.
 
+### Typography module routing
+
+When a title is selected, choose its module from the current composition first, then select a typography authority with matching observable behavior. These references control lettering and type/image geometry only; their wording, subjects, palette, and exact layout are not transferable.
+
+| Planned title module | Suitable board references | Observable construction to carry forward |
+|---|---|---|
+| Primary display mass or integrated display-type block | `6`, `22`, `27`, `93` | oversized display letters, decisive line breaks, clear title-to-image scale contrast, and type that shares the main visual field with the image |
+| Bottom title band or lower-margin caption | `74`, `29` | a shallow lower zone that completes the composition; use either a quiet line in the paper margin or a broad lower title band according to the chosen hierarchy |
+| Side information block | `58`, `18`, `84` | narrow vertical or side-edge reading path, uneven baseline/rotation, and lettering that creates a counterweight rather than a centered heading |
+| Supporting title within an open field | `6`, `22`, `74` | compact, legible title with intentional empty space; its placement serves the anchor rather than replacing it |
+
+The board number is not a title preset. Record the chosen module, primary/supporting hierarchy, exact title geometry, and the selected reference's observable construction in the render contract. A new image must choose this relation afresh; it may not inherit another image's type reference or position.
+
 ### Abstract force field
 
 - `74` — shelf bands and large abstract objects.
