@@ -30,7 +30,7 @@ Do not read both route files. `agents/openai.yaml` and `evals/evals.json` are me
 
 ## Output count and title gate
 
-For one supplied image, produce one final image unless the user requested variants. For `N ≥ 2` images, use the structured multi-image choice in `runtime.md` before per-image planning. Do not merge them, duplicate drafts, or reuse one image's blueprint for another unless the user selects a combined output.
+Produce one final image per supplied image unless the user explicitly requests variants or a combined composition. For `N ≥ 2`, plan and render each source independently; do not ask the user to choose a batch mode, a series mode, or a combined output.
 
 Resolve title need before composition. A poster/`海报` request needs a title unless overridden. When the host supports structured choices, use the required title dialog; otherwise ask one explicit title question instead of inventing an answer. Literal title copy is not globally fixed: user-supplied wording takes precedence, then indispensable source copy, then a short title derived from the current subject or visual thesis. Once written into this render's contract, the exact copy is fixed for that render.
 

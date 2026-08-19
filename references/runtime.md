@@ -7,37 +7,27 @@ This is the single source of truth for every Rustfield render. It contains the p
 Use this exact order:
 
 1. Select the route and output count.
-2. Resolve the multi-image mode when `N ≥ 2`.
-3. Resolve title need before topology, negative space, typography, or composition.
-4. Extract meaning and identity anchors.
-5. Write the visual thesis.
-6. Convert identity into broad subject-specific masses.
-7. Design a new title-aware composition.
-8. Assign role-separated references and one palette authority.
-9. Resolve copy, stamps, and palette roles.
-10. Apply the global junction system and selected local print evidence.
-11. Freeze one render contract, compile one execution Prompt, and generate one complete image.
+2. Resolve title need before topology, negative space, typography, or composition.
+3. Extract meaning and identity anchors.
+4. Write the visual thesis.
+5. Convert identity into broad subject-specific masses.
+6. Design a new title-aware composition.
+7. Assign role-separated references and one palette authority.
+8. Resolve copy, stamps, and palette roles.
+9. Apply the global junction system and selected local print evidence.
+10. Freeze one render contract, compile one execution Prompt, and generate one complete image.
 
 Never begin with texture. Never use a source-photo trace plus a print filter as a redesign.
 
-### Multi-image gate
+### Multi-image default
 
-When `N ≥ 2` user images are supplied, use a structured choice before planning:
-
-1. `逐图独立重构（推荐）` — one independent blueprint and final image for each source;
-2. `统一系列重构` — one shared visual family, with a separate blueprint and composition for each source;
-3. `合成一张图` — one relational blueprint and one combined final image.
-
-If the host cannot show structured choices, ask one concise explicit question. Record the chosen mode before making any source blueprint.
+When `N ≥ 2` user images are supplied, create one independent blueprint and one final image for each source. Do not ask a batch-mode question or offer series/combined modes. Combine sources only when the user explicitly asks for a combined composition.
 
 ### Title decision gate
 
-Use the user's explicit title/no-title instruction when present. Otherwise ask before composition:
+Use the user's explicit title/no-title instruction when present. Otherwise ask before composition, once for each final image: `不加标题` / `自动生成标题` / `自定义标题`. Ask for exact wording only when `自定义标题` is selected.
 
-- one source: `需要新增标题` / `不新增标题` / `只保留输入图已有文字`;
-- multiple sources: `逐图自定义（推荐）` / `全部新增标题` / `全部不新增标题`, then ask the same per-image choice when custom is selected.
-
-`海报`/`poster` means `需要新增标题` unless the user overrides it. Do not randomize this decision. If the host lacks a structured dialog, ask the same question in one short sentence; do not silently choose for the user.
+`海报`/`poster` means `自动生成标题` unless the user overrides it. Do not randomize this decision. If the host lacks a structured dialog, ask the same question in one short sentence; do not silently choose for the user. Indispensable source copy is preserved automatically and is not a title-choice option.
 
 ## 2. Meaning and identity
 
@@ -140,7 +130,7 @@ Use screen-print/RISO, not watercolor, gouache, dry brush, craft collage, polish
 Freeze one value for every field:
 
 ```text
-Route / output count / batch mode:
+Route / output count:
 Title mode / exact copy / hierarchy / module / typography authority:
 Source sentence / identity kernel / visual thesis:
 Visual anchor / counterweights / open-space or enclosure:
