@@ -24,7 +24,7 @@ Interpret every instruction using these statuses:
 
 When statements appear to conflict, use this priority order: the current user's explicit instruction; exact facts in the supplied image or researched subject; the shared visual contract; then `GUIDANCE`. If two requirements at the same priority level conflict, stop and ask the user. Do not invent an unrecorded requirement.
 
-`IF` the user does not specify a variant count, generate and deliver exactly one image. Generate multiple images only when the user explicitly requests a number or distinct directions.
+`IF` the user supplied one source image and did not specify a variant count, generate and deliver exactly one final image. `IF` the user supplied `N ≥ 2` source images, the default output is one final image per source image; do not merge the inputs or show duplicate drafts unless the user selects a different multi-image mode below. If the user explicitly requests `K` distinct directions, generate `K` complete candidates per selected source and deliver only those final candidates.
 
 Read the following files in this exact order for every generation:
 
@@ -40,17 +40,33 @@ Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request
 
 ## Fixed production order
 
-The runtime sequence is not interchangeable: route → title decision gate → meaning → visual thesis → large subject-specific silhouettes → abstraction gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
+The runtime sequence is not interchangeable: route → multi-image gate when applicable → title decision gate → meaning → large subject-specific silhouettes → abstraction gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
+
+## Multi-image gate
+
+When `N ≥ 2` user source images are supplied, resolve the batch mode with a structured choice dialog before per-image planning. Use the platform's structured user-input tool or native quick-reply UI; do not ask the user to type a sentence or a number.
+
+Show exactly these choices:
+
+1. `逐图独立重构（推荐）` — produce `N` final images; each source gets its own identity kernel, composition, palette decision, shape budget, and source-derived stamp.
+2. `统一系列重构` — produce `N` final images; share the selected visual family, material behavior, and (when appropriate) palette/typography system, but redesign each source separately.
+3. `合成一张图` — combine the sources into one final composition only when the user selects this option.
+
+If the user asks for multiple directions, record the requested direction count separately from the batch mode. Never use one source image's blueprint as the template for another source.
 
 ## Title decision gate
 
-Resolve whether the image needs a new text title before choosing topology, negative space, typography reference, or composition. If the user already required a title or no title, use that answer. Otherwise ask one concise question: **“这张图需要加入文字标题吗？请选择：需要标题 / 不需要标题 / 只保留输入图已有文字、不新增标题。”**
+Resolve whether the image needs a new text title before choosing topology, negative space, typography reference, or composition. If the user already required a title or no title, use that answer. Otherwise open a structured choice dialog, not an open-ended text question.
+
+For one source image, show `需要新增标题`, `不新增标题`, and `只保留输入图已有文字`.
+
+For multiple source images, first show `逐图自定义（推荐）`, `全部新增标题`, and `全部不新增标题`. When `逐图自定义` is selected, open the same three-choice title dialog once for each source image. Record the selection per source; do not ask the user to type a sentence or option number. If the user supplied exact copy in the prompt, preserve that copy instead of deriving new wording.
 
 An explicit `海报`/`poster` request remains a title request unless the user explicitly overrides it. Once the answer is recorded, use it for the complete render; do not infer, randomize, or change it later.
 
 ## Render contract gate
 
-Before writing the prompt, freeze one compact contract from [references/generation-path.md](references/generation-path.md): route; title mode and exact copy when applicable; source/identity kernel; topology/energy/density; one primary and one secondary structural change; one palette-anchor file with roles and area relationship; paper substrate versus colored field; dominant silhouettes and diagnostics; boundary behavior; gap/overlap/registration behavior; local print evidence; and stamp strategy. Every field must have one value. Do not carry unresolved alternatives into the prompt.
+Before writing the prompt, freeze one compact contract from [references/generation-path.md](references/generation-path.md): route; batch mode and source index when applicable; title mode and exact copy when applicable; source/identity kernel; topology/energy/density; one primary and one secondary structural change; one palette-anchor file with roles and area relationship; paper substrate versus colored field; dominant silhouettes and diagnostics; boundary behavior; gap/overlap/registration behavior; local print evidence; and stamp strategy. Every field must have one value. Do not carry unresolved alternatives into the prompt.
 
 ## Core contract
 

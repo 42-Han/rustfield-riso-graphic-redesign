@@ -267,6 +267,18 @@
         "Title behavior is resolved before topology and composition: ask the user when title need is unspecified, then carry the answer into the title block, typography reference, layout, and one-pass prompt; optional title presence is not a regeneration criterion after the answer is recorded.",
         "Any failure is regenerated as a fresh full render from original inputs; no generated candidate is edited or used as the next reference."
       ]
+    },
+    {
+      "id": 24,
+      "prompt": "我同时上传四张图片，请用我们的 skill 重绘；每张图可以有不同的构图，并由我分别选择是否加入标题。",
+      "expected_output": "A structured multi-image interaction that resolves batch mode first, lets the user choose title presence per source, and returns one complete final image per source unless the user selects a combined composition.",
+      "expectations": [
+        "A structured choice dialog resolves batch mode before per-image planning.",
+        "The user can choose 逐图独立重构, 统一系列重构, or 合成一张图.",
+        "Default or selected per-image routing outputs one final image per source; it does not return one representative image or duplicate drafts.",
+        "Title mode can be selected independently for each source through the per-image three-choice dialog.",
+        "Each source gets its own identity kernel, composition, palette decision, and stamp; no source blueprint, layout, or title is copied to another."
+      ]
     }
   ]
 }

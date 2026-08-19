@@ -5,39 +5,50 @@ This is the runtime order for every render. Do not reorder the stages and do not
 ## Processing order (MUST)
 
 1. **Route first** — determine image-input or text-only route and output count.
-2. **Title decision gate** — resolve whether a new title is needed before topology, negative space, typography reference, or composition.
-3. **Meaning** — identify the exact subject, count, action/state, relationships, setting function, atmosphere, and required information.
-4. **Visual thesis** — state what the image is about and the one dominant spatial, relational, or scale device that expresses it.
-5. **Shape first** — reduce the source to readable subject-specific silhouettes and a small diagnostic set, then complete the abstraction gate below. Do not add texture before the silhouettes and relationships read at thumbnail size.
-6. **Title-aware composition** — write the original arrangement and the planned arrangement, reserve the resolved title block only when the user selected a title, then choose one primary and one secondary structural change: crop, scale, rotation, asymmetry, overlap, viewpoint, depth order, enclosure, or negative-space pattern. The primary change alters hierarchy; the secondary changes relation or rhythm. A filter over the original coordinate graph is a failure.
-7. **Reference roles** — choose only the references needed for content, composition, shape, palette, material, and typography. Each reference has one role.
-8. **Palette and information** — select one exact project-board palette authority, then bind the resolved title/copy mode and source-derived stamp(s) without changing the subject or importing reference content.
-9. **Printed surface last** — write the global gap/overlap/registration behavior and local RISO evidence after the mass plan. Texture must support the shapes, never construct them.
-10. **Freeze the render contract** — record one value for every required decision below. Do not carry alternatives into the prompt.
-11. **One short prompt and one complete render** — compile the ordered prompt below, generate once from the original source and approved references, inspect, and restart from the original if a gate fails.
+2. **Multi-image gate when applicable** — for `N ≥ 2` user sources, resolve batch mode and whether each source gets an independent or shared series solution.
+3. **Title decision gate** — resolve whether a new title is needed before topology, negative space, typography reference, or composition.
+4. **Meaning** — identify the exact subject, count, action/state, relationships, setting function, atmosphere, and required information.
+5. **Visual thesis** — state what the image is about and the one dominant spatial, relational, or scale device that expresses it.
+6. **Shape first** — reduce the source to readable subject-specific silhouettes and a small diagnostic set, then complete the abstraction gate below. Do not add texture before the silhouettes and relationships read at thumbnail size.
+7. **Title-aware composition** — write the original arrangement and the planned arrangement, reserve the resolved title block only when the user selected a title, then choose one primary and one secondary structural change: crop, scale, rotation, asymmetry, overlap, viewpoint, depth order, enclosure, or negative-space pattern. The primary change alters hierarchy; the secondary changes relation or rhythm. A filter over the original coordinate graph is a failure.
+8. **Reference roles** — choose only the references needed for content, composition, shape, palette, material, and typography. Each reference has one role.
+9. **Palette and information** — select one exact project-board palette authority, then bind the resolved title/copy mode and source-derived stamp(s) without changing the subject or importing reference content.
+10. **Printed surface last** — write the global gap/overlap/registration behavior and local RISO evidence after the mass plan. Texture must support the shapes, never construct them.
+11. **Freeze the render contract** — record one value for every required decision below. Do not carry alternatives into the prompt.
+12. **One short prompt and one complete render** — compile the ordered prompt below, generate once from the original source and approved references, inspect, and restart from the original if a gate fails.
 
 ## 1. Declare the route and output
 
 Record:
 
 - route: `identity-preserving redesign`, `layout-preserving restyle`, `free semantic translation`, or `local edit`;
-- intended use, aspect ratio, and output count (use the user's explicit count; otherwise exactly one);
+- batch mode: `single`, `逐图独立重构`, `统一系列重构`, or `合成一张图`;
+- source index and total source count when `N ≥ 2`;
+- intended use, aspect ratio, and output count (`N` final images for `N` source images unless the batch mode is `合成一张图`; multiply by `K` only when the user requested `K` distinct directions);
 - title decision: `需要标题`, `不需要标题`, or `只保留输入图已有文字、不新增标题`;
 - text strategy: preserve required copy, resolved title, stamp-only, or no text;
 - stamp strategy: source-derived stamp(s), or no stamp when explicitly prohibited or unsupported;
 - exact title/copy only when the resolved answer requires or preserves it.
 
-## 2. Title decision gate (MUST happen before composition)
+## 2. Multi-image gate (MUST happen before per-image planning)
 
-If the user explicitly required a title or no title, record that answer. Otherwise **Ask the user before composition planning**:
+When `N ≥ 2` user source images are present, record the selected batch mode before writing any source blueprint:
 
-> 这张图需要加入文字标题吗？请选择：需要标题 / 不需要标题 / 只保留输入图已有文字、不新增标题。
+- `逐图独立重构` → create one independent blueprint and one complete final render per source. Recompute topology, composition, palette anchor, title mode, mass budget, and stamp for each source.
+- `统一系列重构` → create one shared family contract for material and any intentionally shared palette/typography, then create a separate source blueprint and separate composition for every image.
+- `合成一张图` → create one relational blueprint that names each source's role in the combined composition; output exactly one final image.
+
+Never return one representative image for a multi-image request unless `合成一张图` was selected. Never show intermediate drafts or duplicate retries. If the user requests multiple directions, each direction is a separate complete blueprint and final render, not a sequence of edits.
+
+## 3. Title decision gate (MUST happen before composition)
+
+If the user explicitly required a title or no title, record that answer. Otherwise invoke a structured choice dialog before composition planning. For one source, show `需要新增标题`, `不新增标题`, and `只保留输入图已有文字`. For multiple sources, first show `逐图自定义`, `全部新增标题`, and `全部不新增标题`; when `逐图自定义` is selected, invoke the three-choice dialog once per source image. Do not ask the user to type a sentence or an option number.
 
 The word `海报`/`poster` is treated as a title request unless the user explicitly overrides it. Do not choose the title block, typography reference, negative-space target, or composition until the answer is recorded. Once recorded, the answer is fixed for the complete render.
 
 For supplied images, use `identity-preserving redesign` unless the user explicitly selects another route. Project-board or web references selected by the Skill never become the content source.
 
-## 3. Build the meaning packet
+## 4. Build the meaning packet
 
 Write four compact statements:
 
@@ -52,7 +63,7 @@ Then write one `visual thesis`:
 This image is about [specific meaning or tension], expressed through [one dominant spatial, relational, or scale device], not through a collection of explanatory icons.
 ```
 
-## 4. Build the shape plan before any surface plan
+## 5. Build the shape plan before any surface plan
 
 For each main subject, record:
 
@@ -77,7 +88,7 @@ This gate controls construction, not surface. For image input, the default redes
 - Before the prompt is written, compare the source and planned coordinate graphs. If the dominant subject placement, viewpoint, depth order, and surrounding negative space remain materially the same, return to the composition step and redesign it.
 - Functional environments may remain, but translate dense texture or line inventory into a few broad planes, bands, or silhouette carriers. Keep only structural marks that are required to identify the setting or action.
 
-## 5. Redesign the composition explicitly
+## 6. Redesign the composition explicitly
 
 Record both sides of the redesign:
 
@@ -90,7 +101,7 @@ Secondary structural change: [one relation/rhythm change: asymmetry, overlap, en
 
 Preserve subject identity and relationship topology, but do not preserve the source's complete coordinate graph unless layout preservation was requested. Prefer one dominant relationship over an inventory of equally weighted objects. Use crop, unequal scale, off-center weight, overlap, enclosure, shallow perspective, and purposeful open space to make the redesign visibly new. The planned arrangement must satisfy the abstraction gate before any material language is added.
 
-## 6. Assign reference roles
+## 7. Assign reference roles
 
 Attach only references that change a real design decision, plus the mandatory material calibration:
 
@@ -105,7 +116,7 @@ Reference 6 — typography: font skeleton, weight/width, hierarchy, line breaks,
 
 Never blend palettes from multiple references. Never import subjects, props, clothing, anatomy, wording, branding, or exact coordinates from a style reference. The material calibration contributes no colors, layout, or brush-stroke surface; use only its broad edge wobble, gaps, registration, halftone, ink-density, and missing-ink behavior.
 
-## 7. Resolve palette, text, and stamps
+## 8. Resolve palette, text, and stamps
 
 Choose one exact palette anchor and record its file number, ink families, dominance order, approximate area relationship, and warm/cool or complementary contrast. If several anchors fit, choose the one matching the current energy and density; if still tied, choose the one whose color-area relationship is clearest to reproduce and record that choice. Preserve the anchor's own saturation level and high-chroma accents when present; do not force a muted anchor to become neon or a vivid anchor to become dull. Treat neutral natural-white as the paper substrate and visible paper slivers/margins, not as a requirement for a white-dominant image. Keep black secondary, at or below one quarter of the canvas and preferably below one fifth.
 
@@ -130,7 +141,7 @@ Resolve text and stamps independently:
 
 Use legible retro display lettering when the answer is `需要标题`; keep irregularity in the printed edge and spacing rather than casual handwriting or unresolved pseudo-text. If the answer is `不需要标题`, leave the render text-free. If the answer is `只保留输入图已有文字、不新增标题`, preserve only that recorded source copy.
 
-## 8. Apply the global boundary system, then local RISO evidence
+## 9. Apply the global boundary system, then local RISO evidence
 
 Every major color junction participates in one shared but varied system of narrow unequal gaps, exposed natural-white slivers, slight overlaps, and registration offsets. Do not use equal wide gutters, uniform outlines, or perfectly snapped seams. Some meaningful fields may remain connected.
 
@@ -140,6 +151,7 @@ After the color masses and composition are solved, add only local print evidence
 
 ```text
 Route:
+Batch mode / source index:
 Title mode / exact copy / title role:
 Source sentence / identity kernel:
 Topology / energy / density:
@@ -158,7 +170,7 @@ Source-specific avoids:
 
 Every line must contain one resolved value. This record is the only bridge between planning and the final prompt; do not add a second style summary.
 
-## 9. Compile the prompt in this exact order
+## 10. Compile the prompt in this exact order
 
 Keep the source-specific portion short and concrete (normally 90–200 words). Use five blocks, in this order:
 
@@ -176,7 +188,7 @@ Paste the following material lock verbatim as the final paragraph of the prompt:
 MATERIAL LOCK — Use a neutral natural-white paper base. Build readable closed color masses first. Give every major silhouette a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble, broad and uneven but still sharp; the wobble changes contour location, not edge sharpness, and never becomes blur, feathering, fuzzy halo, wet bleed, or brush-built softness. At meaningful color junctions use narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets. Add localized halftone clusters, uneven ink density, and small missing-ink rubs only after the shapes read; keep some fields almost clean and never use uniform full-frame grain. No yellowed paper, polished vector seams, watercolor, gouache, cut-paper craft, or rigid rectangular reduction.
 ```
 
-## 10. Generate, review, and restart
+## 11. Generate, review, and restart
 
 Generate the complete image once from the original content source and approved references. Never use a generated candidate as a mask, inpaint target, recolor source, texture pass, or typography input.
 

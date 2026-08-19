@@ -8,6 +8,7 @@ Complete before prompt writing:
 
 ```text
 Route / intended use / ratio / output count:
+Batch mode / source index / total source count:
 Source sentence:
 Subject type and count:
 Defining diagnostics:
@@ -61,6 +62,7 @@ Do not generate until all apply:
 - The source and planned-result sentences describe the same specific subject, action/state, relationship or setting function, and atmosphere unless the chosen route authorizes change.
 - The visual thesis names one dominant meaning or tension and one visible structural device; it is not a list of props or mood adjectives.
 - Subject type and count are explicit.
+- For `N ≥ 2` source images, the batch mode is explicit and the output count is `N` final images unless `合成一张图` was selected; each source has its own blueprint unless it is deliberately combined.
 - Every identity and relationship anchor has a visible place, scale, or structural expression.
 - For image input, every stamp comes from a named visible source element. For text-only input, every stamp comes from a concrete brief fact or declared identity anchor. Any required or selected title has exact concept-derived, supplied, or preserved wording.
 - Topology, energy, density, and output ratio are selected independently.
@@ -79,7 +81,8 @@ Do not generate until all apply:
 - The boundary lock separates crisp edge sharpness from broad contour wobble; wobble may move the contour but may not blur it.
 - Shape is readable before texture. The calibration's edge wobble, unequal junction gaps, and registration are visible at normal viewing size, while local ink evidence remains subordinate to the large masses.
 - The prompt's source-specific portion follows the fixed order identity → thesis/composition → shape/palette/information → boundary/print → source-specific avoids and stays normally within 90–200 words before the fixed material lock.
-- The title decision gate is complete before topology and composition: use the explicit user answer, or ask the title question before proceeding. Record the completed answer before selecting typography references or compiling the prompt; carry it unchanged into the complete render.
+- The title decision gate is complete before topology and composition: use the explicit user answer, or invoke the structured title-choice dialog before proceeding. Record the completed answer before selecting typography references or compiling the prompt; carry it unchanged into the complete render.
+- When the title decision was not explicit, it was collected through the structured choice dialog; for multiple sources, the title mode is recorded per source or as an explicit all-source setting. Do not require free-text answers for these choices.
 - When text is selected or required, it is exact and included in the same render. Optional title presence or absence is valid and never a reason to regenerate. Only an explicit no-text request prohibits text.
 - Selected composition, typography, stamp(s), palette, material, gaps, and print surface are all solved in one prompt and one render; there is no later mask, overlay, recolor, texture, or type pass.
 - Reference roles are separate and no style reference contributes content.
