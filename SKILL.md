@@ -7,6 +7,17 @@ description: Use when generating or redesigning any reference image, prompt, or 
 
 Transform any subject through one reusable pop-leaning visual grammar. Preserve what makes the input specific; change how it is organized and rendered. Build every delivered image as one complete render rather than a stack of corrective edits.
 
+## First-principles contract
+
+Four decisions control every render:
+
+1. **Identity** — what must remain recognizable from the user's image or brief.
+2. **Form** — how that identity is reduced to a few broad, subject-specific masses.
+3. **Composition** — how those masses are re-staged so one visual anchor reads clearly.
+4. **Surface** — how the resolved masses receive the selected palette and restrained local RISO evidence.
+
+This is the causal chain `identity → form → composition → surface`. Palette, typography, stamps, gaps, registration, and halftone support these four decisions; they never replace an unresolved form or composition decision.
+
 ## Route by user input
 
 - `IF` the user supplied at least one image, select the image-input route and use [references/subject-extraction.md](references/subject-extraction.md).
@@ -40,7 +51,7 @@ Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request
 
 ## Fixed production order
 
-The runtime sequence is not interchangeable: route → multi-image gate when applicable → title decision gate → meaning → large subject-specific silhouettes → abstraction gate → detail compression gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
+The runtime sequence is not interchangeable: route → multi-image gate when applicable → title decision gate → meaning → large subject-specific silhouettes → abstraction and detail-compression gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
 
 ## Multi-image gate
 
@@ -76,8 +87,8 @@ For image input, `IF` the user did not explicitly request another route, select 
 - Rebuild scale, crop, coordinates, depth, shape construction, palette, and material.
 - Simplify construction, not meaning. Fewer shapes per object must not become fewer source-specific ideas.
 - The first render must visibly convert photographic construction into broad subject-specific masses. Record one dominant silhouette, two to five diagnostics, and the detail that is intentionally removed for each main subject before writing the prompt.
-- Detail compression gate: express each subject with a cut-paper-like arrangement of a few flat, interlocking masses, but do not render cut-paper craft material. Individual strands, hairs, fur strokes, fabric patterns, and repeated texture lines are removed unless one broad mark is indispensable to identity; a printed version of a detail is still detail.
-- At thumbnail size, the hierarchy must read as one dominant subject plus one to three supporting masses. Texture, pattern, or ink speckle may never be the reason the subject is recognizable.
+- Abstraction and detail-compression gate: express each subject with a cut-paper-like arrangement of a few flat, interlocking masses, but do not render cut-paper craft material. Individual strands, hairs, fur strokes, fabric patterns, and repeated texture lines are removed unless one broad mark is indispensable to identity; a printed version of a detail is still detail.
+- At thumbnail size, the hierarchy must read as one visual anchor plus supporting mass groups. Preserve source-required counts and relationships inside those groups; texture, pattern, or ink speckle may never be the reason the subject is recognizable.
 - Unless layout preservation was explicitly requested, make at least two visible structural changes: one hierarchy change and one relation/rhythm change. A filter, recolor, small crop, or unchanged coordinate graph does not count as redesign.
 - The recomposed arrangement must be visibly different at thumbnail size and must make the dominant subject clearer through scale, spacing, overlap, crop, or negative space; do not retain the source's crowded coordinate graph.
 - Let the input control content. Let the project reference board control palette and the mandatory RISO print language unless the user explicitly requests source-color preservation.
@@ -168,7 +179,7 @@ Apply these invariants to every subject category:
 - Make every major color junction participate in one global registration-boundary system: narrow irregular gaps, exposed paper/light slivers, slight overlaps, or offset joins. Vary the behavior by junction; do not create uniform outlines or wide tiled gutters. Strong connected fields may remain connected when needed for hierarchy.
 - Keep the subject readable through crisp printed boundaries with clearly visible broad, low-frequency contour wobble. The wobble changes contour location, not edge sharpness; show uneven ink contact, slight registration, and small under-inked breaks without blur, feathering, fuzzy halos, wet watercolor bleeding, pasted craft edges, or polished vector contours.
 - Use line only for necessary internal information such as motion, pattern, label, species mark, or sparse structural cue. Do not make continuous outline drawing the main construction system.
-- Use a small subject-specific mass/detail budget before adding surface. The accepted batches often began around 6–18 major closed masses and, when the topology supported it, about 70–85% large readable masses; these are starting guides only, never a universal output quota.
+- Use the smallest subject-specific mass/detail budget that preserves identity, relationship, setting function, and information. Do not impose a fixed whole-image shape count.
 - Preserve only the environmental structure, functional parts, and perspective planes that carry identity. Translate dense foliage, fur, hair, clothing folds, reflections, and architectural line inventories into broad masses or a few structural bands; do not carry photographic detail into the first render.
 
 When people appear, preserve pose, body/crop identity, clothing blocks, action props, and social relationships. `MUST` remove facial features unless the current user explicitly requires them. Reduce hair strands, anatomy lines, seams, folds, fingers, laces, jewelry, and fashion-rendering detail until color masses carry the figure. This is a conditional figure rule, not a rule for non-human subjects.

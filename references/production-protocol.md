@@ -2,6 +2,8 @@
 
 Use this protocol to approve a complete one-pass candidate or restart a failed attempt. It contains no subject-specific preset; all content fields come from the current source.
 
+Four decisions control every render: identity → form → composition → surface. If a later surface choice is compensating for an unresolved form or composition decision, return to that earlier gate.
+
 ## Preflight record
 
 Complete before prompt writing:
@@ -38,9 +40,9 @@ Exact user-board palette anchor:
 Mandatory material calibration: reference_images/material-calibration-riso-edge.png attached / missing:
 Palette ink families / dominance order / approximate area ratios:
 Identity-critical source-color exceptions:
-Shape/detail budget by main subject (starting point: 6–18 major masses; adjust only for identity/relationship/setting):
+Shape/detail budget by main subject (smallest set that preserves identity, relationship, setting, and information):
 Global color-boundary plan:
-Surface mode and intensity (local print evidence; starting coverage roughly 5–15%):
+Surface mode and intensity (local print evidence limited to selected structural areas):
 Paper substrate versus colored field:
 Boundary lock (crisp edge / broad wobble / unequal gaps / overlaps / registration):
 Exact title/copy and retro typography plan:
@@ -69,15 +71,14 @@ Do not generate until all apply:
 - The setting skeleton survives when it carries identity.
 - The plan records the original arrangement, the planned arrangement, one primary hierarchy change, and one secondary relation/rhythm change unless layout preservation is requested.
 - The planned arrangement does not preserve the source's complete coordinate graph when layout preservation was not requested.
-- composition clarity gate: the recomposed arrangement must be visibly different at thumbnail size, with one dominant subject plus one to three supporting masses and purposeful open space; do not let a crowded source inventory remain the visual hierarchy.
-- The abstraction gate is complete before prompt writing: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and a mass replacement for every removed identity-bearing detail.
-- Detail compression gate is complete before surface planning: individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines are replaced by broad masses or omitted, and print texture is not used to preserve them.
+- composition clarity gate: the recomposed arrangement must be visibly different at thumbnail size, with one visual anchor plus supporting mass groups and purposeful open space; preserve source-required counts inside those groups without letting a crowded inventory become the visual hierarchy.
+- The single abstraction and detail-compression gate is complete before prompt writing or surface planning: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and a broad-mass replacement for every removed identity-bearing detail; individual strands, hairs, fur strokes, fabric patterns, and repeated texture lines are replaced or omitted, and print texture is never used to preserve them.
 - Unless layout preservation was requested, the planned arrangement has at least two visible structural changes; color, texture, a small crop, or a filter does not count.
 - One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. The mandatory material calibration is attached separately and controls print behavior only.
 - If more than one palette anchor fits, the plan records the energy/density match used to choose one; if still tied, it records the anchor whose color-area relationship is clearest to reproduce. No palette choice remains implicit.
 - The output palette lock is documented separately from saturation: each major mass has a clean dominant ink family, supporting inks have explicit roles, and adjacent masses remain visibly separated rather than muddy. A restrained or near-monochrome anchor is valid when its hue, value structure, and boundaries are clear.
 - Each major subject has diagnostic features and a simplification budget.
-- The shape plan is completed before any texture plan: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and only necessary internal lines. Use the accepted batches' 6–18 major-mass range only as a starting guide, never as a universal quota.
+- The shape plan is completed before any texture plan: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and only necessary internal lines. Use the smallest subject-specific set that preserves identity and relation; never impose a universal quota.
 - Every major color junction participates in the shared registration-boundary system through a narrow irregular gap, light/paper sliver, slight overlap, or offset join. The plan does not use uniform outlines or wide gutters.
 - Natural-white is recorded as the paper substrate and exposed paper, not as a requirement for a white-dominant image.
 - The boundary lock separates crisp edge sharpness from broad contour wobble; wobble may move the contour but may not blur it.

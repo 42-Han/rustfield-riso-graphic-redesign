@@ -2,7 +2,7 @@
 
 Use this path only when the user supplied no image. Project-board or web images selected by the Skill remain supporting references; they do not change the route.
 
-Use the same production order as the image-input path: route → title decision gate → meaning/theme anchors → visual thesis → shape masses → title-aware redesigned composition → role-separated references and palette → text/stamps → global junctions → local print evidence → one short prompt → one complete render.
+Use the common production order in `SKILL.md`: route → Multi-image gate when applicable → title decision gate → meaning/theme anchors → visual thesis → shape masses → abstraction and detail-compression gate → title-aware redesigned composition → role-separated references and palette → text/stamps → global junctions → local print evidence → one short prompt → one complete render.
 
 ## 1. Lock the text brief
 
@@ -19,9 +19,7 @@ Write:
 
 ## 2. Title decision gate (MUST happen before research-driven composition)
 
-If the user explicitly required a title or no title, record that answer. Otherwise ask before choosing topology, negative space, typography reference, or composition:
-
-> 这张图需要加入文字标题吗？请选择：需要标题 / 不需要标题 / 只保留输入图已有文字、不新增标题。
+If the user explicitly required a title or no title, record that answer. Otherwise invoke the structured choice dialog before choosing topology, negative space, typography reference, or composition. For one source, show `需要新增标题`, `不新增标题`, and `只保留输入图已有文字`. For multiple sources, apply the multi-image gate in `SKILL.md`, then show `逐图自定义`, `全部新增标题`, and `全部不新增标题`; when custom is selected, invoke the same three-choice title dialog once per source. Do not ask the user to type a sentence or an option number.
 
 The word `海报`/`poster` is treated as a title request unless the user explicitly overrides it. Do not begin composition planning until the answer is recorded. Once recorded, carry it unchanged through research, references, prompt writing, and the complete render.
 
@@ -139,7 +137,7 @@ Naïve geometry means deliberate simplification and slightly awkward constructio
 
 Build the subject from readable color masses with subject-specific curves, blunt angles, leaning axes, asymmetry, and proportion shifts. Geometry controls mass organization and hierarchy; it never licenses rigid rectangular reduction, generic icon construction, or vector-smooth edge finish.
 
-Never impose a fixed whole-image shape count as a shortcut for simplification. Set local detail budgets by role. Reduce excessive facial, hair, anatomy, fold, decoration, or repeated micro-detail while preserving successful environmental structure, moderate block perspective, functional parts, sparse necessary lines, and enough information density to keep the established subject specific.
+Never impose a fixed whole-image shape count as a shortcut for simplification. Set local detail budgets by role. Form before surface is the only texture rule: reduce excessive facial, hair, anatomy, fold, decoration, or repeated micro-detail into broad masses or omit it while preserving successful environmental structure, moderate block perspective, functional parts, sparse necessary lines, and enough information density to keep the established subject specific. At thumbnail size read one visual anchor plus supporting mass groups; preserve source-required counts and relationships inside those groups.
 
 - Use a crisp, hard-edged printed boundary with clearly visible low-frequency, nonuniform contour wobble on every major silhouette. The wobble changes contour location, not edge sharpness; it should preserve recognition and remain visible at normal viewing size without blur, feathering, fuzzy halos, soft-focus edges, wet bleed, or brush-built softness.
 - Vary repeated shapes instead of duplicating perfect copies. Break mechanical equality in width, radius, angle, spacing, alignment, and curvature.
@@ -168,7 +166,7 @@ After the masses read clearly, apply unmistakable physical print evidence: ink-d
 - Concentrate evidence inside selected large/medium masses and at meaningful junctions.
 - Vary density, scale, direction, and location. Keep some color masses almost clean.
 - Let small missing-ink rubs expose the paper without erasing the silhouette.
-- Make the print evidence visible at normal viewing size but subordinate to the large shapes. Do not reduce it to microscopic grain, and do not let it become a full-frame noise filter.
+- Make the print evidence visible at normal viewing size but subordinate to the large shapes. Local print evidence serves only selected structural areas; keep most large fields clean. Do not reduce it to microscopic grain, and do not let it become a full-frame noise filter.
 - Keep the paper substrate neutral natural white; colored fields may still dominate the composition. Change the substrate only when the user explicitly requests another paper color.
 
 Print behavior must remain controlled but materially active. Never simulate it with full-frame grain, uniform distress, fuzzy watercolor bleed, brush-built silhouettes, pasted seams, or photographed paper craft.

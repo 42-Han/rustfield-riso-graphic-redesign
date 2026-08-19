@@ -72,15 +72,15 @@ For each main subject, record:
 - one allowed proportion or viewpoint shift;
 - only the internal lines required for action, pattern, label, species mark, or function.
 
-Use a small subject-specific mass budget. The accepted batches often began around **6–18 major closed masses** and, when the topology supported it, about **70–85% of the image carried by large readable masses**. These are starting guides, never a universal output quota; deviate only for a recorded identity, relationship, or setting reason.
+Use the smallest subject-specific mass budget that preserves identity, relationship, setting function, and information. Do not impose a fixed whole-image shape count.
 
 Remove photographic micro-detail: eyes, nose, mouth, hair strands, anatomy contours, seams, folds, fingers, laces, jewelry inventory, tiny reflections, repeated surface pattern, and decorative clutter when the subject remains identifiable without them. People are faceless by default unless the user explicitly requires facial features.
 
 The shape must read before texture. Do not use dots, scratches, grain, or brush marks to make an otherwise generic silhouette recognizable.
 
-### Abstraction gate (MUST be complete before the prompt)
+### Abstraction and detail compression gate (MUST be complete before surface planning)
 
-This gate controls construction, not surface. For image input, the default redesign must visibly replace photographic construction with a small set of geometric/organic color masses in the first render:
+This is the single construction gate; it controls form and composition, not surface. For image input, the default redesign must visibly replace photographic construction with a small set of geometric/organic color masses in the first render. Form before surface is the only texture rule. Use a cut-paper-like simplification of the subject's forms without adding cut-paper craft texture:
 
 - For every main subject, record a dominant silhouette, two to five diagnostics, and an explicit removed-detail list. The removed-detail list must name the source features that will not be drawn (for example hair strands, fur texture, cloth folds, seams, foliage texture, window grids, or repeated architectural lines).
 - State how the same subject-specific information is carried by the new masses. If a subject is still recognizable only because of photographic micro-detail, the shape plan is incomplete.
@@ -88,14 +88,10 @@ This gate controls construction, not surface. For image input, the default redes
 - Before the prompt is written, compare the source and planned coordinate graphs. If the dominant subject placement, viewpoint, depth order, and surrounding negative space remain materially the same, return to the composition step and redesign it.
 - Functional environments may remain, but translate dense texture or line inventory into a few broad planes, bands, or silhouette carriers. Keep only structural marks that are required to identify the setting or action.
 
-### Detail compression gate (MUST be complete before surface planning)
-
-This is a shape decision, not a material effect. Use a cut-paper-like simplification of the subject's forms without adding cut-paper craft texture:
-
 - Replace individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines with one broad silhouette, one to three flat internal masses, or nothing when the identity still reads; remove decorative marks unless they are identity-critical.
 - A halftone, ink rub, or printed version of a fine detail is still fine detail. Do not use print marks to preserve photographic hair, fur, fabric, foliage, or pattern inventories.
-- At thumbnail size, the composition must read as **one dominant subject plus one to three supporting masses**. Large fields carry recognition; micro-detail never carries recognition.
-- Keep most large fields clean. Reserve halftone clusters, ink-density changes, missing-ink rubs, and ink drags for a few deliberate local zones after the masses read; never spread them across every subject or field.
+- At thumbnail size, the composition must read as **one visual anchor plus supporting mass groups**. Preserve source-required counts and relationships inside those groups; large fields carry recognition and micro-detail never carries recognition.
+- Keep most large fields clean. local print evidence serves only selected structural areas: reserve halftone clusters, ink-density changes, missing-ink rubs, and ink drags for a few deliberate zones after the masses read; never spread them across every subject or field.
 - Record the removed-detail list and the broad mass that replaces each identity-bearing removal in the render contract. If the subject needs texture to be recognized, return to the shape plan and simplify again.
 
 ## 6. Redesign the composition explicitly
@@ -155,7 +151,7 @@ Use legible retro display lettering when the answer is `需要标题`; keep irre
 
 Every major color junction participates in one shared but varied system of narrow unequal gaps, exposed natural-white slivers, slight overlaps, and registration offsets. Do not use equal wide gutters, uniform outlines, or perfectly snapped seams. Some meaningful fields may remain connected.
 
-After the color masses and composition are solved, add only local print evidence: uneven ink density, concentrated halftone clusters, small missing-ink rubs, a few short ink-drag marks, and selected registration drift. As a starting guide, keep visible halftone/ink-event coverage local and subordinate (roughly 5–15% of the canvas, adjusted only when the declared reference clearly supports more); keep most large fields clean. Never use full-frame grain or texture to replace shape design.
+After the color masses and composition are solved, add only local print evidence: uneven ink density, concentrated halftone clusters, small missing-ink rubs, a few short ink-drag marks, and selected registration drift. local print evidence serves only selected structural areas; keep most large fields clean and never use full-frame grain or texture to replace shape design.
 
 ### Render contract (MUST be complete before the prompt)
 
@@ -195,7 +191,7 @@ Do not append a second mood-board description, a generic style essay, or a long 
 Paste the following material lock verbatim as the final paragraph of the prompt:
 
 ```text
-MATERIAL LOCK — Use a neutral natural-white paper base. Build readable closed color masses first. Each subject must remain a few broad, cut-paper-like flat masses without cut-paper craft material: no individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines; a printed version of a fine detail is still fine detail. At thumbnail size read one dominant subject plus one to three supporting masses. Give every major silhouette a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble, broad and uneven but still sharp; the wobble changes contour location, not edge sharpness, and never becomes blur, feathering, fuzzy halo, wet bleed, or brush-built softness. At meaningful color junctions use narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets. Add localized halftone clusters, uneven ink density, and small missing-ink rubs only after the shapes read; keep most large fields clean and reserve print evidence for a few deliberate zones, never use uniform full-frame grain. No yellowed paper, polished vector seams, watercolor, gouache, cut-paper craft, or rigid rectangular reduction.
+MATERIAL LOCK — Use a neutral natural-white paper base. Build readable closed color masses first. Each subject must remain a few broad, cut-paper-like flat masses without cut-paper craft material: no individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines; a printed version of a fine detail is still fine detail. At thumbnail size read one visual anchor plus supporting mass groups, preserving source-required counts and relationships inside those groups. Give every major silhouette a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble, broad and uneven but still sharp; the wobble changes contour location, not edge sharpness, and never becomes blur, feathering, fuzzy halo, wet bleed, or brush-built softness. At meaningful color junctions use narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets. Add localized halftone clusters, uneven ink density, and small missing-ink rubs only after the shapes read; keep most large fields clean and reserve print evidence for a few deliberate zones, never use uniform full-frame grain. No yellowed paper, polished vector seams, watercolor, gouache, cut-paper craft, or rigid rectangular reduction.
 ```
 
 ## 11. Generate, review, and restart

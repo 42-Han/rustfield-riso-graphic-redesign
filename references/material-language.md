@@ -10,7 +10,7 @@ Use this gate for every generation. The project is defined by simplified express
 - Make every major color junction participate in one shared registration-boundary system: a narrow irregular paper/light-color gap, slight overlap, or offset registration sliver. Vary the behavior by junction; do not make all joins edge-to-edge, uniformly outlined, or separated by equal wide gutters.
 - Let large and medium color fields carry the image. Ink contact, edge wobble, junction gaps, halftone, and registration are local supporting evidence; they must not compete with or replace the silhouettes.
 - Compress hair, fur, foliage, fabric patterns, and surface decoration into broad flat masses before adding print evidence. A halftone or ink rub cannot be used to retain the original fine texture.
-- At thumbnail size, read one dominant subject plus one to three supporting masses. Keep most large fields clean; selected local print marks are accents, not a dense texture layer.
+- At thumbnail size, read one visual anchor plus supporting mass groups. Preserve source-required counts and relationships inside those groups. Keep most large fields clean; selected local print marks are accents, not a dense texture layer.
 - For people, color masses must carry anatomy and identity. A figure should survive as a small set of abstract blocks without relying on line drawing.
 - Preserve a clear large/medium/small hierarchy at thumbnail size.
 - Use one declared user-board image as the palette authority. Copy its ink families, dominance order, approximate area ratios, and contrast pattern; do not synthesize a hybrid from several references. A separate material reference may refine print behavior only; it never overrides the palette authority.
@@ -20,7 +20,7 @@ Use this gate for every generation. The project is defined by simplified express
 ## Dominant surface: screen-print / risograph
 
 - Use the ink families present in the selected palette anchor. Do not impose a fixed color count.
-- Place concentrated local halftone fields, ink-density shifts, missing-ink rubs, and registration offsets inside selected shapes and meaningful color boundaries. Use roughly 5–15% visible local ink-event coverage as a starting guide, adjusting only when the declared board reference clearly supports denser evidence.
+- Place concentrated local halftone fields, ink-density shifts, missing-ink rubs, and registration offsets only inside selected shapes and meaningful color boundaries. Local print evidence serves selected structural areas; do not spread it across every subject or field.
 - Include localized halftone clusters, uneven ink density, and a few small missing-ink rubs where they support form or junctions; keep some large fields almost clean and never simulate the material as one uniform full-frame grain filter.
 - Keep dots local and intentional. Do not cover the whole image with uniform distress.
 - Let pop energy come first from color clash, scale, crop, flat contrast, and mass relationships; dot fields are secondary evidence, not the source of the composition.
