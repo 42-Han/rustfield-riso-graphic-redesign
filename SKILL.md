@@ -40,7 +40,7 @@ Do not skip steps 1, 2, 3, 5, or 7. Do not read both route files for one request
 
 ## Fixed production order
 
-The runtime sequence is not interchangeable: route → multi-image gate when applicable → title decision gate → meaning → large subject-specific silhouettes → abstraction gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
+The runtime sequence is not interchangeable: route → multi-image gate when applicable → title decision gate → meaning → large subject-specific silhouettes → abstraction gate → detail compression gate → title-aware redesigned composition → role-separated references and one palette anchor → text/stamps → global gaps/overlaps/registration → local RISO evidence → one frozen render contract → one short prompt → one complete render. Never begin with texture, never let a material reference choose the composition, and never treat a source-photo trace with a print filter as a redesign.
 
 ## Multi-image gate
 
@@ -76,7 +76,10 @@ For image input, `IF` the user did not explicitly request another route, select 
 - Rebuild scale, crop, coordinates, depth, shape construction, palette, and material.
 - Simplify construction, not meaning. Fewer shapes per object must not become fewer source-specific ideas.
 - The first render must visibly convert photographic construction into broad subject-specific masses. Record one dominant silhouette, two to five diagnostics, and the detail that is intentionally removed for each main subject before writing the prompt.
+- Detail compression gate: express each subject with a cut-paper-like arrangement of a few flat, interlocking masses, but do not render cut-paper craft material. Individual strands, hairs, fur strokes, fabric patterns, and repeated texture lines are removed unless one broad mark is indispensable to identity; a printed version of a detail is still detail.
+- At thumbnail size, the hierarchy must read as one dominant subject plus one to three supporting masses. Texture, pattern, or ink speckle may never be the reason the subject is recognizable.
 - Unless layout preservation was explicitly requested, make at least two visible structural changes: one hierarchy change and one relation/rhythm change. A filter, recolor, small crop, or unchanged coordinate graph does not count as redesign.
+- The recomposed arrangement must be visibly different at thumbnail size and must make the dominant subject clearer through scale, spacing, overlap, crop, or negative space; do not retain the source's crowded coordinate graph.
 - Let the input control content. Let the project reference board control palette and the mandatory RISO print language unless the user explicitly requests source-color preservation.
 - Treat any named color, label, product form, uniform, landmark, or species marking as a possible identity anchor before replacing it.
 

@@ -9,7 +9,7 @@ This is the runtime order for every render. Do not reorder the stages and do not
 3. **Title decision gate** — resolve whether a new title is needed before topology, negative space, typography reference, or composition.
 4. **Meaning** — identify the exact subject, count, action/state, relationships, setting function, atmosphere, and required information.
 5. **Visual thesis** — state what the image is about and the one dominant spatial, relational, or scale device that expresses it.
-6. **Shape first** — reduce the source to readable subject-specific silhouettes and a small diagnostic set, then complete the abstraction gate below. Do not add texture before the silhouettes and relationships read at thumbnail size.
+6. **Shape first** — reduce the source to readable subject-specific silhouettes and a small diagnostic set, then complete the abstraction and detail-compression gates below. Do not add texture before the silhouettes and relationships read at thumbnail size.
 7. **Title-aware composition** — write the original arrangement and the planned arrangement, reserve the resolved title block only when the user selected a title, then choose one primary and one secondary structural change: crop, scale, rotation, asymmetry, overlap, viewpoint, depth order, enclosure, or negative-space pattern. The primary change alters hierarchy; the secondary changes relation or rhythm. A filter over the original coordinate graph is a failure.
 8. **Reference roles** — choose only the references needed for content, composition, shape, palette, material, and typography. Each reference has one role.
 9. **Palette and information** — select one exact project-board palette authority, then bind the resolved title/copy mode and source-derived stamp(s) without changing the subject or importing reference content.
@@ -88,6 +88,16 @@ This gate controls construction, not surface. For image input, the default redes
 - Before the prompt is written, compare the source and planned coordinate graphs. If the dominant subject placement, viewpoint, depth order, and surrounding negative space remain materially the same, return to the composition step and redesign it.
 - Functional environments may remain, but translate dense texture or line inventory into a few broad planes, bands, or silhouette carriers. Keep only structural marks that are required to identify the setting or action.
 
+### Detail compression gate (MUST be complete before surface planning)
+
+This is a shape decision, not a material effect. Use a cut-paper-like simplification of the subject's forms without adding cut-paper craft texture:
+
+- Replace individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines with one broad silhouette, one to three flat internal masses, or nothing when the identity still reads; remove decorative marks unless they are identity-critical.
+- A halftone, ink rub, or printed version of a fine detail is still fine detail. Do not use print marks to preserve photographic hair, fur, fabric, foliage, or pattern inventories.
+- At thumbnail size, the composition must read as **one dominant subject plus one to three supporting masses**. Large fields carry recognition; micro-detail never carries recognition.
+- Keep most large fields clean. Reserve halftone clusters, ink-density changes, missing-ink rubs, and ink drags for a few deliberate local zones after the masses read; never spread them across every subject or field.
+- Record the removed-detail list and the broad mass that replaces each identity-bearing removal in the render contract. If the subject needs texture to be recognized, return to the shape plan and simplify again.
+
 ## 6. Redesign the composition explicitly
 
 Record both sides of the redesign:
@@ -99,7 +109,7 @@ Primary structural change: [one hierarchy change: crop, scale, viewpoint, or dep
 Secondary structural change: [one relation/rhythm change: asymmetry, overlap, enclosure, rotation, module distribution, or negative-space pattern].
 ```
 
-Preserve subject identity and relationship topology, but do not preserve the source's complete coordinate graph unless layout preservation was requested. Prefer one dominant relationship over an inventory of equally weighted objects. Use crop, unequal scale, off-center weight, overlap, enclosure, shallow perspective, and purposeful open space to make the redesign visibly new. The planned arrangement must satisfy the abstraction gate before any material language is added.
+Preserve subject identity and relationship topology, but do not preserve the source's complete coordinate graph unless layout preservation was requested. Prefer one dominant relationship over an inventory of equally weighted objects. Use crop, unequal scale, off-center weight, overlap, enclosure, shallow perspective, and purposeful open space to make the redesign visibly new. The recomposed arrangement must be visibly different at thumbnail size and must make the dominant subject clearer; the planned arrangement must satisfy the abstraction and detail-compression gates before any material language is added.
 
 ## 7. Assign reference roles
 
@@ -145,7 +155,7 @@ Use legible retro display lettering when the answer is `需要标题`; keep irre
 
 Every major color junction participates in one shared but varied system of narrow unequal gaps, exposed natural-white slivers, slight overlaps, and registration offsets. Do not use equal wide gutters, uniform outlines, or perfectly snapped seams. Some meaningful fields may remain connected.
 
-After the color masses and composition are solved, add only local print evidence: uneven ink density, concentrated halftone clusters, small missing-ink rubs, a few short ink-drag marks, and selected registration drift. As a starting guide, keep visible halftone/ink-event coverage local and subordinate (roughly 5–15% of the canvas, adjusted only when the declared reference clearly supports more). Never use full-frame grain or texture to replace shape design.
+After the color masses and composition are solved, add only local print evidence: uneven ink density, concentrated halftone clusters, small missing-ink rubs, a few short ink-drag marks, and selected registration drift. As a starting guide, keep visible halftone/ink-event coverage local and subordinate (roughly 5–15% of the canvas, adjusted only when the declared reference clearly supports more); keep most large fields clean. Never use full-frame grain or texture to replace shape design.
 
 ### Render contract (MUST be complete before the prompt)
 
@@ -185,7 +195,7 @@ Do not append a second mood-board description, a generic style essay, or a long 
 Paste the following material lock verbatim as the final paragraph of the prompt:
 
 ```text
-MATERIAL LOCK — Use a neutral natural-white paper base. Build readable closed color masses first. Give every major silhouette a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble, broad and uneven but still sharp; the wobble changes contour location, not edge sharpness, and never becomes blur, feathering, fuzzy halo, wet bleed, or brush-built softness. At meaningful color junctions use narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets. Add localized halftone clusters, uneven ink density, and small missing-ink rubs only after the shapes read; keep some fields almost clean and never use uniform full-frame grain. No yellowed paper, polished vector seams, watercolor, gouache, cut-paper craft, or rigid rectangular reduction.
+MATERIAL LOCK — Use a neutral natural-white paper base. Build readable closed color masses first. Each subject must remain a few broad, cut-paper-like flat masses without cut-paper craft material: no individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines; a printed version of a fine detail is still fine detail. At thumbnail size read one dominant subject plus one to three supporting masses. Give every major silhouette a crisp, hard-edged printed boundary with clearly visible low-frequency irregular contour wobble, broad and uneven but still sharp; the wobble changes contour location, not edge sharpness, and never becomes blur, feathering, fuzzy halo, wet bleed, or brush-built softness. At meaningful color junctions use narrow unequal gaps, exposed paper slivers, slight overlaps, and registration offsets. Add localized halftone clusters, uneven ink density, and small missing-ink rubs only after the shapes read; keep most large fields clean and reserve print evidence for a few deliberate zones, never use uniform full-frame grain. No yellowed paper, polished vector seams, watercolor, gouache, cut-paper craft, or rigid rectangular reduction.
 ```
 
 ## 11. Generate, review, and restart

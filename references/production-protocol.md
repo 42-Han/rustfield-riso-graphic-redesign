@@ -69,7 +69,9 @@ Do not generate until all apply:
 - The setting skeleton survives when it carries identity.
 - The plan records the original arrangement, the planned arrangement, one primary hierarchy change, and one secondary relation/rhythm change unless layout preservation is requested.
 - The planned arrangement does not preserve the source's complete coordinate graph when layout preservation was not requested.
+- composition clarity gate: the recomposed arrangement must be visibly different at thumbnail size, with one dominant subject plus one to three supporting masses and purposeful open space; do not let a crowded source inventory remain the visual hierarchy.
 - The abstraction gate is complete before prompt writing: each main subject has one dominant silhouette, two to five diagnostics, an explicit removed-detail list, and a mass replacement for every removed identity-bearing detail.
+- Detail compression gate is complete before surface planning: individual strands, hairs, fur strokes, fabric patterns, or repeated texture lines are replaced by broad masses or omitted, and print texture is not used to preserve them.
 - Unless layout preservation was requested, the planned arrangement has at least two visible structural changes; color, texture, a small crop, or a filter does not count.
 - One exact user-board image controls the palette; its ink families, dominance order, approximate area ratios, and any source-color exception are documented. The mandatory material calibration is attached separately and controls print behavior only.
 - If more than one palette anchor fits, the plan records the energy/density match used to choose one; if still tied, it records the anchor whose color-area relationship is clearest to reproduce. No palette choice remains implicit.
@@ -80,6 +82,7 @@ Do not generate until all apply:
 - Natural-white is recorded as the paper substrate and exposed paper, not as a requirement for a white-dominant image.
 - The boundary lock separates crisp edge sharpness from broad contour wobble; wobble may move the contour but may not blur it.
 - Shape is readable before texture. The calibration's edge wobble, unequal junction gaps, and registration are visible at normal viewing size, while local ink evidence remains subordinate to the large masses.
+- Keep most large fields clean; localized halftone, ink-density shifts, missing-ink rubs, and ink drags are selected accents, not a dense texture layer across every subject.
 - The prompt's source-specific portion follows the fixed order identity → thesis/composition → shape/palette/information → boundary/print → source-specific avoids and stays normally within 90–200 words before the fixed material lock.
 - The title decision gate is complete before topology and composition: use the explicit user answer, or invoke the structured title-choice dialog before proceeding. Record the completed answer before selecting typography references or compiling the prompt; carry it unchanged into the complete render.
 - When the title decision was not explicit, it was collected through the structured choice dialog; for multiple sources, the title mode is recorded per source or as an explicit all-source setting. Do not require free-text answers for these choices.
