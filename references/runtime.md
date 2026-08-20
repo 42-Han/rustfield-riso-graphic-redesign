@@ -11,9 +11,9 @@ Use this exact order:
 3. Extract meaning and identity anchors.
 4. Write the visual thesis.
 5. Convert identity into broad subject-specific masses.
-6. Design a new title-aware composition.
+6. Design a new title- and stamp-aware composition.
 7. Assign role-separated references and one palette authority.
-8. Resolve copy, stamps, and palette roles.
+8. Resolve copy and palette roles.
 9. Apply the global junction system and selected local print evidence.
 10. Freeze one render contract, compile one execution Prompt, and generate one complete image.
 
@@ -77,9 +77,9 @@ Primary structural change: [crop, scale, viewpoint, or depth-order change].
 Secondary structural change: [asymmetry, overlap, rotation, enclosure, module rhythm, or negative-space change].
 ```
 
-The first two fields are mandatory graphic construction. An optional composition or shape reference may refine them, but they cannot be left to the renderer. Unless layout preservation was explicitly requested, the planned arrangement must visibly change both hierarchy and relation/rhythm from the source; recolor, texture, small crop, or unchanged coordinates do not count.
+The visual anchor, counterweight(s), and stamp module are mandatory graphic construction. An optional composition or shape reference may refine them, but they cannot be left to the renderer. Unless layout preservation was explicitly requested, the planned arrangement must visibly change both hierarchy and relation/rhythm from the source; recolor, texture, small crop, or unchanged coordinates do not count.
 
-### Title-aware composition
+### Title- and stamp-aware composition
 
 When a title is selected, reserve its module inside this planned arrangement before selecting typography. Decide whether it is a primary display mass or supporting information, then choose one module:
 
@@ -91,6 +91,14 @@ When a title is selected, reserve its module inside this planned arrangement bef
 The title's literal words come from: user-supplied copy → indispensable source copy → short phrase derived from the current subject or visual thesis. The words are fixed only in this render contract, not across future images or unrelated themes.
 
 Record exact wording, module location, width/height relationship, line breaks, alignment, baseline/rotation, spacing, ink/paper relationship, and whether image masses stop at, pass behind, or overlap the type. Type is never a label dropped onto an already finished image.
+
+For every render, add this field to the same composition blueprint:
+
+```text
+Stamp module: [source-derived form] functions as [title-band terminus / margin index / corner counterweight / boundary connector] at [location], attached to [title module / outer margin / visual anchor / color-field junction].
+```
+
+The stamp is a small secondary layout mass, not free decoration. When a title is present, it must either terminate, balance, align with, or bridge the title module. When no title is present, it must bind to an outer margin, the visual anchor, or a declared color-field junction. Its chosen function and attachment are mandatory graphic construction, together with the visual anchor and counterweight(s).
 
 ## 5. Reference roles
 
@@ -109,11 +117,11 @@ Choose one exact board palette authority afresh for the current image. Record al
 
 For selected titles, choose typography after the title module is known. Copy the reference's observable font skeleton, weight/width, hierarchy, line breaks, alignment, rotation, spacing, and type/image interlock—not its wording, objects, palette, or exact layout. A fixed default font or title position is never valid.
 
-## 6. Information and stamps
+## 6. Information and stamp source
 
 Preserve required source copy exactly. `不加标题` creates no new title; indispensable source copy remains preserved. When a title is required or selected, render its exact words in the same complete image and review legibility.
 
-Select one source-derived stamp for every render and record its source, location, scale, and visual role. For image input, it comes from a visible prop, tool, landmark, ingredient, sign fragment, species feature, product detail, or silhouette. For text-only work, it comes from a concrete brief fact or declared identity anchor. Add one or two further stamps only when they improve the declared composition. Omit stamps only when the user explicitly requests an extremely minimal result or the source has no meaningful secondary anchor. Stamps remain secondary and compositionally connected; they are not generic decoration.
+Select one source-derived stamp for every render. For image input, it comes from a visible prop, tool, landmark, ingredient, sign fragment, species feature, product detail, or silhouette. For text-only work, it comes from a concrete brief fact or declared identity anchor. Its layout function and attachment were already fixed in the composition blueprint. Add one or two further stamps only when they serve a separate recorded layout function. Omit stamps only when the user explicitly requests an extremely minimal result or the source has no meaningful secondary anchor.
 
 ## 7. Surface: physical print behavior
 
@@ -141,7 +149,7 @@ Reference roles:
 Palette authority / ink roles / area relationship / color exception:
 Paper substrate / boundary and junction system:
 Named local print zones:
-Stamp strategy: source / location / scale / role, or recorded reason for omission:
+Stamp module: source-derived form / layout function / attached field / location / scale, or recorded reason for omission:
 Source-specific risks:
 ```
 
@@ -149,9 +157,9 @@ Compile one execution Prompt in this exact order. The compiler does not ask the 
 
 1. **Render and authorities** — one complete render; name content, graphic construction, palette, material, and typography authorities with their narrow roles.
 2. **Identity lock** — subject, count, action/state, relationship, setting function, atmosphere, and indispensable information.
-3. **Visual redesign** — visual anchor, counterweights, open space, planned arrangement, primary/secondary structural changes, and title module when selected.
+3. **Visual redesign** — visual anchor, counterweights, open space, planned arrangement, primary/secondary structural changes, title module when selected, and the stamp module with its layout function and attachment.
 4. **Object conversion** — specific closed masses and structural bands for every main subject; name the source detail removed.
-5. **Palette and information** — actual ink families, dominance/area roles, exact title/copy, title geometry and typography construction, source-critical color exception, and selected stamps.
+5. **Palette and information** — actual ink families, dominance/area roles, exact title/copy, title geometry and typography construction, source-critical color exception, and source-derived stamp identity.
 6. **Surface allocation** — neutral natural-white paper, clean large fields, crisp broad contour wobble, varied junction behavior, and only the named local print zones.
 7. **Source-specific risks** — only likely identity, information, or material failures for this image.
 
@@ -164,7 +172,7 @@ Review in this order:
 1. identity, count, action, relationship, setting function, and indispensable copy;
 2. thumbnail-scale anchor, broad masses, and genuinely redesigned coordinate graph;
 3. declared palette relation and clean color separation;
-4. title module, exact copy, typography hierarchy, and the recorded source-derived stamp;
+4. title module, exact copy, typography hierarchy, and whether the source-derived stamp visibly performs its recorded layout function and attachment;
 5. enlarged print behavior at at least five major junctions.
 
 At each enlarged junction, confirm at least two visible forms of print evidence: contour wobble, unequal gap, paper sliver, overlap, registration offset, halftone, missing ink, or short ink drag. Restart from the original when the candidate is a source-photo trace, retains photographic micro-detail, lacks the new composition, uses an untraceable palette, turns the substrate yellow, blurs the contour wobble, makes smooth vector seams, fragments into equal gutters, or lets texture outweigh mass hierarchy.
